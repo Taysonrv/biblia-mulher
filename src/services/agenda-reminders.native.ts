@@ -50,7 +50,11 @@ export const agendaReminders: AgendaReminders = {
         trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: new Date(when), channelId: CHANNEL_ID },
       });
       return 'scheduled';
-    } catch { return 'failed'; }
+    } catch (error) {
+      // Keep the event saved, but surface the real native failure in Metro logs.
+      console.error('[Agenda Ministerial] Falha ao agendar lembrete:', error);
+      return 'failed';
+    }
   },
   async cancel(eventId) {
     await Notifications.cancelScheduledNotificationAsync(agendaNotificationId(eventId));
