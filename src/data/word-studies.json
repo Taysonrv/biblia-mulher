@@ -1,0 +1,288 @@
+[
+  {
+    "id": "shalom",
+    "language": "Hebraico",
+    "original": "שָׁלוֹם",
+    "transliteration": "shalom",
+    "strong": "H7965",
+    "title": "Paz",
+    "meaning": "Paz, integridade e bem-estar; o sentido depende da situação.",
+    "note": "Pode descrever segurança, boas relações ou ausência de guerra; cada passagem seleciona um desses sentidos.",
+    "example": {
+      "book": "Números",
+      "chapter": 6,
+      "verse": 26,
+      "context": "A bênção pede que Deus conceda paz ao povo. O termo integra uma bênção de cuidado e proteção."
+    },
+    "reflection": "Que atitudes favorecem relações de paz em minha comunidade?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH7965"
+  },
+  {
+    "id": "hesed",
+    "language": "Hebraico",
+    "original": "חֶסֶד",
+    "transliteration": "hesed",
+    "strong": "H2617",
+    "title": "Bondade fiel",
+    "meaning": "Bondade, lealdade e amor expresso em cuidado.",
+    "note": "Aqui estudamos o sentido de bondade e lealdade. Não se deve aplicar essa definição automaticamente a todo uso de uma forma semelhante.",
+    "example": {
+      "book": "Salmos",
+      "chapter": 23,
+      "verse": 6,
+      "context": "O salmista confia que bondade e misericórdia o acompanharão. Hesed descreve esse cuidado persistente."
+    },
+    "reflection": "Como transformar lealdade em cuidado concreto?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH2617"
+  },
+  {
+    "id": "ruach",
+    "language": "Hebraico",
+    "original": "רוּחַ",
+    "transliteration": "ruach",
+    "strong": "H7307",
+    "title": "Espírito, vento, sopro",
+    "meaning": "Pode indicar vento, sopro ou espírito.",
+    "note": "A mesma palavra comporta sentidos distintos. O contexto, e não apenas o dicionário, orienta a tradução.",
+    "example": {
+      "book": "Gênesis",
+      "chapter": 1,
+      "verse": 2,
+      "context": "Na cena da criação, ruach é traduzido por Espírito em Almeida. Outras traduções discutem vento ou sopro de Deus."
+    },
+    "reflection": "O que muda quando comparo traduções e considero o contexto?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH7307"
+  },
+  {
+    "id": "berit",
+    "language": "Hebraico",
+    "original": "בְּרִית",
+    "transliteration": "berit",
+    "strong": "H1285",
+    "title": "Aliança",
+    "meaning": "Aliança, pacto ou compromisso entre partes.",
+    "note": "Pode designar acordos humanos ou uma aliança entre Deus e pessoas; não descreve sempre o mesmo tipo de relação.",
+    "example": {
+      "book": "Gênesis",
+      "chapter": 9,
+      "verse": 9,
+      "context": "Deus anuncia a aliança com Noé e sua descendência depois do dilúvio. O compromisso é acompanhado de uma promessa."
+    },
+    "reflection": "Que compromissos exigem fidelidade de minha parte?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH1285"
+  },
+  {
+    "id": "emunah",
+    "language": "Hebraico",
+    "original": "אֱמוּנָה",
+    "transliteration": "emunah",
+    "strong": "H530",
+    "title": "Fidelidade",
+    "meaning": "Firmeza, constância e fidelidade.",
+    "note": "A tradução fé ou fidelidade deve ser examinada em cada frase, considerando quem age e a relação descrita.",
+    "example": {
+      "book": "Habacuque",
+      "chapter": 2,
+      "verse": 4,
+      "context": "A afirmação sobre o justo viver por fé ou fidelidade aparece em um diálogo sobre violência, espera e confiança."
+    },
+    "reflection": "Como a confiança se torna perseverança nas decisões?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH530"
+  },
+  {
+    "id": "torah",
+    "language": "Hebraico",
+    "original": "תּוֹרָה",
+    "transliteration": "torah",
+    "strong": "H8451",
+    "title": "Instrução",
+    "meaning": "Instrução, orientação ou lei.",
+    "note": "Torah pode indicar uma instrução específica ou um conjunto de ensinamentos; o uso como nome do Pentateuco é mais amplo.",
+    "example": {
+      "book": "Salmos",
+      "chapter": 1,
+      "verse": 2,
+      "context": "A pessoa retratada no salmo encontra prazer no ensinamento do Senhor e medita nele continuamente."
+    },
+    "reflection": "Como transformar leitura em aprendizado praticado?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH8451"
+  },
+  {
+    "id": "agape",
+    "language": "Grego",
+    "original": "ἀγάπη",
+    "transliteration": "agápē",
+    "strong": "G26",
+    "title": "Amor",
+    "meaning": "Amor, boa vontade e estima.",
+    "note": "O substantivo pode falar do amor de Deus ou de pessoas. A palavra isolada não define toda uma doutrina do amor.",
+    "example": {
+      "book": "1 Coríntios",
+      "chapter": 13,
+      "verse": 4,
+      "context": "Paulo descreve o amor por atitudes como paciência e bondade, no contexto de uma comunidade dividida por dons e prestígio."
+    },
+    "reflection": "Meu modo de usar os dons serve ao próximo?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG26"
+  },
+  {
+    "id": "charis",
+    "language": "Grego",
+    "original": "χάρις",
+    "transliteration": "cháris",
+    "strong": "G5485",
+    "title": "Graça",
+    "meaning": "Favor, graça; em alguns contextos, gratidão.",
+    "note": "Favor recebido e agradecimento são sentidos possíveis, mas não devem ser somados em toda ocorrência.",
+    "example": {
+      "book": "João",
+      "chapter": 1,
+      "verse": 16,
+      "context": "O prólogo liga a plenitude de Jesus à graça recebida. A leitura deve considerar a sequência do prólogo."
+    },
+    "reflection": "Como o reconhecimento do que recebo inspira generosidade?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG5485"
+  },
+  {
+    "id": "pistis",
+    "language": "Grego",
+    "original": "πίστις",
+    "transliteration": "pístis",
+    "strong": "G4102",
+    "title": "Fé",
+    "meaning": "Fé, confiança ou fidelidade, conforme o contexto.",
+    "note": "A palavra pode descrever confiança, fidelidade ou o conteúdo da fé. A construção da frase ajuda a distinguir esses usos.",
+    "example": {
+      "book": "Hebreus",
+      "chapter": 11,
+      "verse": 1,
+      "context": "A exposição sobre a fé introduz exemplos de perseverança de pessoas que viveram voltadas às promessas de Deus."
+    },
+    "reflection": "Que escolhas concretas revelam em quem confio?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG4102"
+  },
+  {
+    "id": "logos",
+    "language": "Grego",
+    "original": "λόγος",
+    "transliteration": "lógos",
+    "strong": "G3056",
+    "title": "Palavra",
+    "meaning": "Palavra, fala, mensagem ou razão, conforme o uso.",
+    "note": "Em João, Palavra é um título no prólogo. Isso não torna cada ocorrência de logos uma referência direta a Jesus.",
+    "example": {
+      "book": "João",
+      "chapter": 1,
+      "verse": 1,
+      "context": "O prólogo apresenta a Palavra em relação com Deus e depois fala de sua encarnação. O contexto define o uso como título."
+    },
+    "reflection": "Como a leitura do prólogo inteiro amplia minha compreensão do versículo?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG3056"
+  },
+  {
+    "id": "metanoia",
+    "language": "Grego",
+    "original": "μετάνοια",
+    "transliteration": "metánoia",
+    "strong": "G3341",
+    "title": "Arrependimento",
+    "meaning": "Arrependimento ou mudança de disposição.",
+    "note": "A definição não se limita a decompor as partes da palavra. É preciso observar o chamado concreto na passagem.",
+    "example": {
+      "book": "Atos",
+      "chapter": 2,
+      "verse": 38,
+      "context": "Depois do anúncio sobre Jesus, Pedro chama seus ouvintes ao arrependimento. Trata-se de uma resposta à mensagem recebida."
+    },
+    "reflection": "Que resposta concreta acompanha o reconhecimento de um erro?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG3341"
+  },
+  {
+    "id": "ekklesia",
+    "language": "Grego",
+    "original": "ἐκκλησία",
+    "transliteration": "ekklēsía",
+    "strong": "G1577",
+    "title": "Assembleia",
+    "meaning": "Assembleia ou comunidade reunida; no NT, frequentemente igreja.",
+    "note": "O termo também pode indicar uma reunião civil. A origem da palavra não substitui o significado em cada passagem.",
+    "example": {
+      "book": "Atos",
+      "chapter": 19,
+      "verse": 32,
+      "context": "Neste episódio de Éfeso, a palavra descreve uma assembleia agitada, não uma comunidade cristã. É um exemplo da importância do contexto."
+    },
+    "reflection": "Como esse exemplo muda minha forma de consultar um dicionário?",
+    "source": {
+      "label": "STEP Bible • TBESG • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DG1577"
+  },
+  {
+    "id": "elah",
+    "language": "Aramaico",
+    "original": "אֱלָהּ",
+    "transliteration": "elāh",
+    "strong": "H426",
+    "title": "Deus",
+    "meaning": "Deus ou divindade, conforme o referente.",
+    "note": "O número Strong começa com H por convenção de catálogo; esta entrada é aramaica, não hebraica.",
+    "example": {
+      "book": "Daniel",
+      "chapter": 2,
+      "verse": 20,
+      "context": "Na seção aramaica de Daniel, a oração bendiz o Deus a quem pertencem sabedoria e poder."
+    },
+    "reflection": "Como o idioma e o contexto ajudam a identificar o referente de uma palavra?",
+    "source": {
+      "label": "STEP Bible • TBESH • CC BY 4.0",
+      "url": "https://github.com/STEPBible/STEPBible-Data/tree/master/Lexicons"
+    },
+    "lexiconUrl": "https://www.stepbible.org/?q=strong%3DH426"
+  }
+]

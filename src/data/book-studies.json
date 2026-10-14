@@ -1,0 +1,2008 @@
+[
+  {
+    "name": "Gênesis",
+    "chapters": 50,
+    "testament": "Antigo",
+    "id": "genesis",
+    "genre": "Pentateuco",
+    "author": "Tradicionalmente atribuída a Moisés; a formação editorial do Pentateuco é debatida.",
+    "date": "Tradição mosaica: séculos XV–XIII a.C.; estudos da forma final propõem também os séculos VI–V a.C.",
+    "message": "Deus cria, a humanidade rompe a comunhão e a promessa feita a Abraão abre um caminho de bênção para as nações.",
+    "outline": [
+      {
+        "title": "Origens da humanidade",
+        "range": "1–11"
+      },
+      {
+        "title": "Abraão e sua família",
+        "range": "12–36"
+      },
+      {
+        "title": "José e a preservação da família",
+        "range": "37–50"
+      }
+    ],
+    "reflection": "Como as promessas de Deus sustentam a confiança em meio às falhas humanas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-genesis/"
+      },
+      {
+        "label": "USCCB • Introdução e composição",
+        "url": "https://bible.usccb.org/bible/genesis/0"
+      },
+      {
+        "label": "USCCB • Formação do Pentateuco",
+        "url": "https://bible.usccb.org/bible/thepentateuch/0"
+      }
+    ]
+  },
+  {
+    "name": "Êxodo",
+    "chapters": 40,
+    "testament": "Antigo",
+    "id": "exodus",
+    "genre": "Pentateuco",
+    "author": "Tradicionalmente atribuída a Moisés, com reconhecimento de atualizações editoriais posteriores.",
+    "date": "Tradição mosaica: séculos XV–XIII a.C.; composição e edição posteriores são debatidas.",
+    "message": "A libertação do Egito conduz Israel à aliança e à presença de Deus, unindo liberdade, adoração e responsabilidade.",
+    "outline": [
+      {
+        "title": "Libertação do Egito",
+        "range": "1–18"
+      },
+      {
+        "title": "Aliança no Sinai",
+        "range": "19–24"
+      },
+      {
+        "title": "Tabernáculo e presença de Deus",
+        "range": "25–40"
+      }
+    ],
+    "reflection": "De que maneira a liberdade recebida se transforma em serviço?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-exodus/"
+      },
+      {
+        "label": "USCCB • Formação do Pentateuco",
+        "url": "https://bible.usccb.org/bible/thepentateuch/0"
+      }
+    ]
+  },
+  {
+    "name": "Levítico",
+    "chapters": 27,
+    "testament": "Antigo",
+    "id": "leviticus",
+    "genre": "Pentateuco",
+    "author": "Tradicionalmente atribuída a Moisés; reúne instruções sacerdotais no conjunto do Pentateuco.",
+    "date": "Associado ao período mosaico na tradição; a organização final do material sacerdotal é debatida.",
+    "message": "A santidade de Deus orienta o culto, os relacionamentos e o cuidado com a comunidade.",
+    "outline": [
+      {
+        "title": "Sacrifícios e sacerdócio",
+        "range": "1–10"
+      },
+      {
+        "title": "Pureza e reconciliação",
+        "range": "11–16"
+      },
+      {
+        "title": "Santidade na vida cotidiana",
+        "range": "17–27"
+      }
+    ],
+    "reflection": "Como a santidade aparece no cuidado com outras pessoas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-leviticus/"
+      },
+      {
+        "label": "USCCB • Formação do Pentateuco",
+        "url": "https://bible.usccb.org/bible/thepentateuch/0"
+      }
+    ]
+  },
+  {
+    "name": "Números",
+    "chapters": 36,
+    "testament": "Antigo",
+    "id": "numbers",
+    "genre": "Pentateuco",
+    "author": "Tradicionalmente atribuída a Moisés, integrada à formação do Pentateuco.",
+    "date": "Associado ao período mosaico; a data da forma final não é consensual.",
+    "message": "A jornada no deserto expõe a infidelidade do povo e a fidelidade de Deus, que prepara uma nova geração.",
+    "outline": [
+      {
+        "title": "Organização no Sinai",
+        "range": "1–10"
+      },
+      {
+        "title": "Caminhada e rebeliões",
+        "range": "11–20"
+      },
+      {
+        "title": "Preparação para a terra",
+        "range": "21–36"
+      }
+    ],
+    "reflection": "O que os períodos de espera revelam sobre minha confiança?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-numbers/"
+      },
+      {
+        "label": "USCCB • Formação do Pentateuco",
+        "url": "https://bible.usccb.org/bible/thepentateuch/0"
+      }
+    ]
+  },
+  {
+    "name": "Deuteronômio",
+    "chapters": 34,
+    "testament": "Antigo",
+    "id": "deuteronomy",
+    "genre": "Pentateuco",
+    "author": "Discursos atribuídos a Moisés, reunidos com uma conclusão que narra sua morte.",
+    "date": "Tradição mosaica; propostas de composição e edição abrangem também os séculos VII–V a.C.",
+    "message": "Recordar a aliança é aprender a amar a Deus e a praticar justiça ao entrar em uma nova etapa.",
+    "outline": [
+      {
+        "title": "Memória da caminhada",
+        "range": "1–4"
+      },
+      {
+        "title": "Instruções da aliança",
+        "range": "5–26"
+      },
+      {
+        "title": "Renovação e despedida",
+        "range": "27–34"
+      }
+    ],
+    "reflection": "Que ensinamentos preciso transmitir à próxima geração?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-deuteronomy/"
+      },
+      {
+        "label": "USCCB • Formação do Pentateuco",
+        "url": "https://bible.usccb.org/bible/thepentateuch/0"
+      }
+    ]
+  },
+  {
+    "name": "Josué",
+    "chapters": 24,
+    "testament": "Antigo",
+    "id": "joshua",
+    "genre": "História",
+    "author": "Autor não identificado; o livro preserva tradições ligadas a Josué.",
+    "date": "Material antigo com organização posterior; a conclusão é por vezes situada no período do exílio.",
+    "message": "A entrada na terra é narrada como cumprimento da promessa, acompanhado do chamado à fidelidade.",
+    "outline": [
+      {
+        "title": "Entrada e conquista",
+        "range": "1–12"
+      },
+      {
+        "title": "Distribuição da terra",
+        "range": "13–22"
+      },
+      {
+        "title": "Compromisso com a aliança",
+        "range": "23–24"
+      }
+    ],
+    "reflection": "Como responder às promessas com responsabilidade e fidelidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-joshua/"
+      }
+    ]
+  },
+  {
+    "name": "Juízes",
+    "chapters": 21,
+    "testament": "Antigo",
+    "id": "judges",
+    "genre": "História",
+    "author": "Anônimo; a atribuição tradicional a Samuel não é demonstrável pelo texto.",
+    "date": "Composição debatida; reúne tradições anteriores à monarquia, organizadas posteriormente.",
+    "message": "Os ciclos de violência e infidelidade mostram o custo de abandonar a aliança e a necessidade de uma liderança justa.",
+    "outline": [
+      {
+        "title": "Cenário e infidelidade",
+        "range": "1–2"
+      },
+      {
+        "title": "Ciclos dos juízes",
+        "range": "3–16"
+      },
+      {
+        "title": "Desordem social",
+        "range": "17–21"
+      }
+    ],
+    "reflection": "Que ciclos destrutivos precisam ser interrompidos em nossa comunidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-judges/"
+      }
+    ]
+  },
+  {
+    "name": "Rute",
+    "chapters": 4,
+    "testament": "Antigo",
+    "id": "ruth",
+    "genre": "História",
+    "author": "Autor não identificado.",
+    "date": "Escrito depois do surgimento de Davi; a data exata é incerta.",
+    "message": "A lealdade de uma estrangeira e o cuidado de uma família apontam para a providência de Deus nas relações cotidianas.",
+    "outline": [
+      {
+        "title": "Perda e decisão",
+        "range": "1"
+      },
+      {
+        "title": "Acolhimento e resgate",
+        "range": "2–3"
+      },
+      {
+        "title": "Família restaurada",
+        "range": "4"
+      }
+    ],
+    "reflection": "Como acolher quem atravessa perdas ou chega de outro lugar?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-ruth/"
+      }
+    ]
+  },
+  {
+    "name": "1 Samuel",
+    "chapters": 31,
+    "testament": "Antigo",
+    "id": "1samuel",
+    "genre": "História",
+    "author": "Autor ou redatores não identificados; Samuel é personagem central, não autor declarado de todo o livro.",
+    "date": "Após o reinado de Davi; a data da edição final é debatida.",
+    "message": "A passagem dos juízes à monarquia contrasta aparência, poder e obediência, preparando a ascensão de Davi.",
+    "outline": [
+      {
+        "title": "Samuel e sua missão",
+        "range": "1–7"
+      },
+      {
+        "title": "Saul e a monarquia",
+        "range": "8–15"
+      },
+      {
+        "title": "Davi e Saul",
+        "range": "16–31"
+      }
+    ],
+    "reflection": "Minha maneira de liderar nasce do serviço ou do desejo de reconhecimento?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-samuel/"
+      }
+    ]
+  },
+  {
+    "name": "2 Samuel",
+    "chapters": 24,
+    "testament": "Antigo",
+    "id": "2samuel",
+    "genre": "História",
+    "author": "Continuação de Samuel, por autor ou redatores não identificados.",
+    "date": "Após o reinado de Davi; incorpora memórias antigas e elaboração posterior.",
+    "message": "A promessa à casa de Davi caminha junto às consequências de seus pecados e aos limites do poder humano.",
+    "outline": [
+      {
+        "title": "Reinado e promessa",
+        "range": "1–10"
+      },
+      {
+        "title": "Pecado e conflitos",
+        "range": "11–20"
+      },
+      {
+        "title": "Memórias do reinado",
+        "range": "21–24"
+      }
+    ],
+    "reflection": "Como assumir as consequências dos erros sem fugir da responsabilidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-samuel/"
+      }
+    ]
+  },
+  {
+    "name": "1 Reis",
+    "chapters": 22,
+    "testament": "Antigo",
+    "id": "1kings",
+    "genre": "História",
+    "author": "Autor ou redatores anônimos; usa registros dos reinados de Israel e Judá.",
+    "date": "Forma final relacionada ao exílio, no século VI a.C.",
+    "message": "A sabedoria e a riqueza não substituem a fidelidade: o reino se divide e os profetas confrontam a idolatria.",
+    "outline": [
+      {
+        "title": "Salomão e o templo",
+        "range": "1–11"
+      },
+      {
+        "title": "Divisão do reino",
+        "range": "12–16"
+      },
+      {
+        "title": "Elias e os reis",
+        "range": "17–22"
+      }
+    ],
+    "reflection": "O que compete com Deus por minha lealdade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-kings/"
+      }
+    ]
+  },
+  {
+    "name": "2 Reis",
+    "chapters": 25,
+    "testament": "Antigo",
+    "id": "2kings",
+    "genre": "História",
+    "author": "Continuação de Reis, por redatores não identificados.",
+    "date": "Século VI a.C., após a queda de Jerusalém e os acontecimentos finais narrados.",
+    "message": "A queda de Israel e Judá é interpretada à luz da aliança, preservando sinais de esperança mesmo no exílio.",
+    "outline": [
+      {
+        "title": "Eliseu e os reinos",
+        "range": "1–10"
+      },
+      {
+        "title": "Crises e queda de Israel",
+        "range": "11–17"
+      },
+      {
+        "title": "Judá e o exílio",
+        "range": "18–25"
+      }
+    ],
+    "reflection": "Como manter esperança sem ignorar as consequências da injustiça?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-kings/"
+      }
+    ]
+  },
+  {
+    "name": "1 Crônicas",
+    "chapters": 29,
+    "testament": "Antigo",
+    "id": "1chronicles",
+    "genre": "História",
+    "author": "Cronista anônimo; a associação com Esdras é tradicional, não certa.",
+    "date": "Pós-exílio; frequentemente situado nos séculos V–IV a.C.",
+    "message": "As genealogias e o reinado de Davi reconstroem a memória de um povo e destacam o culto a Deus.",
+    "outline": [
+      {
+        "title": "Memória das famílias",
+        "range": "1–9"
+      },
+      {
+        "title": "Davi e o reino",
+        "range": "10–21"
+      },
+      {
+        "title": "Preparação para o templo",
+        "range": "22–29"
+      }
+    ],
+    "reflection": "Que memórias ajudam uma comunidade a reconstruir sua identidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-chronicles/"
+      }
+    ]
+  },
+  {
+    "name": "2 Crônicas",
+    "chapters": 36,
+    "testament": "Antigo",
+    "id": "2chronicles",
+    "genre": "História",
+    "author": "Continuação do trabalho do cronista anônimo.",
+    "date": "Pós-exílio, provavelmente nos séculos V–IV a.C.",
+    "message": "A história do templo e dos reis de Judá associa restauração à busca de Deus e à renovação da vida comunitária.",
+    "outline": [
+      {
+        "title": "Salomão e o templo",
+        "range": "1–9"
+      },
+      {
+        "title": "Reis de Judá",
+        "range": "10–28"
+      },
+      {
+        "title": "Reformas, queda e retorno",
+        "range": "29–36"
+      }
+    ],
+    "reflection": "O que precisa ser restaurado além das estruturas externas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-2-chronicles/"
+      }
+    ]
+  },
+  {
+    "name": "Esdras",
+    "chapters": 10,
+    "testament": "Antigo",
+    "id": "ezra",
+    "genre": "História",
+    "author": "Inclui memórias de Esdras, reunidas por ele ou por um editor não identificado.",
+    "date": "Após os acontecimentos do século V a.C.; data editorial incerta.",
+    "message": "O retorno do exílio exige reconstruir o culto e discernir a identidade da comunidade diante da aliança.",
+    "outline": [
+      {
+        "title": "Retorno e reconstrução",
+        "range": "1–6"
+      },
+      {
+        "title": "Esdras e o ensino",
+        "range": "7–8"
+      },
+      {
+        "title": "Crise da comunidade",
+        "range": "9–10"
+      }
+    ],
+    "reflection": "Como unir reconstrução prática, estudo e compromisso espiritual?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-ezra/"
+      }
+    ]
+  },
+  {
+    "name": "Neemias",
+    "chapters": 13,
+    "testament": "Antigo",
+    "id": "nehemiah",
+    "genre": "História",
+    "author": "Inclui memórias de Neemias; a autoria do conjunto não é explicitada.",
+    "date": "Depois das atividades de Neemias no século V a.C.; edição final incerta.",
+    "message": "A reconstrução dos muros é acompanhada de oração, justiça social e renovação do compromisso com Deus.",
+    "outline": [
+      {
+        "title": "Reconstrução e oposição",
+        "range": "1–7"
+      },
+      {
+        "title": "Palavra e aliança",
+        "range": "8–10"
+      },
+      {
+        "title": "Comunidade reorganizada",
+        "range": "11–13"
+      }
+    ],
+    "reflection": "Minha dedicação a um projeto também cuida das pessoas envolvidas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-nehemiah/"
+      }
+    ]
+  },
+  {
+    "name": "Ester",
+    "chapters": 10,
+    "testament": "Antigo",
+    "id": "esther",
+    "genre": "História",
+    "author": "Autor anônimo; a hipótese de Mardoqueu é tradicional e não confirmada.",
+    "date": "Depois dos acontecimentos do reinado persa de Xerxes, no século V a.C.; data exata incerta.",
+    "message": "A sobrevivência dos judeus na Pérsia é narrada por reviravoltas que evidenciam coragem, solidariedade e providência.",
+    "outline": [
+      {
+        "title": "Ester no palácio",
+        "range": "1–2"
+      },
+      {
+        "title": "Ameaça e intervenção",
+        "range": "3–7"
+      },
+      {
+        "title": "Livramento e memória",
+        "range": "8–10"
+      }
+    ],
+    "reflection": "Que responsabilidade acompanha a posição que ocupo?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-esther/"
+      }
+    ]
+  },
+  {
+    "name": "Jó",
+    "chapters": 42,
+    "testament": "Antigo",
+    "id": "job",
+    "genre": "Sabedoria e poesia",
+    "author": "Autor não identificado.",
+    "date": "Data de composição desconhecida; o cenário dos acontecimentos não determina quando o livro foi escrito.",
+    "message": "O sofrimento de Jó desafia explicações fáceis e convida à humildade diante de Deus e ao cuidado com quem sofre.",
+    "outline": [
+      {
+        "title": "Provação de Jó",
+        "range": "1–2"
+      },
+      {
+        "title": "Debates sobre o sofrimento",
+        "range": "3–37"
+      },
+      {
+        "title": "Resposta divina e desfecho",
+        "range": "38–42"
+      }
+    ],
+    "reflection": "Tenho escutado a dor do outro antes de tentar explicá-la?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-job/"
+      }
+    ]
+  },
+  {
+    "name": "Salmos",
+    "chapters": 150,
+    "testament": "Antigo",
+    "id": "psalms",
+    "genre": "Sabedoria e poesia",
+    "author": "Diversos autores e tradições: Davi, Asafe, filhos de Corá, entre outros; muitos salmos são anônimos.",
+    "date": "Coletânea formada ao longo de séculos; os títulos e a organização não fixam uma única data.",
+    "message": "Louvor, lamento e confiança ensinam a levar toda a experiência humana à presença de Deus.",
+    "outline": [
+      {
+        "title": "Livros I e II",
+        "range": "1–72"
+      },
+      {
+        "title": "Livros III e IV",
+        "range": "73–106"
+      },
+      {
+        "title": "Livro V",
+        "range": "107–150"
+      }
+    ],
+    "reflection": "Que sentimento preciso apresentar a Deus com honestidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-the-psalms/"
+      }
+    ]
+  },
+  {
+    "name": "Provérbios",
+    "chapters": 31,
+    "testament": "Antigo",
+    "id": "proverbs",
+    "genre": "Sabedoria e poesia",
+    "author": "Coleções associadas a Salomão, sábios, Agur e Lemuel, com trabalho editorial posterior.",
+    "date": "Material desde o período de Salomão, no século X a.C.; a coletânea recebeu organização posterior.",
+    "message": "A sabedoria molda decisões, palavras, trabalho e relações, começando pela reverência a Deus.",
+    "outline": [
+      {
+        "title": "Convite à sabedoria",
+        "range": "1–9"
+      },
+      {
+        "title": "Coleções de provérbios",
+        "range": "10–29"
+      },
+      {
+        "title": "Agur, Lemuel e vida virtuosa",
+        "range": "30–31"
+      }
+    ],
+    "reflection": "Qual decisão cotidiana precisa de mais discernimento?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-proverbs/"
+      }
+    ]
+  },
+  {
+    "name": "Eclesiastes",
+    "chapters": 12,
+    "testament": "Antigo",
+    "id": "ecclesiastes",
+    "genre": "Sabedoria e poesia",
+    "author": "A voz de Qohelet, o Pregador; a identificação com Salomão é tradicional e debatida.",
+    "date": "Não há consenso sobre a composição; a linguagem e a atribuição tradicional levam a propostas diferentes.",
+    "message": "A fragilidade das conquistas humanas convida a reconhecer limites e a receber a vida diante de Deus.",
+    "outline": [
+      {
+        "title": "Busca de sentido",
+        "range": "1–2"
+      },
+      {
+        "title": "Tempo, limites e trabalho",
+        "range": "3–8"
+      },
+      {
+        "title": "Sabedoria e conclusão",
+        "range": "9–12"
+      }
+    ],
+    "reflection": "O que estou tentando controlar que preciso aprender a receber?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-ecclesiastes/"
+      }
+    ]
+  },
+  {
+    "name": "Cânticos",
+    "chapters": 8,
+    "testament": "Antigo",
+    "id": "songofsongs",
+    "genre": "Sabedoria e poesia",
+    "author": "Poemas associados a Salomão; autoria e organização da coletânea são debatidas.",
+    "date": "Data incerta; a associação com Salomão não encerra a questão da composição.",
+    "message": "A poesia celebra o amor, o desejo e a reciprocidade, com imagens que pedem leitura sensível ao gênero literário.",
+    "outline": [
+      {
+        "title": "Encontro e desejo",
+        "range": "1–2"
+      },
+      {
+        "title": "Busca e celebração",
+        "range": "3–5"
+      },
+      {
+        "title": "Amor e compromisso",
+        "range": "6–8"
+      }
+    ],
+    "reflection": "Como respeito, cuidado e reciprocidade aparecem nos meus relacionamentos?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-the-song-of-solomon/"
+      }
+    ]
+  },
+  {
+    "name": "Isaías",
+    "chapters": 66,
+    "testament": "Antigo",
+    "id": "isaiah",
+    "genre": "Profetas",
+    "author": "Tradição vinculada a Isaías, filho de Amoz; a composição do conjunto é debatida.",
+    "date": "Ministério iniciado por volta de 740 a.C.; há debate sobre material exílico e pós-exílico.",
+    "message": "O Deus santo confronta a injustiça e anuncia consolo, restauração e esperança para seu povo e para as nações.",
+    "outline": [
+      {
+        "title": "Juízo e esperança",
+        "range": "1–39"
+      },
+      {
+        "title": "Consolo e servo do Senhor",
+        "range": "40–55"
+      },
+      {
+        "title": "Restauração e nova criação",
+        "range": "56–66"
+      }
+    ],
+    "reflection": "Como a esperança transforma minha resposta à injustiça?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-isaiah/"
+      }
+    ]
+  },
+  {
+    "name": "Jeremias",
+    "chapters": 52,
+    "testament": "Antigo",
+    "id": "jeremiah",
+    "genre": "Profetas",
+    "author": "Profecias de Jeremias com participação de seu escriba Baruque e transmissão editorial.",
+    "date": "Ministério desde cerca de 627 a.C.; o livro incorpora material do fim de Judá e do exílio.",
+    "message": "A denúncia da infidelidade e da violência convive com a promessa de uma aliança que alcança o coração.",
+    "outline": [
+      {
+        "title": "Chamado e mensagens a Judá",
+        "range": "1–25"
+      },
+      {
+        "title": "Conflitos e esperança",
+        "range": "26–45"
+      },
+      {
+        "title": "Nações e queda de Jerusalém",
+        "range": "46–52"
+      }
+    ],
+    "reflection": "Que mudança interior precisa acompanhar minha prática religiosa?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-jeremiah/"
+      }
+    ]
+  },
+  {
+    "name": "Lamentações",
+    "chapters": 5,
+    "testament": "Antigo",
+    "id": "lamentations",
+    "genre": "Profetas",
+    "author": "Autor não identificado; a atribuição a Jeremias é tradicional.",
+    "date": "Após a destruição de Jerusalém em 586 a.C.; provavelmente ainda no século VI a.C.",
+    "message": "O lamento dá voz à devastação de Jerusalém sem eliminar a busca por misericórdia e restauração.",
+    "outline": [
+      {
+        "title": "Dor da cidade",
+        "range": "1–2"
+      },
+      {
+        "title": "Lamento e esperança",
+        "range": "3"
+      },
+      {
+        "title": "Memória e súplica",
+        "range": "4–5"
+      }
+    ],
+    "reflection": "Como oferecer espaço para o luto sem apressar respostas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-lamentations/"
+      }
+    ]
+  },
+  {
+    "name": "Ezequiel",
+    "chapters": 48,
+    "testament": "Antigo",
+    "id": "ezekiel",
+    "genre": "Profetas",
+    "author": "Mensagens e visões ligadas ao sacerdote e profeta Ezequiel.",
+    "date": "Oráculos datados entre aproximadamente 593 e 571 a.C., durante o exílio.",
+    "message": "A glória de Deus, a responsabilidade humana e a promessa de um coração novo sustentam a esperança no exílio.",
+    "outline": [
+      {
+        "title": "Chamado e juízo sobre Judá",
+        "range": "1–24"
+      },
+      {
+        "title": "Oráculos às nações",
+        "range": "25–32"
+      },
+      {
+        "title": "Restauração e presença de Deus",
+        "range": "33–48"
+      }
+    ],
+    "reflection": "O que significa buscar renovação do coração, além de mudança de circunstâncias?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-ezekiel/"
+      }
+    ]
+  },
+  {
+    "name": "Daniel",
+    "chapters": 12,
+    "testament": "Antigo",
+    "id": "daniel",
+    "genre": "Profetas",
+    "author": "Tradicionalmente atribuído a Daniel; a data e a composição dos relatos e visões são debatidas.",
+    "date": "Tradição: século VI a.C.; uma proposta crítica frequente situa a forma final no século II a.C.",
+    "message": "A fidelidade sob impérios hostis e as visões do reino de Deus encorajam a perseverança.",
+    "outline": [
+      {
+        "title": "Relatos na corte",
+        "range": "1–6"
+      },
+      {
+        "title": "Visões dos reinos",
+        "range": "7–12"
+      }
+    ],
+    "reflection": "Como permanecer fiel quando há pressão para abandonar minhas convicções?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-daniel/"
+      },
+      {
+        "label": "USCCB • Introdução e composição",
+        "url": "https://bible.usccb.org/bible/daniel/0"
+      }
+    ]
+  },
+  {
+    "name": "Oséias",
+    "chapters": 14,
+    "testament": "Antigo",
+    "id": "hosea",
+    "genre": "Profetas",
+    "author": "Mensagens do profeta Oséias.",
+    "date": "Ministério no século VIII a.C., aproximadamente 753–722 a.C.",
+    "message": "A imagem de uma relação ferida expõe a infidelidade de Israel e a persistência do amor de Deus.",
+    "outline": [
+      {
+        "title": "Sinal vivido pelo profeta",
+        "range": "1–3"
+      },
+      {
+        "title": "Denúncia e chamado ao retorno",
+        "range": "4–14"
+      }
+    ],
+    "reflection": "Como um retorno sincero se torna visível em ações?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-hosea/"
+      }
+    ]
+  },
+  {
+    "name": "Joel",
+    "chapters": 3,
+    "testament": "Antigo",
+    "id": "joel",
+    "genre": "Profetas",
+    "author": "Joel, filho de Petuel; pouco se sabe sobre sua vida.",
+    "date": "Data debatida; muitos estudiosos propõem um contexto pós-exílico.",
+    "message": "Uma calamidade leva ao chamado ao arrependimento e à esperança no derramamento do Espírito.",
+    "outline": [
+      {
+        "title": "Crise e lamento",
+        "range": "1"
+      },
+      {
+        "title": "Retorno e promessa do Espírito",
+        "range": "2"
+      },
+      {
+        "title": "Juízo e restauração",
+        "range": "3"
+      }
+    ],
+    "reflection": "Como uma crise pode nos levar a uma resposta comunitária responsável?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-joel/"
+      }
+    ]
+  },
+  {
+    "name": "Amós",
+    "chapters": 9,
+    "testament": "Antigo",
+    "id": "amos",
+    "genre": "Profetas",
+    "author": "Amós, pastor e cultivador de sicômoros, chamado a profetizar.",
+    "date": "Século VIII a.C., durante os reinados de Uzias e Jeroboão II.",
+    "message": "O culto não encobre a exploração: Deus exige justiça para os vulneráveis e denuncia uma prosperidade sem compaixão.",
+    "outline": [
+      {
+        "title": "Oráculos às nações",
+        "range": "1–2"
+      },
+      {
+        "title": "Denúncia a Israel",
+        "range": "3–6"
+      },
+      {
+        "title": "Visões e esperança",
+        "range": "7–9"
+      }
+    ],
+    "reflection": "Minha espiritualidade se traduz em justiça para quem é vulnerável?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-amos/"
+      }
+    ]
+  },
+  {
+    "name": "Obadias",
+    "chapters": 1,
+    "testament": "Antigo",
+    "id": "obadiah",
+    "genre": "Profetas",
+    "author": "Visão atribuída a Obadias; identidade do profeta desconhecida.",
+    "date": "Data debatida; uma proposta comum é após 586 a.C., no início do exílio.",
+    "message": "O orgulho e a violência de Edom contra Judá são confrontados pela justiça de Deus.",
+    "outline": [
+      {
+        "title": "Orgulho e violência de Edom",
+        "range": "1"
+      },
+      {
+        "title": "Restauração de Sião",
+        "range": "1"
+      }
+    ],
+    "reflection": "Como respondo quando alguém atravessa uma situação de fragilidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-obadiah/"
+      }
+    ]
+  },
+  {
+    "name": "Jonas",
+    "chapters": 4,
+    "testament": "Antigo",
+    "id": "jonah",
+    "genre": "Profetas",
+    "author": "Narrativa anônima sobre Jonas; o livro não declara seu autor.",
+    "date": "O profeta é situado no século VIII a.C.; a data da composição da narrativa é incerta.",
+    "message": "A misericórdia de Deus alcança os inimigos e confronta a resistência de um profeta em aceitar essa compaixão.",
+    "outline": [
+      {
+        "title": "Fuga e resgate",
+        "range": "1–2"
+      },
+      {
+        "title": "Nínive e a resistência de Jonas",
+        "range": "3–4"
+      }
+    ],
+    "reflection": "A quem tenho dificuldade de estender misericórdia?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-jonah/"
+      }
+    ]
+  },
+  {
+    "name": "Miquéias",
+    "chapters": 7,
+    "testament": "Antigo",
+    "id": "micah",
+    "genre": "Profetas",
+    "author": "Miquéias, de Moresete.",
+    "date": "Ministério no século VIII a.C., durante Jotão, Acaz e Ezequias.",
+    "message": "A denúncia da exploração convive com esperança, destacando justiça, misericórdia e humildade diante de Deus.",
+    "outline": [
+      {
+        "title": "Juízo e esperança",
+        "range": "1–3"
+      },
+      {
+        "title": "Restauração e governante prometido",
+        "range": "4–5"
+      },
+      {
+        "title": "Aliança, justiça e confiança",
+        "range": "6–7"
+      }
+    ],
+    "reflection": "Como praticar justiça e misericórdia sem perder a humildade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-micah/"
+      }
+    ]
+  },
+  {
+    "name": "Naum",
+    "chapters": 3,
+    "testament": "Antigo",
+    "id": "nahum",
+    "genre": "Profetas",
+    "author": "Profeta Naum, de Elcos.",
+    "date": "Entre a queda de Tebas em 664 a.C. e a queda de Nínive em 612 a.C.",
+    "message": "A queda de Nínive anuncia limites à crueldade imperial e oferece consolo aos povos oprimidos.",
+    "outline": [
+      {
+        "title": "Justiça de Deus",
+        "range": "1"
+      },
+      {
+        "title": "Queda de Nínive",
+        "range": "2–3"
+      }
+    ],
+    "reflection": "Como esperar justiça sem transformar o sofrimento do outro em prazer?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-nahum/"
+      }
+    ]
+  },
+  {
+    "name": "Habacuque",
+    "chapters": 3,
+    "testament": "Antigo",
+    "id": "habakkuk",
+    "genre": "Profetas",
+    "author": "Profeta Habacuque.",
+    "date": "Fim do século VII ou início do VI a.C.; data precisa incerta.",
+    "message": "O diálogo com Deus permite questionar a violência e aprender a perseverar com confiança.",
+    "outline": [
+      {
+        "title": "Perguntas do profeta",
+        "range": "1"
+      },
+      {
+        "title": "Resposta e denúncias",
+        "range": "2"
+      },
+      {
+        "title": "Oração de confiança",
+        "range": "3"
+      }
+    ],
+    "reflection": "Consigo levar minhas perguntas a Deus sem desistir de buscar justiça?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-habakkuk/"
+      }
+    ]
+  },
+  {
+    "name": "Sofonias",
+    "chapters": 3,
+    "testament": "Antigo",
+    "id": "zephaniah",
+    "genre": "Profetas",
+    "author": "Sofonias, cuja genealogia é apresentada no início do livro.",
+    "date": "Durante Josias, aproximadamente 640–609 a.C.",
+    "message": "O dia do Senhor confronta o pecado e abre esperança de uma comunidade humilde e restaurada.",
+    "outline": [
+      {
+        "title": "Juízo sobre Judá",
+        "range": "1"
+      },
+      {
+        "title": "Nações e chamado",
+        "range": "2"
+      },
+      {
+        "title": "Restauração e alegria",
+        "range": "3"
+      }
+    ],
+    "reflection": "Como cultivar humildade e solidariedade em tempos de crise?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-zephaniah/"
+      }
+    ]
+  },
+  {
+    "name": "Ageu",
+    "chapters": 2,
+    "testament": "Antigo",
+    "id": "haggai",
+    "genre": "Profetas",
+    "author": "Mensagens do profeta Ageu.",
+    "date": "Oráculos datados em 520 a.C.",
+    "message": "Reconstruir o templo exige rever prioridades e retomar a vida comunitária diante de Deus.",
+    "outline": [
+      {
+        "title": "Revisão de prioridades",
+        "range": "1"
+      },
+      {
+        "title": "Encorajamento e promessa",
+        "range": "2"
+      }
+    ],
+    "reflection": "Minhas prioridades pessoais deixam espaço para compromissos comunitários?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-haggai/"
+      }
+    ]
+  },
+  {
+    "name": "Zacarias",
+    "chapters": 14,
+    "testament": "Antigo",
+    "id": "zechariah",
+    "genre": "Profetas",
+    "author": "Profeta Zacarias; a composição dos capítulos 9–14 é debatida.",
+    "date": "Ministério iniciado em 520 a.C.; a data dos capítulos finais é discutida.",
+    "message": "Visões e promessas encorajam a restauração, a justiça e a esperança em um rei que traz paz.",
+    "outline": [
+      {
+        "title": "Visões e reconstrução",
+        "range": "1–6"
+      },
+      {
+        "title": "Jejum e justiça",
+        "range": "7–8"
+      },
+      {
+        "title": "Rei, pastor e esperança",
+        "range": "9–14"
+      }
+    ],
+    "reflection": "Como ligar esperança futura e responsabilidade presente?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-zechariah/"
+      }
+    ]
+  },
+  {
+    "name": "Malaquias",
+    "chapters": 4,
+    "testament": "Antigo",
+    "id": "malachi",
+    "genre": "Profetas",
+    "author": "Mensageiro chamado Malaquias; o nome também significa mensageiro.",
+    "date": "Período persa, no século V a.C.; frequentemente associado ao tempo de Esdras e Neemias.",
+    "message": "O diálogo entre Deus e o povo confronta um culto indiferente e a quebra da fidelidade nos relacionamentos.",
+    "outline": [
+      {
+        "title": "Culto e compromisso",
+        "range": "1–2"
+      },
+      {
+        "title": "Justiça e retorno",
+        "range": "3"
+      },
+      {
+        "title": "Dia do Senhor",
+        "range": "4"
+      }
+    ],
+    "reflection": "Minha prática religiosa é acompanhada de fidelidade nos relacionamentos?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-malachi/"
+      }
+    ]
+  },
+  {
+    "name": "Mateus",
+    "chapters": 28,
+    "testament": "Novo",
+    "id": "matthew",
+    "genre": "Evangelhos",
+    "author": "Tradicionalmente atribuído ao apóstolo Mateus; o texto não nomeia seu narrador.",
+    "date": "Século I d.C.; propostas variam entre as décadas de 50–60 e de 80–90.",
+    "message": "Jesus é apresentado como o Messias que cumpre as Escrituras e ensina seus discípulos a viver o reino de Deus.",
+    "outline": [
+      {
+        "title": "Origem e início do ministério",
+        "range": "1–4"
+      },
+      {
+        "title": "Ensinos e sinais do reino",
+        "range": "5–25"
+      },
+      {
+        "title": "Morte, ressurreição e missão",
+        "range": "26–28"
+      }
+    ],
+    "reflection": "Como os ensinos de Jesus remodelam meus critérios de grandeza?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-matthew/"
+      },
+      {
+        "label": "Bible.org • Autoria e data",
+        "url": "https://bible.org/seriespage/matthew-introduction-argument-and-outline"
+      }
+    ]
+  },
+  {
+    "name": "Marcos",
+    "chapters": 16,
+    "testament": "Novo",
+    "id": "mark",
+    "genre": "Evangelhos",
+    "author": "Tradicionalmente atribuído a João Marcos, relacionado ao testemunho de Pedro.",
+    "date": "Século I d.C., geralmente entre as décadas de 50 e 70.",
+    "message": "A identidade de Jesus se revela no serviço e na cruz, chamando os discípulos a uma fé que o acompanha.",
+    "outline": [
+      {
+        "title": "Ministério e identidade de Jesus",
+        "range": "1–8"
+      },
+      {
+        "title": "Caminho de discipulado",
+        "range": "9–10"
+      },
+      {
+        "title": "Jerusalém, cruz e ressurreição",
+        "range": "11–16"
+      }
+    ],
+    "reflection": "O que significa seguir Jesus quando isso exige serviço e renúncia?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-mark/"
+      }
+    ]
+  },
+  {
+    "name": "Lucas",
+    "chapters": 24,
+    "testament": "Novo",
+    "id": "luke",
+    "genre": "Evangelhos",
+    "author": "Tradicionalmente atribuído a Lucas; o narrador declara investigar testemunhos.",
+    "date": "Após cerca de 62 d.C.; propostas comuns se estendem até as décadas de 80–90.",
+    "message": "A salvação em Jesus alcança pessoas marginalizadas e chama à misericórdia, à oração e à partilha.",
+    "outline": [
+      {
+        "title": "Origens e preparação",
+        "range": "1–4"
+      },
+      {
+        "title": "Ministério e caminho a Jerusalém",
+        "range": "5–19"
+      },
+      {
+        "title": "Paixão e ressurreição",
+        "range": "20–24"
+      }
+    ],
+    "reflection": "Que pessoas tenho deixado à margem da minha atenção?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-luke/"
+      },
+      {
+        "label": "Asbury Bible Commentary • Autoria e data",
+        "url": "https://www.biblegateway.com/resources/asbury-bible-commentary/i-authorship-date-place-of-origin-and-destination"
+      }
+    ]
+  },
+  {
+    "name": "João",
+    "chapters": 21,
+    "testament": "Novo",
+    "id": "john",
+    "genre": "Evangelhos",
+    "author": "Tradicionalmente atribuído ao apóstolo João; identidade do discípulo amado e composição são debatidas.",
+    "date": "Provavelmente entre 70 e 100 d.C.",
+    "message": "Os sinais e encontros de Jesus apontam para sua identidade como Filho de Deus e convidam a crer para receber vida.",
+    "outline": [
+      {
+        "title": "Prólogo e sinais",
+        "range": "1–12"
+      },
+      {
+        "title": "Despedida, cruz e ressurreição",
+        "range": "13–20"
+      },
+      {
+        "title": "Encontro e missão",
+        "range": "21"
+      }
+    ],
+    "reflection": "Como os encontros com Jesus transformam a compreensão da vida?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-john/"
+      }
+    ]
+  },
+  {
+    "name": "Atos",
+    "chapters": 28,
+    "testament": "Novo",
+    "id": "acts",
+    "genre": "História do Novo Testamento",
+    "author": "Mesmo autor do Evangelho de Lucas, tradicionalmente identificado como Lucas.",
+    "date": "Após cerca de 62 d.C.; a data exata é debatida.",
+    "message": "O Espírito conduz o testemunho sobre Jesus de Jerusalém às nações, em meio a conflitos, decisões e novas comunidades.",
+    "outline": [
+      {
+        "title": "Testemunho em Jerusalém",
+        "range": "1–7"
+      },
+      {
+        "title": "Expansão da missão",
+        "range": "8–12"
+      },
+      {
+        "title": "Viagens de Paulo e chegada a Roma",
+        "range": "13–28"
+      }
+    ],
+    "reflection": "Como reconhecer e acolher o que Deus faz além do meu círculo habitual?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-acts/"
+      },
+      {
+        "label": "Asbury Bible Commentary • Autoria e data",
+        "url": "https://www.biblegateway.com/resources/asbury-bible-commentary/i-authorship-date-place-of-origin-and-destination"
+      }
+    ]
+  },
+  {
+    "name": "Romanos",
+    "chapters": 16,
+    "testament": "Novo",
+    "id": "romans",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo, com Tércio como escriba mencionado no capítulo 16.",
+    "date": "Por volta de 57 d.C.",
+    "message": "O evangelho anuncia a justiça e a misericórdia de Deus, unindo judeus e gentios em uma vida renovada pela fé.",
+    "outline": [
+      {
+        "title": "Pecado, fé e nova vida",
+        "range": "1–8"
+      },
+      {
+        "title": "Israel e as nações",
+        "range": "9–11"
+      },
+      {
+        "title": "Vida comunitária e missão",
+        "range": "12–16"
+      }
+    ],
+    "reflection": "Como a graça muda a forma de acolher pessoas diferentes de mim?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-romans/"
+      }
+    ]
+  },
+  {
+    "name": "1 Coríntios",
+    "chapters": 16,
+    "testament": "Novo",
+    "id": "1corinthians",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo; Sóstenes aparece na saudação.",
+    "date": "Por volta de 53–55 d.C.",
+    "message": "Uma comunidade dividida é chamada a viver a cruz de Cristo por meio do amor, da responsabilidade e da esperança na ressurreição.",
+    "outline": [
+      {
+        "title": "Divisões e conduta",
+        "range": "1–6"
+      },
+      {
+        "title": "Vida comunitária, dons e amor",
+        "range": "7–14"
+      },
+      {
+        "title": "Ressurreição e conclusão",
+        "range": "15–16"
+      }
+    ],
+    "reflection": "Como meus dons podem servir à unidade em vez da competição?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-corinthians/"
+      }
+    ]
+  },
+  {
+    "name": "2 Coríntios",
+    "chapters": 13,
+    "testament": "Novo",
+    "id": "2corinthians",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo; Timóteo aparece na saudação.",
+    "date": "Por volta de 55–56 d.C.",
+    "message": "O ministério é marcado pela reconciliação, pela generosidade e pelo poder de Deus que se manifesta na fraqueza.",
+    "outline": [
+      {
+        "title": "Ministério e reconciliação",
+        "range": "1–7"
+      },
+      {
+        "title": "Generosidade",
+        "range": "8–9"
+      },
+      {
+        "title": "Defesa do apostolado",
+        "range": "10–13"
+      }
+    ],
+    "reflection": "Consigo reconhecer a ação de Deus sem esconder minhas limitações?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-2-corinthians/"
+      }
+    ]
+  },
+  {
+    "name": "Gálatas",
+    "chapters": 6,
+    "testament": "Novo",
+    "id": "galatians",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo.",
+    "date": "Entre cerca de 48 e 55 d.C.; a identificação dos destinatários influencia a data.",
+    "message": "A liberdade recebida em Cristo se fundamenta na fé e se expressa no amor e na vida conduzida pelo Espírito.",
+    "outline": [
+      {
+        "title": "Evangelho e apostolado",
+        "range": "1–2"
+      },
+      {
+        "title": "Fé e promessa",
+        "range": "3–4"
+      },
+      {
+        "title": "Liberdade e vida no Espírito",
+        "range": "5–6"
+      }
+    ],
+    "reflection": "Minha liberdade se transforma em serviço ao próximo?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-galatians/"
+      }
+    ]
+  },
+  {
+    "name": "Efésios",
+    "chapters": 6,
+    "testament": "Novo",
+    "id": "ephesians",
+    "genre": "Cartas de Paulo",
+    "author": "Atribuída a Paulo; a autoria é debatida em parte da pesquisa.",
+    "date": "Tradição: cerca de 60–62 d.C.; outras propostas são posteriores.",
+    "message": "A reconciliação em Cristo forma um só povo e orienta relações de amor, unidade e maturidade.",
+    "outline": [
+      {
+        "title": "Graça e unidade",
+        "range": "1–3"
+      },
+      {
+        "title": "Nova vida e relacionamentos",
+        "range": "4–6"
+      }
+    ],
+    "reflection": "Que barreiras posso ajudar a derrubar em minha comunidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-ephesians/"
+      }
+    ]
+  },
+  {
+    "name": "Filipenses",
+    "chapters": 4,
+    "testament": "Novo",
+    "id": "philippians",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo; Timóteo aparece na saudação.",
+    "date": "Frequentemente situada por volta de 60–62 d.C.; local da prisão é debatido.",
+    "message": "A comunhão no evangelho floresce em alegria, humildade e perseverança, tendo o serviço de Cristo como referência.",
+    "outline": [
+      {
+        "title": "Parceria e prisão",
+        "range": "1"
+      },
+      {
+        "title": "Humildade de Cristo",
+        "range": "2"
+      },
+      {
+        "title": "Perseverança e gratidão",
+        "range": "3–4"
+      }
+    ],
+    "reflection": "Como praticar a humildade sem perder a coragem de perseverar?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-philippians/"
+      }
+    ]
+  },
+  {
+    "name": "Colossenses",
+    "chapters": 4,
+    "testament": "Novo",
+    "id": "colossians",
+    "genre": "Cartas de Paulo",
+    "author": "Atribuída a Paulo; Timóteo é mencionado; a autoria é debatida por alguns estudiosos.",
+    "date": "Tradição: cerca de 60–62 d.C.; existem propostas posteriores.",
+    "message": "A centralidade de Cristo orienta uma vida renovada e confronta ensinamentos que desviam a comunidade dele.",
+    "outline": [
+      {
+        "title": "Cristo e o evangelho",
+        "range": "1–2"
+      },
+      {
+        "title": "Nova vida e relações",
+        "range": "3–4"
+      }
+    ],
+    "reflection": "O que ocupa o centro das minhas decisões?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-colossians/"
+      }
+    ]
+  },
+  {
+    "name": "1 Tessalonicenses",
+    "chapters": 5,
+    "testament": "Novo",
+    "id": "1thessalonians",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo, com Silvano e Timóteo na saudação.",
+    "date": "Por volta de 49–51 d.C.",
+    "message": "Uma comunidade jovem é encorajada a viver em santidade, amor e esperança diante da volta de Cristo.",
+    "outline": [
+      {
+        "title": "Memória e encorajamento",
+        "range": "1–3"
+      },
+      {
+        "title": "Vida cotidiana e esperança",
+        "range": "4–5"
+      }
+    ],
+    "reflection": "Como a esperança fortalece o cuidado mútuo hoje?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-thessalonians/"
+      }
+    ]
+  },
+  {
+    "name": "2 Tessalonicenses",
+    "chapters": 3,
+    "testament": "Novo",
+    "id": "2thessalonians",
+    "genre": "Cartas de Paulo",
+    "author": "Atribuída a Paulo, com Silvano e Timóteo; a autoria é debatida.",
+    "date": "Na atribuição paulina, cerca de 49–51 d.C.; há propostas posteriores.",
+    "message": "A expectativa da volta de Cristo pede discernimento, perseverança e responsabilidade na vida cotidiana.",
+    "outline": [
+      {
+        "title": "Perseverança",
+        "range": "1"
+      },
+      {
+        "title": "Discernimento sobre o dia do Senhor",
+        "range": "2"
+      },
+      {
+        "title": "Trabalho e vida comunitária",
+        "range": "3"
+      }
+    ],
+    "reflection": "Minha expectativa do futuro me torna mais responsável no presente?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-2-thessalonians/"
+      }
+    ]
+  },
+  {
+    "name": "1 Timóteo",
+    "chapters": 6,
+    "testament": "Novo",
+    "id": "1timothy",
+    "genre": "Cartas pastorais",
+    "author": "Atribuída a Paulo; a autoria das cartas pastorais é debatida.",
+    "date": "Tradição: meados da década de 60 d.C.; outras propostas são posteriores.",
+    "message": "O cuidado com a comunidade envolve ensino, liderança íntegra e atenção às pessoas vulneráveis.",
+    "outline": [
+      {
+        "title": "Ensino e culto",
+        "range": "1–3"
+      },
+      {
+        "title": "Cuidado pastoral e conduta",
+        "range": "4–6"
+      }
+    ],
+    "reflection": "Que tipo de caráter sustenta uma liderança confiável?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-timothy/"
+      }
+    ]
+  },
+  {
+    "name": "2 Timóteo",
+    "chapters": 4,
+    "testament": "Novo",
+    "id": "2timothy",
+    "genre": "Cartas pastorais",
+    "author": "Atribuída a Paulo; a autoria das pastorais é debatida.",
+    "date": "Tradição: cerca de 64–67 d.C.; há propostas posteriores.",
+    "message": "A voz de um prisioneiro encoraja fidelidade, perseverança e transmissão responsável do evangelho.",
+    "outline": [
+      {
+        "title": "Coragem e transmissão da fé",
+        "range": "1–2"
+      },
+      {
+        "title": "Escrituras e perseverança",
+        "range": "3–4"
+      }
+    ],
+    "reflection": "O que vale a pena transmitir com fidelidade às próximas pessoas?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-2-timothy/"
+      }
+    ]
+  },
+  {
+    "name": "Tito",
+    "chapters": 3,
+    "testament": "Novo",
+    "id": "titus",
+    "genre": "Cartas pastorais",
+    "author": "Atribuída a Paulo; a autoria das pastorais é debatida.",
+    "date": "Tradição: meados da década de 60 d.C.; existem propostas posteriores.",
+    "message": "A graça educa para uma vida coerente, unindo liderança íntegra e boas obras.",
+    "outline": [
+      {
+        "title": "Liderança",
+        "range": "1"
+      },
+      {
+        "title": "Graça e conduta",
+        "range": "2"
+      },
+      {
+        "title": "Boas obras e convivência",
+        "range": "3"
+      }
+    ],
+    "reflection": "Como a coerência entre ensino e vida pode ser fortalecida?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-titus/"
+      }
+    ]
+  },
+  {
+    "name": "Filemom",
+    "chapters": 1,
+    "testament": "Novo",
+    "id": "philemon",
+    "genre": "Cartas de Paulo",
+    "author": "Paulo; Timóteo aparece na saudação.",
+    "date": "Frequentemente situada por volta de 60–62 d.C.; local da prisão é debatido.",
+    "message": "O apelo por Onésimo põe a fraternidade em Cristo diante de relações sociais marcadas por desigualdade.",
+    "outline": [
+      {
+        "title": "Gratidão, apelo por Onésimo e acolhimento",
+        "range": "1"
+      }
+    ],
+    "reflection": "Que relações precisam ser revistas à luz da dignidade do outro?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-philemon/"
+      }
+    ]
+  },
+  {
+    "name": "Hebreus",
+    "chapters": 13,
+    "testament": "Novo",
+    "id": "hebrews",
+    "genre": "Cartas gerais",
+    "author": "Autor desconhecido; não há identificação segura como Paulo ou outro personagem.",
+    "date": "Século I d.C.; frequentemente situada antes de 70, mas a data é debatida.",
+    "message": "Jesus, sumo sacerdote e mediador, fundamenta a confiança e a perseverança de uma comunidade sob pressão.",
+    "outline": [
+      {
+        "title": "Cristo e sua obra",
+        "range": "1–10"
+      },
+      {
+        "title": "Fé, perseverança e vida comunitária",
+        "range": "11–13"
+      }
+    ],
+    "reflection": "Como encorajar alguém a perseverar sem minimizar suas dificuldades?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-hebrews/"
+      }
+    ]
+  },
+  {
+    "name": "Tiago",
+    "chapters": 5,
+    "testament": "Novo",
+    "id": "james",
+    "genre": "Cartas gerais",
+    "author": "Tradicionalmente atribuída a Tiago, irmão de Jesus; sua identificação é debatida.",
+    "date": "Século I d.C.; na atribuição tradicional, antes de cerca de 62.",
+    "message": "A fé se torna visível no cuidado com os necessitados, no uso das palavras e na rejeição do favoritismo.",
+    "outline": [
+      {
+        "title": "Provação e prática da Palavra",
+        "range": "1"
+      },
+      {
+        "title": "Fé, obras e palavras",
+        "range": "2–3"
+      },
+      {
+        "title": "Humildade e perseverança",
+        "range": "4–5"
+      }
+    ],
+    "reflection": "Como minhas ações confirmam o que afirmo crer?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-james/"
+      }
+    ]
+  },
+  {
+    "name": "1 Pedro",
+    "chapters": 5,
+    "testament": "Novo",
+    "id": "1peter",
+    "genre": "Cartas gerais",
+    "author": "Atribuída a Pedro, com participação de Silvano mencionada no capítulo 5.",
+    "date": "Na atribuição tradicional, cerca de 62–64 d.C.; a composição é debatida.",
+    "message": "A esperança em Cristo fortalece pessoas que sofrem e orienta uma vida de respeito, serviço e fidelidade.",
+    "outline": [
+      {
+        "title": "Identidade e esperança",
+        "range": "1–2"
+      },
+      {
+        "title": "Conduta e sofrimento",
+        "range": "3–5"
+      }
+    ],
+    "reflection": "Como manter respeito e esperança em situações de hostilidade?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-peter/"
+      }
+    ]
+  },
+  {
+    "name": "2 Pedro",
+    "chapters": 3,
+    "testament": "Novo",
+    "id": "2peter",
+    "genre": "Cartas gerais",
+    "author": "Atribuída a Pedro; autoria e relação com Judas são amplamente debatidas.",
+    "date": "Na tradição, cerca de 64–67 d.C.; outras propostas situam o livro depois.",
+    "message": "O crescimento na fé e o discernimento dos falsos ensinos são orientados pela promessa da justiça de Deus.",
+    "outline": [
+      {
+        "title": "Crescimento e testemunho",
+        "range": "1"
+      },
+      {
+        "title": "Falsos mestres",
+        "range": "2"
+      },
+      {
+        "title": "Promessa e perseverança",
+        "range": "3"
+      }
+    ],
+    "reflection": "Como avaliar um ensino pelos seus fundamentos e efeitos?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-2-peter/"
+      }
+    ]
+  },
+  {
+    "name": "1 João",
+    "chapters": 5,
+    "testament": "Novo",
+    "id": "1john",
+    "genre": "Cartas gerais",
+    "author": "Tradição joanina, associada ao apóstolo João; o autor não se nomeia.",
+    "date": "Final do século I d.C., frequentemente entre 85 e 100.",
+    "message": "A comunhão com Deus é reconhecida no compromisso com Jesus, na vida coerente e no amor aos irmãos.",
+    "outline": [
+      {
+        "title": "Luz e comunhão",
+        "range": "1–2"
+      },
+      {
+        "title": "Amor e discernimento",
+        "range": "3–4"
+      },
+      {
+        "title": "Fé e confiança",
+        "range": "5"
+      }
+    ],
+    "reflection": "Como o amor pode ser percebido de forma concreta na minha vida?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-3-john/"
+      }
+    ]
+  },
+  {
+    "name": "2 João",
+    "chapters": 1,
+    "testament": "Novo",
+    "id": "2john",
+    "genre": "Cartas gerais",
+    "author": "O remetente se apresenta como o presbítero; tradicionalmente ligado a João.",
+    "date": "Final do século I d.C., provavelmente no mesmo ambiente das demais cartas joaninas.",
+    "message": "Amor e verdade caminham juntos no discernimento de quem ensina sobre Jesus.",
+    "outline": [
+      {
+        "title": "Amor, verdade e hospitalidade",
+        "range": "1"
+      }
+    ],
+    "reflection": "Como acolher pessoas sem deixar de examinar os ensinamentos?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-3-john/"
+      }
+    ]
+  },
+  {
+    "name": "3 João",
+    "chapters": 1,
+    "testament": "Novo",
+    "id": "3john",
+    "genre": "Cartas gerais",
+    "author": "O presbítero, tradicionalmente associado a João.",
+    "date": "Final do século I d.C.; data exata incerta.",
+    "message": "A hospitalidade a quem serve o evangelho contrasta com uma liderança que busca controlar a comunidade.",
+    "outline": [
+      {
+        "title": "Acolhimento, conflito e testemunho",
+        "range": "1"
+      }
+    ],
+    "reflection": "Minha influência abre espaço para outras pessoas servirem?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-1-3-john/"
+      }
+    ]
+  },
+  {
+    "name": "Judas",
+    "chapters": 1,
+    "testament": "Novo",
+    "id": "jude",
+    "genre": "Cartas gerais",
+    "author": "Judas, que se apresenta como irmão de Tiago; tradicionalmente identificado como irmão de Jesus.",
+    "date": "Século I d.C.; na leitura tradicional, frequentemente na década de 60.",
+    "message": "A comunidade é chamada a discernir ensinos destrutivos e a permanecer na fé com misericórdia.",
+    "outline": [
+      {
+        "title": "Alerta e exemplos",
+        "range": "1"
+      },
+      {
+        "title": "Perseverança e misericórdia",
+        "range": "1"
+      }
+    ],
+    "reflection": "Como unir firmeza no discernimento e misericórdia no cuidado?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-jude/"
+      }
+    ]
+  },
+  {
+    "name": "Apocalipse",
+    "chapters": 22,
+    "testament": "Novo",
+    "id": "revelation",
+    "genre": "Apocalíptica",
+    "author": "João, que se identifica como testemunha em Patmos; sua identificação com o apóstolo é debatida.",
+    "date": "Frequentemente situado por volta de 95–96 d.C.; existem propostas anteriores.",
+    "message": "Visões simbólicas anunciam a vitória de Deus e do Cordeiro, encorajando comunidades a perseverar sem se render à idolatria.",
+    "outline": [
+      {
+        "title": "Cartas às igrejas",
+        "range": "1–3"
+      },
+      {
+        "title": "Visões e conflitos",
+        "range": "4–20"
+      },
+      {
+        "title": "Nova criação",
+        "range": "21–22"
+      }
+    ],
+    "reflection": "Como a esperança da nova criação orienta minhas escolhas presentes?",
+    "sources": [
+      {
+        "label": "Crossway • ESV Global Study Bible",
+        "url": "https://www.esv.org/resources/esv-global-study-bible/introduction-to-revelation/"
+      }
+    ]
+  }
+]

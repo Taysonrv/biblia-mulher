@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Gênesis",
+    "chapters": 50,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Êxodo",
+    "chapters": 40,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Levítico",
+    "chapters": 27,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Números",
+    "chapters": 36,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Deuteronômio",
+    "chapters": 34,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Josué",
+    "chapters": 24,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Juízes",
+    "chapters": 21,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Rute",
+    "chapters": 4,
+    "testament": "Antigo"
+  },
+  {
+    "name": "1 Samuel",
+    "chapters": 31,
+    "testament": "Antigo"
+  },
+  {
+    "name": "2 Samuel",
+    "chapters": 24,
+    "testament": "Antigo"
+  },
+  {
+    "name": "1 Reis",
+    "chapters": 22,
+    "testament": "Antigo"
+  },
+  {
+    "name": "2 Reis",
+    "chapters": 25,
+    "testament": "Antigo"
+  },
+  {
+    "name": "1 Crônicas",
+    "chapters": 29,
+    "testament": "Antigo"
+  },
+  {
+    "name": "2 Crônicas",
+    "chapters": 36,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Esdras",
+    "chapters": 10,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Neemias",
+    "chapters": 13,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Ester",
+    "chapters": 10,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Jó",
+    "chapters": 42,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Salmos",
+    "chapters": 150,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Provérbios",
+    "chapters": 31,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Eclesiastes",
+    "chapters": 12,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Cânticos",
+    "chapters": 8,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Isaías",
+    "chapters": 66,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Jeremias",
+    "chapters": 52,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Lamentações",
+    "chapters": 5,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Ezequiel",
+    "chapters": 48,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Daniel",
+    "chapters": 12,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Oséias",
+    "chapters": 14,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Joel",
+    "chapters": 3,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Amós",
+    "chapters": 9,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Obadias",
+    "chapters": 1,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Jonas",
+    "chapters": 4,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Miquéias",
+    "chapters": 7,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Naum",
+    "chapters": 3,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Habacuque",
+    "chapters": 3,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Sofonias",
+    "chapters": 3,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Ageu",
+    "chapters": 2,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Zacarias",
+    "chapters": 14,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Malaquias",
+    "chapters": 4,
+    "testament": "Antigo"
+  },
+  {
+    "name": "Mateus",
+    "chapters": 28,
+    "testament": "Novo"
+  },
+  {
+    "name": "Marcos",
+    "chapters": 16,
+    "testament": "Novo"
+  },
+  {
+    "name": "Lucas",
+    "chapters": 24,
+    "testament": "Novo"
+  },
+  {
+    "name": "João",
+    "chapters": 21,
+    "testament": "Novo"
+  },
+  {
+    "name": "Atos",
+    "chapters": 28,
+    "testament": "Novo"
+  },
+  {
+    "name": "Romanos",
+    "chapters": 16,
+    "testament": "Novo"
+  },
+  {
+    "name": "1 Coríntios",
+    "chapters": 16,
+    "testament": "Novo"
+  },
+  {
+    "name": "2 Coríntios",
+    "chapters": 13,
+    "testament": "Novo"
+  },
+  {
+    "name": "Gálatas",
+    "chapters": 6,
+    "testament": "Novo"
+  },
+  {
+    "name": "Efésios",
+    "chapters": 6,
+    "testament": "Novo"
+  },
+  {
+    "name": "Filipenses",
+    "chapters": 4,
+    "testament": "Novo"
+  },
+  {
+    "name": "Colossenses",
+    "chapters": 4,
+    "testament": "Novo"
+  },
+  {
+    "name": "1 Tessalonicenses",
+    "chapters": 5,
+    "testament": "Novo"
+  },
+  {
+    "name": "2 Tessalonicenses",
+    "chapters": 3,
+    "testament": "Novo"
+  },
+  {
+    "name": "1 Timóteo",
+    "chapters": 6,
+    "testament": "Novo"
+  },
+  {
+    "name": "2 Timóteo",
+    "chapters": 4,
+    "testament": "Novo"
+  },
+  {
+    "name": "Tito",
+    "chapters": 3,
+    "testament": "Novo"
+  },
+  {
+    "name": "Filemom",
+    "chapters": 1,
+    "testament": "Novo"
+  },
+  {
+    "name": "Hebreus",
+    "chapters": 13,
+    "testament": "Novo"
+  },
+  {
+    "name": "Tiago",
+    "chapters": 5,
+    "testament": "Novo"
+  },
+  {
+    "name": "1 Pedro",
+    "chapters": 5,
+    "testament": "Novo"
+  },
+  {
+    "name": "2 Pedro",
+    "chapters": 3,
+    "testament": "Novo"
+  },
+  {
+    "name": "1 João",
+    "chapters": 5,
+    "testament": "Novo"
+  },
+  {
+    "name": "2 João",
+    "chapters": 1,
+    "testament": "Novo"
+  },
+  {
+    "name": "3 João",
+    "chapters": 1,
+    "testament": "Novo"
+  },
+  {
+    "name": "Judas",
+    "chapters": 1,
+    "testament": "Novo"
+  },
+  {
+    "name": "Apocalipse",
+    "chapters": 22,
+    "testament": "Novo"
+  }
+]

@@ -41,3 +41,8 @@ example
 # generated native folders
 /ios
 /android
+
+# Local authentication configuration
+/.env
+/.env.*
+!/.env.example
