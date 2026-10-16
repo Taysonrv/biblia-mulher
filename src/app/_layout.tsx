@@ -149,6 +149,7 @@ function AppNavigator() {
       <Tabs.Screen name="sermon-presenter" options={{ href: null, ...(subscription.hasPremium ? { tabBarStyle: { display: 'none' as const } } : {}) }} />
       <Tabs.Screen name="agenda" options={{ href: null }} />
       <Tabs.Screen name="agenda-event" options={{ href: null }} />
+      <Tabs.Screen name="ministerial-preparation" options={{ href: null }} />
       <Tabs.Screen name="favorites" options={{ href: null }} />
       <Tabs.Screen name="notes" options={{ href: null }} />
       <Tabs.Screen name="verse-note" options={{ href: null }} />
