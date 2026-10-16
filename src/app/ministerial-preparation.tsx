@@ -16,6 +16,7 @@ export default function MinisterialPreparationScreen() {
   const [events, setEvents] = useState<AgendaEvent[]>([]);
   const [progress, setProgress] = useState<PreparationProgress>({});
   const [loading, setLoading] = useState(true);
+  const [snapshotTime, setSnapshotTime] = useState(0);
   const [error, setError] = useState('');
   const [savingId, setSavingId] = useState('');
   const saving = useRef(false);
@@ -29,6 +30,7 @@ export default function MinisterialPreparationScreen() {
         if (request.current !== version) return;
         setEvents(appointments);
         setProgress(checklist);
+        setSnapshotTime(Date.now());
         setError('');
       })
       .catch(reason => {
@@ -56,7 +58,7 @@ export default function MinisterialPreparationScreen() {
     }
   }
 
-  const upcoming = events.filter(event => new Date(event.startsAt).getTime() > Date.now()).slice(0, 10);
+  const upcoming = events.filter(event => new Date(event.startsAt).getTime() > snapshotTime).slice(0, 10);
   return <MinisterialScreen title="Minha preparação" backTo="/support">
     <Text style={s.body}>Prepare seus próximos compromissos em um só lugar. Marque cada etapa conforme avançar; tudo fica salvo neste aparelho.</Text>
     {loading ? <ActivityIndicator accessibilityLabel="Carregando preparação" /> : null}
