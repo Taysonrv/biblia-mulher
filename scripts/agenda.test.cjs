@@ -68,6 +68,17 @@ test('strict local dates reject rollover, invalid time and elapsed events', () =
   assert.equal(model.dateInput(leap), '29/02/2032');
   assert.equal(model.timeInput(leap), '19:30');
 });
+test('linked sermon is persisted, editable, removable and compatible with older events', async () => {
+  const { repo, state } = setup();
+  const linked = await repo.save(draft({ sermonId: 'sermon-123' }));
+  assert.equal(linked.sermonId, 'sermon-123');
+  assert.equal((await repo.list())[0].sermonId, 'sermon-123');
+  const updated = await repo.save(draft({ sermonId: null }), linked.id);
+  assert.equal(updated.sermonId, undefined);
+  assert.equal((await repo.list())[0].sermonId, undefined);
+  assert.equal(decodeAgenda(state.raw).length, 1);
+  assert.throws(() => model.validateDraft(draft({ sermonId: 'invalid/id' }), NOW));
+});
 test('calendar grid includes leap day and full weeks at month boundaries', () => {
   const days = model.monthDays(new Date(2032, 1, 1));
   assert.equal(days.filter(Boolean).length, 29);
@@ -176,6 +187,8 @@ test('Android creates channel before permission and schedules one dated reminder
   assert.equal(native.calls[0][0], 'channel');
   const request = native.calls.find(call => call[0] === 'schedule')[1];
   assert.equal(request.identifier, model.agendaNotificationId(event.id));
+  assert.equal(request.content.sound, undefined);
+  assert.equal(request.trigger.channelId, 'ministerial-agenda-v2');
   assert.equal(request.trigger.type, 'date');
   assert.equal(request.trigger.date.getTime(), model.reminderAt(event));
   assert.equal(request.content.data.eventId, event.id);
@@ -209,6 +222,14 @@ test('iOS provisional permission works; native failure is reported as unschedule
   assert.ok(!native.calls.some(call => call[0] === 'channel' || call[0] === 'request'));
   native.notifications.scheduleNotificationAsync = async () => { throw new Error('Native scheduling unavailable'); };
   assert.equal(await native.agendaReminders.schedule(nativeEvent()), 'failed');
+});
+test('missing Android notification channels provider is reported as unavailable without scheduling', async () => {
+  const native = nativeSetup();
+  native.notifications.setNotificationChannelAsync = async () => {
+    throw new Error("Call to function 'ExpoNotificationChannelManager.setNotificationChannelAsync' has been rejected. Caused by: java.lang.NullPointerException: null cannot be cast to non-null type expo.modules.notifications.notifications.channels.NotificationsChannelsProvider");
+  };
+  assert.equal(await native.agendaReminders.schedule(nativeEvent()), 'unavailable');
+  assert.ok(!native.calls.some(call => call[0] === 'schedule'));
 });
 test('web keeps reminders explicitly unavailable rather than claiming success', async () => {
   const { agendaReminders } = loadService('agenda-reminders');
