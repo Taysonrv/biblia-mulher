@@ -1,6 +1,6 @@
 import { Pressable, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { MinisterialScreen } from '@/components/ministerial-screen';
 import { FeatureLink, IconBadge, OrbitCard, PremiumBadge, useUi } from '@/components/modern-ui';
 import { useAppTheme } from '@/components/app-theme';
@@ -21,6 +21,7 @@ export default function SupportScreen() {
       </Pressable>
     </OrbitCard>
     <FeatureLink title="Conheça o Premium" description="A criação de esboços e o modo de apresentação fazem parte da assinatura. Sua agenda e seus textos salvos continuam gratuitos." icon="sparkles-outline" href="/subscription" violet />
+    <FeatureLink title="Minha preparação" description="Próximos compromissos, esboços e checklist de preparação." icon="checkmark-done-outline" href={"/ministerial-preparation" as Href} />
     <FeatureLink title="Meus esboços" description="Salve, adapte e retome suas mensagens, mesmo offline." icon="documents-outline" href="/sermons" violet />
     <FeatureLink title="Mentorias e Pregações" description="Aulas e mensagens em vídeo e áudio para assinantes Premium." icon="play-circle-outline" href="/premium-library" violet />
     <FeatureLink title="Agenda ministerial" description="Cultos, estudos, reuniões e pregações no seu calendário."
