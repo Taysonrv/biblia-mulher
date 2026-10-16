@@ -68,6 +68,17 @@ test('strict local dates reject rollover, invalid time and elapsed events', () =
   assert.equal(model.dateInput(leap), '29/02/2032');
   assert.equal(model.timeInput(leap), '19:30');
 });
+test('linked sermon is persisted, editable, removable and compatible with older events', async () => {
+  const { repo, state } = setup();
+  const linked = await repo.save(draft({ sermonId: 'sermon-123' }));
+  assert.equal(linked.sermonId, 'sermon-123');
+  assert.equal((await repo.list())[0].sermonId, 'sermon-123');
+  const updated = await repo.save(draft({ sermonId: null }), linked.id);
+  assert.equal(updated.sermonId, undefined);
+  assert.equal((await repo.list())[0].sermonId, undefined);
+  assert.equal(decodeAgenda(state.raw).length, 1);
+  assert.throws(() => model.validateDraft(draft({ sermonId: 'invalid/id' }), NOW));
+});
 test('calendar grid includes leap day and full weeks at month boundaries', () => {
   const days = model.monthDays(new Date(2032, 1, 1));
   assert.equal(days.filter(Boolean).length, 29);
