@@ -6,7 +6,7 @@ import { agendaRepository } from '@/services/agenda';
 import { dateInput, timeInput, type AgendaEvent } from '@/services/agenda-model';
 import { useSavedSermons } from '@/hooks/use-saved-sermons';
 import {
-  PREPARATION_TASKS, preparationRepository,
+  PREPARATION_TASKS, preparationRepository, preparationSummary,
   type PreparationProgress, type PreparationTaskId,
 } from '@/services/ministerial-preparation';
 
@@ -59,8 +59,17 @@ export default function MinisterialPreparationScreen() {
   }
 
   const upcoming = events.filter(event => new Date(event.startsAt).getTime() > snapshotTime).slice(0, 10);
+  const summary = preparationSummary(progress, upcoming.map(event => event.id));
   return <MinisterialScreen title="Minha preparação" backTo="/support">
     <Text style={s.body}>Prepare seus próximos compromissos em um só lugar. Marque cada etapa conforme avançar; tudo fica salvo neste aparelho.</Text>
+    {!loading && !error && upcoming.length > 0 ? <View style={s.card}>
+      <Text style={s.heading}>Resumo da preparação</Text>
+      <Text style={s.body}>{upcoming.length} compromissos • {summary.completed} de {summary.total} etapas concluídas ({summary.percentage}%)</Text>
+      <View accessibilityRole="progressbar" accessibilityValue={{ min: 0, max: 100, now: summary.percentage }}
+        style={{ height: 12, borderRadius: 8, backgroundColor: '#D4D7D6', overflow: 'hidden' }}>
+        <View style={{ height: '100%', width: `${summary.percentage}%`, backgroundColor: '#687B65', borderRadius: 8 }} />
+      </View>
+    </View> : null}
     {loading ? <ActivityIndicator accessibilityLabel="Carregando preparação" /> : null}
     {error ? <View style={s.card}><Text accessibilityRole="alert" style={s.error}>{error}</Text>
       <Pressable accessibilityRole="button" onPress={refresh} style={s.back}><Text style={s.badge}>TENTAR NOVAMENTE</Text></Pressable>
@@ -71,12 +80,19 @@ export default function MinisterialPreparationScreen() {
     </View> : null}
     {!loading && upcoming.map(event => {
       const checked = progress[event.id] ?? [];
+      const itemProgress = preparationSummary(progress, [event.id]);
       const linked = event.sermonId ? sermons.entries.find(item => item.id === event.sermonId) : undefined;
       return <View key={event.id} style={s.card}>
         <Text style={s.badge}>{event.category.toUpperCase()} • {dateInput(new Date(event.startsAt))} ÀS {timeInput(new Date(event.startsAt))}</Text>
         <Text style={s.heading}>{event.title}</Text>
         {event.location ? <Text style={s.body}>{event.location}</Text> : null}
-        <Text style={s.body}>Preparação: {checked.length} de {PREPARATION_TASKS.length} etapas concluídas</Text>
+        <Text style={s.body}>Preparação: {itemProgress.completed} de {itemProgress.total} etapas concluídas • {itemProgress.percentage}%</Text>
+        <View accessibilityRole="progressbar" accessibilityLabel={'Progresso da preparação de ' + event.title}
+          accessibilityValue={{ min: 0, max: 100, now: itemProgress.percentage }}
+          style={{ height: 10, borderRadius: 8, backgroundColor: '#D4D7D6', overflow: 'hidden' }}>
+          <View style={{ height: '100%', width: `${itemProgress.percentage}%`, backgroundColor: '#687B65', borderRadius: 8 }} />
+        </View>
+        {itemProgress.percentage === 100 ? <Text style={s.badge}>PREPARAÇÃO CONCLUÍDA ✓</Text> : null}
         {PREPARATION_TASKS.map(task => {
           const done = checked.includes(task.id);
           const disabled = !!savingId;
