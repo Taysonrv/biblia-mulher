@@ -52,6 +52,7 @@ export default function AgendaScreen() {
       <Text style={s.heading}>{event.title}</Text>
       {event.location ? <Text style={s.body}>{event.location}</Text> : null}
       <Text style={s.body}>{reminderLabel(event, snapshotTime)}</Text>
+      {event.sermonId ? <Text style={s.badge}>ESBOÇO VINCULADO • TOQUE PARA EDITAR OU ABRIR NA AGENDA</Text> : null}
       <Text style={s.badge}>VER / EDITAR →</Text>
     </Pressable>;
   }
