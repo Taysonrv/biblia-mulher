@@ -21,6 +21,7 @@ function isEvent(value: unknown): value is AgendaEvent {
     && typeof event.location === 'string' && event.location.length <= 150
     && typeof event.notes === 'string' && event.notes.length <= 1000
     && EVENT_CATEGORIES.some(category => category === event.category)
+    && (event.sermonId == null || (typeof event.sermonId === 'string' && /^[a-zA-Z0-9-]{1,80}$/.test(event.sermonId)))
     && REMINDER_OPTIONS.some(option => option.minutes === event.reminderMinutes)
     && ['off', 'scheduled', 'denied', 'past', 'unavailable', 'failed'].includes(String(event.reminderState));
 }
