@@ -60,6 +60,7 @@ function OutlineContent({ id, topic }: { id: string; topic: string }) {
       </View>
       {!id ? <ActionButton label="Salvar esboço" busy={busy === 'save'} disabled={!!busy} onPress={() => void action('save', save)} />
         : <FeatureLink title="Editar minha mensagem" description="Adapte os pontos e acrescente suas notas." icon="create-outline" href={{ pathname: '/sermon-editor', params: { id } }} violet />}
+      {!!saved && <FeatureLink title="Agendar esta mensagem" description="Vincule seu esboço à Agenda Ministerial." icon="calendar-outline" href={{ pathname: '/agenda-event', params: { sermonId: saved.id, sermonTitle: saved.outline.theme } }} />}
       {!!saved && <FeatureLink title="Apresentar mensagem" description="Acompanhe os pontos com texto maior e navegação por seção." icon="play-circle-outline" href={{ pathname: '/sermon-presenter', params: { id } }} />}
       <ActionButton secondary label="Compartilhar esboço" busy={busy === 'share'} disabled={!!busy} onPress={() => void action('share', share)} />
       <ActionButton secondary label={shareText ? 'Ocultar texto para copiar' : 'Ver texto para copiar'} disabled={!!busy} onPress={() => { setShareText(shareText ? '' : formatSermon(outline, saved?.notes ?? '', includeNotes)); setMessage(''); }} />
