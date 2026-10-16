@@ -117,6 +117,10 @@ export default function AgendaEventScreen() {
       {!sermons.ready && !sermons.error ? <Text style={s.body}>Carregando esboços…</Text> : null}
       {sermons.ready && !sermons.entries.length ? <Text style={s.body}>Você ainda não tem esboços salvos. Prepare uma mensagem em Apoio Ministerial.</Text> : null}
       {draft.sermonId && sermons.ready && !sermons.entries.some(item => item.id === draft.sermonId) ? <Text style={s.body}>O esboço vinculado não está mais salvo neste aparelho.</Text> : null}
+      {draft.sermonId && sermons.entries.some(item => item.id === draft.sermonId) ? <Pressable accessibilityRole="button" style={s.back}
+        onPress={() => router.push({ pathname: '/sermon-outline', params: { id: draft.sermonId! } })}>
+        <Text style={s.badge}>ABRIR ESBOÇO VINCULADO →</Text>
+      </Pressable> : null}
       <View style={styles.choices}>
         <Pressable accessibilityRole="button" disabled={disabled} style={[styles.choice, !draft.sermonId && styles.chosen]}
           onPress={() => update('sermonId', null)}><Text style={[styles.choiceText, !draft.sermonId && styles.chosenText]}>Sem esboço</Text></Pressable>
