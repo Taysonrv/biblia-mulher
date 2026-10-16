@@ -10,6 +10,13 @@ export const PREPARATION_TASKS = [
 export type PreparationTaskId = typeof PREPARATION_TASKS[number]['id'];
 export type PreparationProgress = Record<string, PreparationTaskId[]>;
 
+export function preparationSummary(progress: PreparationProgress, eventIds: readonly string[]) {
+  const total = eventIds.length * PREPARATION_TASKS.length;
+  const completed = eventIds.reduce((sum, id) =>
+    sum + PREPARATION_TASKS.filter(task => (progress[id] ?? []).includes(task.id)).length, 0);
+  return { completed, total, percentage: total === 0 ? 0 : Math.round((completed / total) * 100) };
+}
+
 const validEventId = (id: string) => /^[a-zA-Z0-9-]{1,100}$/.test(id);
 const validTask = (id: unknown): id is PreparationTaskId =>
   PREPARATION_TASKS.some(task => task.id === id);
