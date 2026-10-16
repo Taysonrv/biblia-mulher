@@ -25,7 +25,7 @@ export default function SermonsScreen() {
         <Text style={ui.eyebrow}>MENSAGEM SALVA</Text><Text style={ui.heading}>{sermon.outline.theme}</Text><Text style={ui.body}>{sermon.outline.baseText}</Text>
         <Text style={ui.body}>Editado em {new Date(sermon.updatedAt).toLocaleDateString('pt-BR')}{sermon.notes ? ' • Com notas pessoais' : ''}</Text>
         <FeatureLink title="Retomar esboço" description={sermon.outline.theme} icon="document-text-outline" href={{ pathname: '/sermon-outline', params: { id: sermon.id } }} />
-        <FeatureLink title="Agendar esta mensagem" description="Vincule este esboço a um compromisso futuro." icon="calendar-outline" href={{ pathname: '/agenda-event', params: { sermonId: sermon.id } }} />
+        <FeatureLink title="Agendar esta mensagem" description="Vincule este esboço a um compromisso futuro." icon="calendar-outline" href={{ pathname: '/agenda-event', params: { sermonId: sermon.id, sermonTitle: sermon.outline.theme } }} />
       </View>)}
       {last > 0 && <View style={ui.card}><Text style={ui.body}>Página {page + 1} de {last + 1}</Text><ActionButton secondary label="Página anterior de esboços" disabled={!page} onPress={() => turn(page - 1)} /><ActionButton label="Próxima página de esboços" disabled={page === last} onPress={() => turn(page + 1)} /></View>}
     </>}
