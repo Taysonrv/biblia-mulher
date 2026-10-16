@@ -51,7 +51,13 @@ export const agendaReminders: AgendaReminders = {
       });
       return 'scheduled';
     } catch (error) {
-      // Keep the event saved, but surface the real native failure in Metro logs.
+      const message = error instanceof Error ? error.message : String(error);
+      // Some Expo Go Android runtimes lack the native notification channels provider.
+      // Do not suggest retrying an edit when the underlying native service is absent.
+      if (Platform.OS === 'android' && message.includes('NotificationsChannelsProvider')) {
+        console.warn('[Agenda Ministerial] Canal nativo indisponível neste ambiente:', message);
+        return 'unavailable';
+      }
       console.error('[Agenda Ministerial] Falha ao agendar lembrete:', error);
       return 'failed';
     }
