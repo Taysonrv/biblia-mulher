@@ -1,10 +1,11 @@
 import { useAppTheme } from '@/components/app-theme';
 import type { Palette } from '@/constants/design';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Alert, Linking, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { MinisterialScreen, useMinisterialStyles } from '@/components/ministerial-screen';
 import { agendaRepository } from '@/services/agenda';
+import { useSavedSermons } from '@/hooks/use-saved-sermons';
 import { dateInput, EVENT_CATEGORIES, eventToDraft, REMINDER_OPTIONS, reminderLabel, timeInput, type EventDraft } from '@/services/agenda-model';
 
 function defaultDraft(date?: string): EventDraft {
@@ -17,9 +18,11 @@ export default function AgendaEventScreen() {
   const { palette: p } = useAppTheme();
   const styles = createStyles(p);
   const s = useMinisterialStyles();
-  const params = useLocalSearchParams<{ id?: string | string[]; date?: string | string[] }>();
+  const params = useLocalSearchParams<{ id?: string | string[]; date?: string | string[]; sermonId?: string | string[] }>();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
   const date = Array.isArray(params.date) ? params.date[0] : params.date;
+  const requestedSermonId = Array.isArray(params.sermonId) ? params.sermonId[0] : params.sermonId;
+  const sermons = useSavedSermons();
   const [draft, setDraft] = useState<EventDraft>(() => defaultDraft(date));
   const [loading, setLoading] = useState(!!id);
   const [busy, setBusy] = useState(false);
@@ -43,6 +46,11 @@ export default function AgendaEventScreen() {
       setLoading(false);
     }).catch(() => { if (requestVersion.current === version) { setLoading(false); setLoadFailed(true); setError('Não foi possível carregar o compromisso. Tente novamente.'); } });
   }, [id, date]);
+  useEffect(() => {
+    if (id || !requestedSermonId || !sermons.ready) return;
+    const selected = sermons.entries.find(item => item.id === requestedSermonId);
+    if (selected) setDraft(previous => ({ ...previous, sermonId: selected.id, title: previous.title || selected.outline.theme.slice(0, 100), category: 'Pregação' }));
+  }, [id, requestedSermonId, sermons.ready, sermons.entries]);
   useFocusEffect(useCallback(() => {
     load();
     return () => { requestVersion.current++; };
@@ -102,6 +110,23 @@ export default function AgendaEventScreen() {
       <Text style={s.badge}>ANOTAÇÕES (OPCIONAL)</Text>
       <TextInput accessibilityLabel="Anotações do compromisso" editable={!disabled} style={[styles.input, styles.notes]} value={draft.notes}
         maxLength={1000} multiline placeholder="Tema, detalhes e preparação" placeholderTextColor={p.muted} onChangeText={value => update('notes', value)} />
+    </View>
+    <View style={s.card}>
+      <Text style={s.heading}>Esboço para este compromisso (opcional)</Text>
+      {sermons.error ? <Text accessibilityRole="alert" style={s.error}>{sermons.error}</Text> : null}
+      {!sermons.ready && !sermons.error ? <Text style={s.body}>Carregando esboços…</Text> : null}
+      {sermons.ready && !sermons.entries.length ? <Text style={s.body}>Você ainda não tem esboços salvos. Prepare uma mensagem em Apoio Ministerial.</Text> : null}
+      {draft.sermonId && sermons.ready && !sermons.entries.some(item => item.id === draft.sermonId) ? <Text style={s.body}>O esboço vinculado não está mais salvo neste aparelho.</Text> : null}
+      <View style={styles.choices}>
+        <Pressable accessibilityRole="button" disabled={disabled} style={[styles.choice, !draft.sermonId && styles.chosen]}
+          onPress={() => update('sermonId', null)}><Text style={[styles.choiceText, !draft.sermonId && styles.chosenText]}>Sem esboço</Text></Pressable>
+        {sermons.entries.map(item => <Pressable key={item.id} accessibilityRole="button" disabled={disabled}
+          accessibilityState={{ selected: draft.sermonId === item.id, disabled }}
+          style={[styles.choice, draft.sermonId === item.id && styles.chosen]}
+          onPress={() => update('sermonId', item.id)}>
+          <Text style={[styles.choiceText, draft.sermonId === item.id && styles.chosenText]}>{item.outline.theme}</Text>
+        </Pressable>)}
+      </View>
     </View>
     <View style={s.card}>
       <Text style={s.heading}>Quando lembrar?</Text>
