@@ -210,6 +210,14 @@ test('iOS provisional permission works; native failure is reported as unschedule
   native.notifications.scheduleNotificationAsync = async () => { throw new Error('Native scheduling unavailable'); };
   assert.equal(await native.agendaReminders.schedule(nativeEvent()), 'failed');
 });
+test('missing Android notification channels provider is reported as unavailable without scheduling', async () => {
+  const native = nativeSetup();
+  native.notifications.setNotificationChannelAsync = async () => {
+    throw new Error("Call to function 'ExpoNotificationChannelManager.setNotificationChannelAsync' has been rejected. Caused by: java.lang.NullPointerException: null cannot be cast to non-null type expo.modules.notifications.notifications.channels.NotificationsChannelsProvider");
+  };
+  assert.equal(await native.agendaReminders.schedule(nativeEvent()), 'unavailable');
+  assert.ok(!native.calls.some(call => call[0] === 'schedule'));
+});
 test('web keeps reminders explicitly unavailable rather than claiming success', async () => {
   const { agendaReminders } = loadService('agenda-reminders');
   assert.equal(await agendaReminders.schedule(nativeEvent()), 'unavailable');
