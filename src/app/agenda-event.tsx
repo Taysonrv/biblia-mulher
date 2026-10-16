@@ -1,6 +1,6 @@
 import { useAppTheme } from '@/components/app-theme';
 import type { Palette } from '@/constants/design';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { ActivityIndicator, Alert, Linking, Platform, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { MinisterialScreen, useMinisterialStyles } from '@/components/ministerial-screen';
@@ -8,22 +8,23 @@ import { agendaRepository } from '@/services/agenda';
 import { useSavedSermons } from '@/hooks/use-saved-sermons';
 import { dateInput, EVENT_CATEGORIES, eventToDraft, REMINDER_OPTIONS, reminderLabel, timeInput, type EventDraft } from '@/services/agenda-model';
 
-function defaultDraft(date?: string): EventDraft {
+function defaultDraft(date?: string, sermonId?: string, sermonTitle?: string): EventDraft {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   tomorrow.setHours(19, 30, 0, 0);
-  return { title: '', category: 'Culto', date: date ?? dateInput(tomorrow), time: timeInput(tomorrow), location: '', notes: '', reminderMinutes: null };
+  return { title: sermonTitle?.slice(0, 100) ?? '', category: sermonId ? 'Pregação' : 'Culto', date: date ?? dateInput(tomorrow), time: timeInput(tomorrow), location: '', notes: '', reminderMinutes: null, sermonId: sermonId ?? null };
 }
 export default function AgendaEventScreen() {
   const { palette: p } = useAppTheme();
   const styles = createStyles(p);
   const s = useMinisterialStyles();
-  const params = useLocalSearchParams<{ id?: string | string[]; date?: string | string[]; sermonId?: string | string[] }>();
+  const params = useLocalSearchParams<{ id?: string | string[]; date?: string | string[]; sermonId?: string | string[]; sermonTitle?: string | string[] }>();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
   const date = Array.isArray(params.date) ? params.date[0] : params.date;
   const requestedSermonId = Array.isArray(params.sermonId) ? params.sermonId[0] : params.sermonId;
+  const requestedSermonTitle = Array.isArray(params.sermonTitle) ? params.sermonTitle[0] : params.sermonTitle;
   const sermons = useSavedSermons();
-  const [draft, setDraft] = useState<EventDraft>(() => defaultDraft(date));
+  const [draft, setDraft] = useState<EventDraft>(() => defaultDraft(date, requestedSermonId, requestedSermonTitle));
   const [loading, setLoading] = useState(!!id);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
@@ -34,7 +35,7 @@ export default function AgendaEventScreen() {
   const load = useCallback(() => {
     const version = ++requestVersion.current;
     if (!id) {
-      setDraft(defaultDraft(date)); setLoading(false); setLoadFailed(false); setError('');
+      setDraft(defaultDraft(date, requestedSermonId, requestedSermonTitle)); setLoading(false); setLoadFailed(false); setError('');
       return;
     }
     setLoading(true);
@@ -45,12 +46,7 @@ export default function AgendaEventScreen() {
       else { setDraft(eventToDraft(event)); setError(''); setLoadFailed(false); }
       setLoading(false);
     }).catch(() => { if (requestVersion.current === version) { setLoading(false); setLoadFailed(true); setError('Não foi possível carregar o compromisso. Tente novamente.'); } });
-  }, [id, date]);
-  useEffect(() => {
-    if (id || !requestedSermonId || !sermons.ready) return;
-    const selected = sermons.entries.find(item => item.id === requestedSermonId);
-    if (selected) setDraft(previous => ({ ...previous, sermonId: selected.id, title: previous.title || selected.outline.theme.slice(0, 100), category: 'Pregação' }));
-  }, [id, requestedSermonId, sermons.ready, sermons.entries]);
+  }, [id, date, requestedSermonId, requestedSermonTitle]);
   useFocusEffect(useCallback(() => {
     load();
     return () => { requestVersion.current++; };
