@@ -18,6 +18,7 @@ export type AgendaEvent = {
   notes: string;
   reminderMinutes: number | null;
   reminderState: ReminderState;
+  sermonId?: string | null;
 };
 export type EventDraft = {
   title: string;
@@ -27,6 +28,7 @@ export type EventDraft = {
   location: string;
   notes: string;
   reminderMinutes: number | null;
+  sermonId?: string | null;
 };
 export function localDateKey(date: Date): string {
   return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, '0'), String(date.getDate()).padStart(2, '0')].join('-');
@@ -56,16 +58,17 @@ export function validateDraft(draft: EventDraft, now: number): Omit<AgendaEvent,
   if (!title || title.length > 100) throw new Error('Informe um título com até 100 caracteres.');
   if (!EVENT_CATEGORIES.includes(draft.category)) throw new Error('Escolha um tipo de compromisso.');
   if (!REMINDER_OPTIONS.some(option => option.minutes === draft.reminderMinutes)) throw new Error('Escolha uma opção de lembrete válida.');
+  if (draft.sermonId != null && !/^[a-zA-Z0-9-]{1,80}$/.test(draft.sermonId)) throw new Error('Esboço vinculado inválido.');
   if (draft.location.length > 150 || draft.notes.length > 1000) throw new Error('Use até 150 caracteres no local e 1.000 nas anotações.');
   const startsAt = parseLocalDateTime(draft.date, draft.time);
   if (startsAt.getTime() <= now) throw new Error('Escolha uma data e um horário futuros para o compromisso.');
   return { title, category: draft.category, startsAt: startsAt.toISOString(),
-    location: draft.location.trim(), notes: draft.notes.trim(), reminderMinutes: draft.reminderMinutes };
+    location: draft.location.trim(), notes: draft.notes.trim(), reminderMinutes: draft.reminderMinutes, ...(draft.sermonId ? { sermonId: draft.sermonId } : {}) };
 }
 export function eventToDraft(event: AgendaEvent): EventDraft {
   const date = new Date(event.startsAt);
   return { title: event.title, category: event.category, date: dateInput(date), time: timeInput(date),
-    location: event.location, notes: event.notes, reminderMinutes: event.reminderMinutes };
+    location: event.location, notes: event.notes, reminderMinutes: event.reminderMinutes, sermonId: event.sermonId ?? null };
 }
 export function reminderAt(event: Pick<AgendaEvent, 'startsAt' | 'reminderMinutes'>): number | null {
   return event.reminderMinutes === null ? null : new Date(event.startsAt).getTime() - event.reminderMinutes * 60_000;
