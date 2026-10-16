@@ -73,7 +73,7 @@ export function reminderAt(event: Pick<AgendaEvent, 'startsAt' | 'reminderMinute
 export function reminderLabel(event: AgendaEvent, now = Date.now()): string {
   if (event.reminderState === 'off') return 'Sem lembrete';
   if (event.reminderState === 'denied') return 'Lembrete desativado: permissão negada';
-  if (event.reminderState === 'unavailable') return 'Lembrete indisponível nesta plataforma';
+  if (event.reminderState === 'unavailable') return 'Notificações indisponíveis neste ambiente. Teste uma versão de desenvolvimento do app.';
   if (event.reminderState === 'failed') return 'Lembrete não agendado. Edite para tentar novamente.';
   if (event.reminderState === 'past' || (reminderAt(event) ?? 0) <= now) return 'Horário do lembrete já passou';
   return 'Lembrete: ' + REMINDER_OPTIONS.find(option => option.minutes === event.reminderMinutes)?.label.toLowerCase();
