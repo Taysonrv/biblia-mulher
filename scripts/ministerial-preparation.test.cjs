@@ -22,7 +22,7 @@ vm.runInNewContext(code, {
     throw new Error('Unexpected dependency: ' + id);
   },
 }, { filename });
-const { createPreparationRepository, decodePreparation, togglePreparation, PREPARATION_KEY } = moduleLike.exports;
+const { createPreparationRepository, decodePreparation, togglePreparation, preparationSummary, PREPARATION_KEY } = moduleLike.exports;
 
 test('task completion is saved for each event and survives repository restart', async () => {
   records.clear();
@@ -52,4 +52,14 @@ test('invalid data is preserved instead of being silently overwritten', async ()
 test('invalid event ids and tasks are rejected', () => {
   assert.throws(() => togglePreparation({}, '../invalid', 'text'));
   assert.throws(() => togglePreparation({}, 'event-1', 'invalid'));
+});
+
+test('summary reports completion percentage and handles an empty agenda', () => {
+  assert.equal(preparationSummary({}, []).percentage, 0);
+  const progress = { 'event-1': ['text', 'prayer'], 'event-2': ['text', 'outline', 'prayer', 'materials'] };
+  const result = preparationSummary(progress, ['event-1', 'event-2']);
+  assert.equal(result.total, 8);
+  assert.equal(result.completed, 6);
+  assert.equal(result.percentage, 75);
+  assert.equal(preparationSummary(progress, ['event-2']).percentage, 100);
 });
