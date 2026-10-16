@@ -176,6 +176,8 @@ test('Android creates channel before permission and schedules one dated reminder
   assert.equal(native.calls[0][0], 'channel');
   const request = native.calls.find(call => call[0] === 'schedule')[1];
   assert.equal(request.identifier, model.agendaNotificationId(event.id));
+  assert.equal(request.content.sound, undefined);
+  assert.equal(request.trigger.channelId, 'ministerial-agenda-v2');
   assert.equal(request.trigger.type, 'date');
   assert.equal(request.trigger.date.getTime(), model.reminderAt(event));
   assert.equal(request.content.data.eventId, event.id);
