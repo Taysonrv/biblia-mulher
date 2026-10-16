@@ -3,7 +3,7 @@ import * as Notifications from './local-notifications.native';
 import { agendaNotificationId, reminderAt, type AgendaEvent, type ReminderState } from './agenda-model';
 import type { AgendaReminders } from './agenda-repository';
 
-const CHANNEL_ID = 'ministerial-agenda';
+const CHANNEL_ID = 'ministerial-agenda-v2';
 Notifications.setNotificationHandler({
   handleNotification: async notification => ({
     shouldShowBanner: notification.request.content.data?.source === 'ministerial-agenda',
@@ -27,7 +27,7 @@ export const agendaReminders: AgendaReminders = {
       if (Platform.OS === 'android') {
         await Notifications.setNotificationChannelAsync(CHANNEL_ID, {
           name: 'Agenda ministerial', importance: Notifications.AndroidImportance.HIGH,
-          sound: 'default', vibrationPattern: [0, 250, 250, 250], lightColor: '#687B65',
+          vibrationPattern: [0, 250, 250, 250], lightColor: '#687B65',
         });
       }
       let permissions = await Notifications.getPermissionsAsync();
@@ -44,7 +44,7 @@ export const agendaReminders: AgendaReminders = {
         content: {
           title: event.title,
           body: [new Date(event.startsAt).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' }), event.location].filter(Boolean).join(' • '),
-          sound: 'default',
+          ...(Platform.OS === 'ios' ? { sound: 'default' as const } : {}),
           data: { source: 'ministerial-agenda', eventId: event.id },
         },
         trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: new Date(when), channelId: CHANNEL_ID },
