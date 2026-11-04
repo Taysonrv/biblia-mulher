@@ -7,7 +7,7 @@ const ts = require('typescript');
 const exportsObject = {};
 const code = ts.transpileModule(fs.readFileSync(path.resolve(__dirname, '../src/services/reader-preferences-repository.ts'), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
 vm.runInNewContext(code, { exports: exportsObject });
-const { createReaderPreferencesRepository, readerPreferencesKey } = exportsObject;
+const { createReaderPreferencesRepository, readerPreferencesKey, readerTypography } = exportsObject;
 const plain = value => JSON.parse(JSON.stringify(value));
 function setup(raw = null) {
   const state = { rows: new Map([['other-data', 'preserved'], [readerPreferencesKey, raw]]), writes: 0, failRead: false, failWrite: false };
@@ -62,4 +62,15 @@ test('restoring defaults resets every preference while keeping other local data'
   await repo.update({ size: 'standard', spacing: 'standard', layout: 'cards' });
   assert.deepEqual(plain(await repo.read()), { size: 'standard', spacing: 'standard', layout: 'cards' });
   assert.equal(state.rows.get('other-data'), 'preserved');
+});
+
+test('extra-large reading size renders at 30px and persists across restarts', async () => {
+  const { repo, storage } = setup();
+  await repo.update({ size: 'extra-large' });
+  const saved = await createReaderPreferencesRepository(storage).read();
+  assert.equal(saved.size, 'extra-large');
+  assert.equal(readerTypography(saved).fontSize, 30);
+  assert.equal(readerTypography({ ...saved, spacing: 'wide' }).lineHeight, 59);
+  await repo.update({ size: 'standard' });
+  assert.equal((await repo.read()).size, 'standard');
 });
