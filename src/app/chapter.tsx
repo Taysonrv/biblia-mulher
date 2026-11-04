@@ -54,7 +54,7 @@ export default function ChapterScreen() {
       {!!journey.error && <View style={ui.card}><Text accessibilityRole="alert" style={s.error}>{journey.error}</Text><ActionButton secondary label="Tentar salvar histórico" onPress={journey.retry} /></View>}
       <Pressable accessibilityRole="button" accessibilityLabel={optionsOpen ? "Fechar ajustes da leitura" : "Personalizar leitura"} accessibilityState={{ expanded: optionsOpen }} onPress={() => setOptionsOpen(value => !value)} style={({ pressed }) => [ui.card, pressed && ui.pressed]}>
         <Text style={ui.cardTitle}>{optionsOpen ? "Fechar ajustes da leitura" : "Aa • Personalizar leitura"}</Text>
-        <Text style={ui.body}>{reader.preferences.size === "large" ? "Texto grande" : reader.preferences.size === "medium" ? "Texto maior" : "Texto padrão"} • {reader.preferences.spacing === "wide" ? "Espaçamento amplo" : "Espaçamento regular"} • {reader.preferences.layout === "continuous" ? "Leitura contínua" : "Versículos em cards"}</Text>
+        <Text style={ui.body}>{reader.preferences.size === "extra-large" ? "Texto extra grande" : reader.preferences.size === "large" ? "Texto grande" : reader.preferences.size === "medium" ? "Texto maior" : "Texto padrão"} • {reader.preferences.spacing === "wide" ? "Espaçamento amplo" : "Espaçamento regular"} • {reader.preferences.layout === "continuous" ? "Leitura contínua" : "Versículos em cards"}</Text>
       </Pressable>
       {optionsOpen && <ReaderOptions />}
       {!optionsOpen && !!reader.error && <View style={ui.card}><Text accessibilityRole="alert" style={s.error}>{reader.error}</Text><ActionButton secondary label="Tentar recuperar preferências" onPress={reader.retry} /></View>}
