@@ -5,6 +5,7 @@ import { MinisterialScreen } from '@/components/ministerial-screen';
 import { FeatureLink, IconBadge, useUi } from '@/components/modern-ui';
 import { ActionButton } from '@/components/ui-controls';
 import { useAppTheme } from '@/components/app-theme';
+import { CloudSyncCard } from '@/components/cloud-sync-card';
 import { backupRepository } from '@/services/backup';
 import { backupCounts, type BackupPreview } from '@/services/backup-repository';
 import { saveBackupFile, selectBackupFile } from '@/services/backup-files';
@@ -56,6 +57,7 @@ export default function MyDataScreen() {
   }
   return <MinisterialScreen title="Meus dados" backTo="/profile" preferBackTo>
     <View style={ui.card}><IconBadge name="shield-checkmark-outline" /><Text style={ui.heading}>Sua jornada com você.</Text><Text style={ui.body}>Guarde uma cópia dos favoritos, anotações, planos, agenda, esboços e estudos com suas reflexões. Restaure no mesmo aparelho ou leve para outro celular.</Text></View>
+    <CloudSyncCard onSynced={value => { setCounts(value); setPreview(null); }} />
     <Text accessibilityRole="header" style={ui.heading}>Salvos neste aparelho</Text>
     {counts ? <CountsCard counts={counts} /> : <ActionButton secondary label="Carregar meus dados" disabled={!!busy} onPress={() => void action('load', async () => { setCounts(await backupRepository.current()); })} />}
     <View style={ui.card}><Text style={ui.cardTitle}>Guardar minha jornada</Text><Text style={ui.body}>O arquivo inclui suas anotações, reflexões de estudos e notas pessoais dos esboços. Você escolhe onde guardá-lo. O app não envia uma cópia automaticamente.</Text><ActionButton label="Exportar backup" busy={busy === 'export'} disabled={!!busy || !counts} onPress={() => void action('export', exportData)} /></View>

@@ -26,7 +26,7 @@ function BookStudyScreen() {
     <StudyPersonalActions kind="book" studyId={book.id} fromStudySearch={fromStudySearch} fromMyStudies={fromMyStudies} />
     {!!words.length && <View style={{ gap: 12 }}><Text style={ui.heading}>Palavras deste livro</Text>{words.map(word => <FeatureLink key={word.id} title={word.transliteration + ' • ' + word.title} description={word.language + ' • ' + word.example.book + ' ' + word.example.chapter + ':' + word.example.verse} icon="language-outline" href={{ pathname: '/word-study', params: { word: word.id } }} />)}</View>}
     <FeatureLink title="Explorar capítulos" description={chapters.length ? 'Todos os ' + chapters.length + (chapters.length === 1 ? ' capítulo disponível offline.' : ' capítulos disponíveis offline.') : 'O texto deste livro está em preparação. A introdução já está disponível.'} icon="book-outline" href={{ pathname: '/book', params: { book: book.name, chapters: book.chapters } }} />
-    <StudySection title="Fontes para aprofundar"><Text style={ui.body}>Resumo introdutório da Bíblia Smart. As fontes abaixo apresentam perspectivas de estudo e abrem no navegador.</Text>{book.sources.map(source => <StudySourceLink key={source.url} {...source} />)}</StudySection>
+    <StudySection title="Fontes para aprofundar"><Text style={ui.body}>Resumo introdutório da Bíblia VP. As fontes abaixo apresentam perspectivas de estudo e abrem no navegador.</Text>{book.sources.map(source => <StudySourceLink key={source.url} {...source} />)}</StudySection>
   </MinisterialScreen>;
 }
 

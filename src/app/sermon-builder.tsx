@@ -1,4 +1,4 @@
-import { withPremiumAccess } from '@/components/premium-access';
+import { FeatureLink } from '@/components/modern-ui';
 import { useAppTheme } from '@/components/app-theme';
 import { useState } from 'react';
 import { Keyboard, Pressable, Text, TextInput, View } from 'react-native';
@@ -35,6 +35,7 @@ function SermonBuilderScreen() {
         {error ? <Text accessibilityRole="alert" style={s.error}>{error}</Text> : null}
         <ActionButton label="Criar esboço" onPress={createOutline} />
       </View>
+      <FeatureLink title="Colar pregação completa" description="Traga seu texto do AI Studio e leia em tela cheia." icon="document-text-outline" href="/sermon-manuscript" />
       <Text style={s.body}>Precisa de uma ideia? Toque em um exemplo:</Text>
       {['Salmos 23', 'Perdão', 'Oração e ansiedade'].map(example => (
         <Pressable key={example} accessibilityRole="button" style={({ pressed }) => [s.card, pressed && { opacity: 0.72 }]}
@@ -46,4 +47,4 @@ function SermonBuilderScreen() {
   );
 }
 
-export default withPremiumAccess(SermonBuilderScreen, 'ministerial', '/support');
+export default SermonBuilderScreen;

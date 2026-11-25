@@ -10,8 +10,8 @@ import { normalizeSermonInput, sermonProvider, type SermonOutline } from '@/serv
 import { formatSermon } from '@/services/sermon-repository';
 import { savedSermons } from '@/services/saved-sermons';
 import { shareSermon } from '@/services/sermon-sharing';
+import { SermonPreachingComposer } from '@/components/sermon-preaching-composer';
 import { SermonManagement } from '@/components/sermon-management';
-import { PremiumBoundary } from '@/components/premium-access';
 
 function Section({ title, body }: { title: string; body: string }) {
   const s = useMinisterialStyles();
@@ -59,7 +59,7 @@ function OutlineContent({ id, topic }: { id: string; topic: string }) {
         {saved && <Text style={ui.body}>Última edição: {new Date(saved.updatedAt).toLocaleString('pt-BR')}</Text>}
       </View>
       {!id ? <ActionButton label="Salvar esboço" busy={busy === 'save'} disabled={!!busy} onPress={() => void action('save', save)} />
-        : <FeatureLink title="Editar minha mensagem" description="Adapte os pontos e acrescente suas notas." icon="create-outline" href={{ pathname: '/sermon-editor', params: { id } }} violet />}
+        : <FeatureLink title="Editar minha mensagem" description="Adapte os pontos e acrescente suas notas." icon="create-outline" href={{ pathname: outline.manuscript !== undefined ? '/sermon-manuscript' : '/sermon-editor', params: { id } }} violet />}
       {!!saved && <FeatureLink title="Agendar esta mensagem" description="Vincule seu esboço à Agenda Ministerial." icon="calendar-outline" href={{ pathname: '/agenda-event', params: { sermonId: saved.id, sermonTitle: saved.outline.theme } }} />}
       {!!saved && <FeatureLink title="Apresentar mensagem" description="Acompanhe os pontos com texto maior e navegação por seção." icon="play-circle-outline" href={{ pathname: '/sermon-presenter', params: { id } }} />}
       <ActionButton secondary label="Compartilhar esboço" busy={busy === 'share'} disabled={!!busy} onPress={() => void action('share', share)} />
@@ -68,13 +68,16 @@ function OutlineContent({ id, topic }: { id: string; topic: string }) {
       {!!actionError && <Text accessibilityRole="alert" style={s.error}>{actionError}</Text>}
       {!!message && <Text accessibilityLiveRegion="polite" style={ui.body}>{message}</Text>}
       {!!shareText && shareText === formatSermon(outline, saved?.notes ?? '', includeNotes) && <Section title="Texto para compartilhar" body={shareText} />}
+      {!!saved && outline.manuscript === undefined && <SermonPreachingComposer key={'preaching:' + saved.id + ':' + saved.updatedAt} message={saved} />}
       {!!saved && <SermonManagement key={`${saved.id}:${saved.updatedAt}`} message={saved} entries={library.entries} />}
+      {outline.manuscript !== undefined ? <Section title="Pregação completa" body={outline.manuscript} /> : <>
       <Text style={s.body}>Roteiro inicial de apoio. Confira as referências na sua Bíblia e adapte os exemplos antes de pregar.</Text>
       <Section title="Introdução" body={outline.introduction} /><Text style={s.heading}>Desenvolvimento</Text>
       {outline.points.map((point, index) => <Section key={index} title={point.title} body={point.body} />)}
       <Section title="Aplicação" body={outline.application} /><Section title="Conclusão" body={outline.conclusion} />
       <View style={s.card}><Text style={s.heading}>Referências relacionadas</Text>{outline.references.map((ref, index) => <Text selectable key={index} style={s.body}>• {ref}</Text>)}</View>
       <View style={s.card}><Text style={s.heading}>Perguntas para reflexão</Text>{outline.questions.map((question, index) => <Text selectable key={index} style={s.body}>{index + 1}. {question}</Text>)}</View>
+      </>}
       {!!saved?.notes && <Section title="Minhas notas pessoais" body={saved.notes} />}
     </>}
     <FeatureLink title="Meus esboços" description="Retome suas mensagens salvas." icon="documents-outline" href="/sermons" />
@@ -86,5 +89,5 @@ export default function SermonOutlineScreen() {
   const id = (Array.isArray(params.id) ? params.id[0] : params.id) ?? '';
   const topic = normalizeSermonInput((Array.isArray(params.topic) ? params.topic[0] : params.topic) ?? '');
   const content = <OutlineContent key={id || topic} id={id} topic={topic} />;
-  return id ? content : <PremiumBoundary feature="ministerial" backTo="/support">{content}</PremiumBoundary>;
+  return content;
 }

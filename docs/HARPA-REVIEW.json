@@ -1,0 +1,3249 @@
+{
+  "reviewedAt": "2026-10-28",
+  "scope": "Inventário técnico de 640 entradas; revisão individual somente das entradas documentadas. Não representa parecer sobre todas as letras.",
+  "source": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json",
+  "sha256": "cf33d6921626458c6df8e2bf859bc747300ce56b1d687a9379028b643847728d",
+  "included": 11,
+  "corrections": [
+    {
+      "number": 47,
+      "before": "Foste morto eu meu lugar",
+      "after": "Foste morto em meu lugar"
+    },
+    {
+      "number": 59,
+      "before": "Te conhecer o amor sem fim",
+      "after": "Té conhecer o amor sem fim"
+    },
+    {
+      "number": 187,
+      "before": "Meus Deus, de Ti!",
+      "after": "Meu Deus, de Ti!"
+    },
+    {
+      "number": 187,
+      "before": "Perto de TI, meu Rei",
+      "after": "Perto de Ti, meu Rei"
+    },
+    {
+      "number": 198,
+      "before": "Que me purifica e guarde para Si",
+      "after": "Que me purifica e guarda para Si"
+    },
+    {
+      "number": 198,
+      "before": "Que o mundo me abandona",
+      "after": "Que o mundo me abandone"
+    }
+  ],
+  "entries": [
+    {
+      "number": 1,
+      "title": "1 - Chuvas de Graça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 2,
+      "title": "2 - Saudosa Lembrança",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 3,
+      "title": "3 - Plena Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 4,
+      "title": "4 - Deus Velará Por Ti",
+      "status": "pending",
+      "reason": "Original identificado, mas autoria da redação portuguesa desta transcrição ainda inconclusiva."
+    },
+    {
+      "number": 5,
+      "title": "5 - Ó Desce Fogo Santo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 6,
+      "title": "6 - Na Maldição Da Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 7,
+      "title": "7 - Cristo Cura Sim!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 8,
+      "title": "8 - Cristo, O Fiel Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 9,
+      "title": "9 - Marchai Soldados De Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 10,
+      "title": "10 - Eu Te Louvo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 11,
+      "title": "11 - Ó Cristão, Eia Avante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 12,
+      "title": "12 - Vem Já, Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 13,
+      "title": "13 - Jesus Comprou-me",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 14,
+      "title": "14 - Gozo Em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 15,
+      "title": "15 - Conversão",
+      "status": "included"
+    },
+    {
+      "number": 16,
+      "title": "16 - Despertar Para o Trabalho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 17,
+      "title": "17 - Pensando Em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 18,
+      "title": "18 - Grata Nova",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 19,
+      "title": "19 - O Convite De Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 20,
+      "title": "20 - Olhai o Cordeiro De Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 21,
+      "title": "21 - Gloriosa Aurora",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 22,
+      "title": "22 - Ceia Do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 23,
+      "title": "23 - Glória a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 24,
+      "title": "24 - Poder Pentecostal",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 25,
+      "title": "25 - Jesus Tu és Bom",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 26,
+      "title": "26 - A Formosa Jerusálem",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 27,
+      "title": "27 - Amor Que Vence",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 28,
+      "title": "28 - Deus Vai Te Guiar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 29,
+      "title": "29 - O Precioso Sangue",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 30,
+      "title": "30 - Não Sou Meu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 31,
+      "title": "31 - Glória ao Meu Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 32,
+      "title": "32 - Meu Cristo! Meu Cristo!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 33,
+      "title": "33 - Com Tua Mão Segura",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 34,
+      "title": "34 - Milícia De Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 35,
+      "title": "35 - O Grande Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 36,
+      "title": "36 - O Exilado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 37,
+      "title": "37 - Cristo Pra Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 38,
+      "title": "38 - O Senhor é Rei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 39,
+      "title": "39 - Alvo Mais Que a Neve",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 40,
+      "title": "40 - A Cidade Do Bom Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 41,
+      "title": "41 - A Cristo Coroai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 42,
+      "title": "42 - Saudai Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 43,
+      "title": "43 - Doce Lar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 44,
+      "title": "44 - Oh! Que Glória!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 45,
+      "title": "45 - Redentor Onipotente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 46,
+      "title": "46 - Um Pendão Real",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 47,
+      "title": "47 - Rocha Eterna",
+      "status": "included"
+    },
+    {
+      "number": 48,
+      "title": "48 - O Dia do Triunfo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 49,
+      "title": "49 - Aleluia! Já Creio",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 50,
+      "title": "50 - Sempre Fiéis",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 51,
+      "title": "51 - Adoração Reconhecida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 52,
+      "title": "52 - Tudo Está Bem",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 53,
+      "title": "53 - A Esperança da Igreja",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 54,
+      "title": "54 - Louvemos ao Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 55,
+      "title": "55 - Mais Perto da Tua Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 56,
+      "title": "56 - Tudo em Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 57,
+      "title": "57 - Vivifica-nos Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 58,
+      "title": "58 - Não Temas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 59,
+      "title": "59 - Eu creio, Sim",
+      "status": "included"
+    },
+    {
+      "number": 60,
+      "title": "60 - Exultação do Crente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 61,
+      "title": "61 - Deus Tomará Conta de Ti",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 62,
+      "title": "62 - Achei Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 63,
+      "title": "63 - Acordai, Acordai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 64,
+      "title": "64 - De Todo o Mundo: Aleluia!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 65,
+      "title": "65 - Quem Irá?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 66,
+      "title": "66 - Pronto a Salvar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 67,
+      "title": "67 - Quem Quer ir Com Cristo?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 68,
+      "title": "68 - Gozo de Ter Salvação",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 69,
+      "title": "69 - Jesus Quebrou os Meus Grilhões",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 70,
+      "title": "70 - Cristo Vai Voltar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 71,
+      "title": "71 - Santo és Tu, Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 72,
+      "title": "72 - Rasgou-se o Véu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 73,
+      "title": "73 - Vem, Vem a Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 74,
+      "title": "74 - Cristo Virá",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 75,
+      "title": "75 - Em Jesus Tens a Palma da Vitória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 76,
+      "title": "76 - Vem, ó Pródigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 77,
+      "title": "77 - Guarda o Contacto",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 78,
+      "title": "78 - Meu Forte Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 79,
+      "title": "79 - Sua Graça Me Basta",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 80,
+      "title": "80 - Cristo Te Chama",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 81,
+      "title": "81 - Pode Salvar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 82,
+      "title": "82 - Um Meigo Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 83,
+      "title": "83 - Não Posso Explicar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 84,
+      "title": "84 - O Grande “Eu sou”",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 85,
+      "title": "85 - Deixai Entrar o Espírito de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 86,
+      "title": "86 - Satisfeito com Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 87,
+      "title": "87 - Meu Testemunho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 88,
+      "title": "88 - Revela a Nós Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 89,
+      "title": "89 - Sublime e Grande Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 90,
+      "title": "90 - Há Paz e Alegria",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 91,
+      "title": "91 - Nívea Luz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 92,
+      "title": "92 - O Bondoso Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 93,
+      "title": "93 - Há Trabalho Pronto",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 94,
+      "title": "94 - Na Jerusalém de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 95,
+      "title": "95 - Ouve, ó Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 96,
+      "title": "96 - Deixa Penetrar a Luz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 97,
+      "title": "97 - Há um Caminho Santo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 98,
+      "title": "98 - Estarás Vigiando?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 99,
+      "title": "99 - Eis o Dia a Declinar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 100,
+      "title": "100 - O Bom Consolador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 101,
+      "title": "101 - A Unção Real",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 102,
+      "title": "102 - Crê na Promessa",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 103,
+      "title": "103 - Caminhemos na Luz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 104,
+      "title": "104 - Jesus Procura a Ovelha",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 105,
+      "title": "105 - A Gloriosa Esperança",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 106,
+      "title": "106 - Viva Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 107,
+      "title": "107 - Firme nas Promessas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 108,
+      "title": "108 - Pelejar Por Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 109,
+      "title": "109 - Venha a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 110,
+      "title": "110 - Clama: Jesus, Jesus!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 111,
+      "title": "111 - Que Mudança!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 112,
+      "title": "112 - O Nome Soberano",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 113,
+      "title": "113 - O Celeste Diretor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 114,
+      "title": "114 - Aceita o Perdão de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 115,
+      "title": "115 - Trabalhai e Orai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 116,
+      "title": "116 - Livre Estou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 117,
+      "title": "117 - O Senhor Salva a Todo o Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 118,
+      "title": "118 - Face a Face",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 119,
+      "title": "119 - Inesgotável é Seu Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 120,
+      "title": "120 - Noite de Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 121,
+      "title": "121 - Maravilhoso é Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 122,
+      "title": "122 - Fogo Divino",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 123,
+      "title": "123 - Cristo Voltará",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 124,
+      "title": "124 - Adoração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 125,
+      "title": "125 - Quem Dera Hoje Vir!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 126,
+      "title": "126 - Bem-Aventurança do Crente",
+      "status": "included"
+    },
+    {
+      "number": 127,
+      "title": "127 - O Senhor da Ceifa Chama",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 128,
+      "title": "128 - Entrega o Teu Coração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 129,
+      "title": "129 - A Fonte Salvadora",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 130,
+      "title": "130 - Cristo é Meu!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 131,
+      "title": "131 - De Valor Em Valor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 132,
+      "title": "132 - Obreiros do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 133,
+      "title": "133 - No Rol do livro",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 134,
+      "title": "134 - Jesus à Porta do Coração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 135,
+      "title": "135 - O Nome Precioso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 136,
+      "title": "136 - Jesus, Nosso Socorro",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 137,
+      "title": "137 - Liberto da Escravidão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 138,
+      "title": "138 - Quem Bate é Jesus Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 139,
+      "title": "139 - Jesus, Meu Eterno Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 140,
+      "title": "140 - A Segurança do Crente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 141,
+      "title": "141 - Guia-me Sempre, Meu Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 142,
+      "title": "142 - A Cidade Celeste",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 143,
+      "title": "143 - O Verdadeiro Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 144,
+      "title": "144 - Vem à Assembléia de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 145,
+      "title": "145 - União do Crente Com Seu Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 146,
+      "title": "146 - Caminho brilhante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 147,
+      "title": "147 - Servir a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 148,
+      "title": "148 - Bendirei a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 149,
+      "title": "149 - Canto do Pescador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 150,
+      "title": "150 - Para Casamentos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 151,
+      "title": "151 - Fala Jesus Querido",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 152,
+      "title": "152 - Pela Cruz ao Céu Irei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 153,
+      "title": "153 - Soldados de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 154,
+      "title": "154 - Doce Nome de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 155,
+      "title": "155 - Imploramos Teu Poder",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 156,
+      "title": "156 - A Ovelha Perdida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 157,
+      "title": "157 - Cristo, em Breve, Vem!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 158,
+      "title": "158 - Que Farás de Jesus Cristo?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 159,
+      "title": "159 - Cantai, ó Peregrinos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 160,
+      "title": "160 - Deus Nos Quis Salvar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 161,
+      "title": "161 - Navegando Pra Terra Celeste",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 162,
+      "title": "162 - O Estandarte da Verdade",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 163,
+      "title": "163 - Cristo Morreu Por Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 164,
+      "title": "164 - Paz Luz e Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 165,
+      "title": "165 - A Armadura Cristã",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 166,
+      "title": "166 - Deixa Entrar o Rei da Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 167,
+      "title": "167 - As Testemunhas de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 168,
+      "title": "168 - Meus Irmãos, Nos Jubilemos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 169,
+      "title": "169 - Oh! Jesus Me Ama",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 170,
+      "title": "170 - Ao Calvário de Horror",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 171,
+      "title": "171 - Um Pecador Remido",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 172,
+      "title": "172 - Ó Vem Te Entregar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 173,
+      "title": "173 - Os Santos Louvam Ao Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 174,
+      "title": "174 - Glória, Aleluia, Gloria",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 175,
+      "title": "175 - Irmãos Amados",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 176,
+      "title": "176 - Sacerdotes do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 177,
+      "title": "177 - Salvo Estou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 178,
+      "title": "178 - Gloriosa Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 179,
+      "title": "179 - Redentor Formoso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 180,
+      "title": "180 - Em Cristo Fruímos a Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 181,
+      "title": "181 - Vem, Celeste Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 182,
+      "title": "182 - Jesus no Getsêmane",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 183,
+      "title": "183 - Ressuscitou!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 184,
+      "title": "184 - Meu Jesus! Meu Jesus!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 185,
+      "title": "185 - Invocação e Louvor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 186,
+      "title": "186 - De Valor em Valor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 187,
+      "title": "187 - Mais Perto Meu Deus de Ti!",
+      "status": "included"
+    },
+    {
+      "number": 188,
+      "title": "188 - O Gozo do Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 189,
+      "title": "189 - Glória ao Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 190,
+      "title": "190 - Cristo! Meu Cristo!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 191,
+      "title": "191 - O Meu Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 192,
+      "title": "192 - Pelo Sangue",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 193,
+      "title": "193 - A Alma Abatida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 194,
+      "title": "194 - Jesus Me Guiará",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 195,
+      "title": "195 - Benigno Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 196,
+      "title": "196 - Uma Flor Gloriosa",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 197,
+      "title": "197 - O Lar da Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 198,
+      "title": "198 - Jesus o Bom Amigo",
+      "status": "included"
+    },
+    {
+      "number": 199,
+      "title": "199 - A Ceia do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 200,
+      "title": "200 - O Bondoso Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 201,
+      "title": "201 - A Decisão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 202,
+      "title": "202 - Lugar de Delícias",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 203,
+      "title": "203 - Deixai as Ilusões",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 204,
+      "title": "204 - O Peregrino da Terra",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 205,
+      "title": "205 - Graça, Graça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 206,
+      "title": "206 - O Clarim nos Alerta",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 207,
+      "title": "207 - Jerusalém Divina",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 208,
+      "title": "208 - Vem a Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 209,
+      "title": "209 - A Voz do Bom Pastor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 210,
+      "title": "210 - Fala, fala, Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 211,
+      "title": "211 - Vem a Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 212,
+      "title": "212 - Os Guerreiros Se Preparam",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 213,
+      "title": "213 - Sobre a Terra Vou Andando",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 214,
+      "title": "214 - Desejamos ir Lá",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 215,
+      "title": "215 - Ver-nos-emos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 216,
+      "title": "216 - Louvai a Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 217,
+      "title": "217 - Ouve Sua Voz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 218,
+      "title": "218 - Dá Teu Fardo a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 219,
+      "title": "219 - O Amor do Criador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 220,
+      "title": "220 - Ide Segar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 221,
+      "title": "221 - Opera em Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 222,
+      "title": "222 - Vem a Jesus, ó Perdido",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 223,
+      "title": "223 - Na Minh’Alma Reina a Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 224,
+      "title": "224 - É o Tempo de Segar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 225,
+      "title": "225 - Sê Valente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 226,
+      "title": "226 - Cristo, Teu Santo Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 227,
+      "title": "227 - Deus Amou de Tal Maneira",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 228,
+      "title": "228 - Este Mundo Não Compreende",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 229,
+      "title": "229 - Jesus, ó Meigo Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 230,
+      "title": "230 - Nós Vogamos Nesta Nau",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 231,
+      "title": "231 - Não Foi Com Ouro",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 232,
+      "title": "232 - Os Bem Aventurados",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 233,
+      "title": "233 - A Ceia Do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 234,
+      "title": "234 - O Gozo Dos Santos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 235,
+      "title": "235 - Já Sei, Já Sei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 236,
+      "title": "236 - Já Nos Lavou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 237,
+      "title": "237 - O Gozo de Estar Preparado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 238,
+      "title": "238 - Ó Pecador Desalentado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 239,
+      "title": "239 - Imploramos o Consolador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 240,
+      "title": "240 - Oh Dia Alegre",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 241,
+      "title": "241 - Marchemos Sem Temor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 242,
+      "title": "242 - Eu Confio Firmemente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 243,
+      "title": "243 - Ao Abrir o Culto",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 244,
+      "title": "244 - Louvai a Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 245,
+      "title": "245 - Paz de Deus em Jesus Encontrei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 246,
+      "title": "246 - O Descanso em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 247,
+      "title": "247 - Deus Nos Guarde No Seu Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 248,
+      "title": "248 - Hosana e Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 249,
+      "title": "249 - Ó vem, Senhor, e Habita",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 250,
+      "title": "250 - Noiva de Jesus, Apronta-te",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 251,
+      "title": "251 - Ao Culto Não Faltar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 252,
+      "title": "252 - Santo, Santo és Tu Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 253,
+      "title": "253 - Avante, ó Crentes",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 254,
+      "title": "254 - Mais Perto de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 255,
+      "title": "255 - Meu Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 256,
+      "title": "256 - Abandona Este Mundo de Horror",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 257,
+      "title": "257 - O Perdão Sem Igual",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 258,
+      "title": "258 - Na Rocha Eterna Firmado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 259,
+      "title": "259 - Creio eu na Bíblia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 260,
+      "title": "260 - Avante com o Nosso Capitão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 261,
+      "title": "261 - Alma Triste, Abatida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 262,
+      "title": "262 - Senhor, Estás Comigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 263,
+      "title": "263 - Ao Fim do Culto",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 264,
+      "title": "264 - Ó Pai Celeste",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 265,
+      "title": "265 - Doce é Crer em Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 266,
+      "title": "266 - Resgatados Fomos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 267,
+      "title": "267 - Jesus Minha Força",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 268,
+      "title": "268 - Confiante em Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 269,
+      "title": "269 - Louvarei ao Meu Amado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 270,
+      "title": "270 - Louvando ao Nosso Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 271,
+      "title": "271 - Na Mansão do Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 272,
+      "title": "272 - Quando Jesus Aparecer",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 273,
+      "title": "273 - Só a Ti Recorrerei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 274,
+      "title": "274 - Jesus é a Luz do Mundo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 275,
+      "title": "275 - Ó Acorda, Desperta!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 276,
+      "title": "276 - Em Canaã Eu Entrarei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 277,
+      "title": "277 - Salvo Estás? Limpo Estás?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 278,
+      "title": "278 - Levar a Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 279,
+      "title": "279 - Ali Quero ir, e Tu?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 280,
+      "title": "280 - Ó Jesus, Te Suplico",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 281,
+      "title": "281 - Vem Sem Tardar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 282,
+      "title": "282 - Que Sangue Precioso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 283,
+      "title": "283 - O Pastor e as Ovelhas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 284,
+      "title": "284 - Bendito Cristo, Eis-me Aqui",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 285,
+      "title": "285 - Tu És o Meu Gozo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 286,
+      "title": "286 - Não Tarda Vir Jesus!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 287,
+      "title": "287 - Oh, Foi o Sangue",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 288,
+      "title": "288 - A Palavra da Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 289,
+      "title": "289 - Sob o Sangue Teu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 290,
+      "title": "290 - Teu Espírito Vem Derramar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 291,
+      "title": "291 - A Mensagem da Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 292,
+      "title": "292 - Qual o Preço do Perdão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 293,
+      "title": "293 - Jesus no Calvário",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 294,
+      "title": "294 - Eu Vou Com Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 295,
+      "title": "295 - Novo Canto de Louvor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 296,
+      "title": "296 - No Jardim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 297,
+      "title": "297 - Abundância de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 298,
+      "title": "298 - Avante, Servos de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 299,
+      "title": "299 - Há um Canto Novo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 300,
+      "title": "300 - Nossa Esperança",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 301,
+      "title": "301 - Vem Cear",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 302,
+      "title": "302 - Não Murmures; Canta",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 303,
+      "title": "303 - Precisamos de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 304,
+      "title": "304 - A Face Adorada de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 305,
+      "title": "305 - Campeões da luz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 306,
+      "title": "306 - A Palavra de Deus é um Tesouro",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 307,
+      "title": "307 - Louvor ao Deus Trino",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 308,
+      "title": "308 - Só o Sangue de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 309,
+      "title": "309 - Ao Findar do Dia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 310,
+      "title": "310 - Avante Eu Vou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 311,
+      "title": "311 - Jesus, Meu Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 312,
+      "title": "312 - A Vinda de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 313,
+      "title": "313 - Louvor a Trindade",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 314,
+      "title": "314 - O pai bondoso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 315,
+      "title": "315 - Oh! Amor Bendito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 316,
+      "title": "316 - Em Busca de Sião",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 317,
+      "title": "317 - Jesus Vem Triunfante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 318,
+      "title": "318 - Ao Lar Paternal",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 319,
+      "title": "319 - Ainda Há Lugar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 320,
+      "title": "320 - Seguir a Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 321,
+      "title": "321 - Só em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 322,
+      "title": "322 - As Santas Escrituras",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 323,
+      "title": "323 - Levantai Vossos Olhos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 324,
+      "title": "324 - Jesus, o Melhor Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 325,
+      "title": "325 - A Luz do Céu Raiou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 326,
+      "title": "326 - Oh! Meu Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 327,
+      "title": "327 - Teu Nome Precioso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 328,
+      "title": "328 - O Pão da Vida",
+      "status": "pending",
+      "reason": "Tradução atribuída a Paulo Leivas Macalão (1982); autorização não documentada.",
+      "url": "https://www.hinologia.org/o-pao-da-vida-no-326-da-harpa-crista/"
+    },
+    {
+      "number": 329,
+      "title": "329 - Jesus é Minha Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 330,
+      "title": "330 - A Fé dos Santos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 331,
+      "title": "331 - Ó Caro Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 332,
+      "title": "332 - Para o Céu eu vou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 333,
+      "title": "333 - O Céu, Meu Lar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 334,
+      "title": "334 - O Fim Vem, Cuidado!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 335,
+      "title": "335 - Mui Perto Está o Dia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 336,
+      "title": "336 - Oração de Elias",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 337,
+      "title": "337 - O Bom Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 338,
+      "title": "338 - Quero Jesus, Tua Luz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 339,
+      "title": "339 - Jesus Ressuscitado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 340,
+      "title": "340 - Um Povo Forte",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 341,
+      "title": "341 - A Aspiração da Alma",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 342,
+      "title": "342 - As Cordas do Coração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 343,
+      "title": "343 - Abre o Coração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 344,
+      "title": "344 - Um Amigo Entre os Lírios",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 345,
+      "title": "345 - Oh! Tenho Gozo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 346,
+      "title": "346 - É Meu o Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 347,
+      "title": "347 - Vem a Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 348,
+      "title": "348 - Longe de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 349,
+      "title": "349 - Os Dons do Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 350,
+      "title": "350 - A História da Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 351,
+      "title": "351 - A Felicidade da Salvação",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 352,
+      "title": "352 - Jesus, Nossa Esperança",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 353,
+      "title": "353 - Vem, ó Pródigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 354,
+      "title": "354 - O Cuidado da Alma",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 355,
+      "title": "355 - Fala do Amor de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 356,
+      "title": "356 - Oração Dominical",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 357,
+      "title": "357 - O Fim das Lutas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 358,
+      "title": "358 - Senhor, Manda Teu Poder",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 359,
+      "title": "359 - Vem a Mim, Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 360,
+      "title": "360 - A Preciosa Fonte",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 361,
+      "title": "361 - O Peregrino da Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 362,
+      "title": "362 - O Espírito Diz: Vem!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 363,
+      "title": "363 - Consagração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 364,
+      "title": "364 - Oh, que Paz!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 365,
+      "title": "365 - Confiança em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 366,
+      "title": "366 - O Nascimento de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 367,
+      "title": "367 - Espírito Consolador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 368,
+      "title": "368 - Jesus, Tudo prá Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 369,
+      "title": "369 - Sob as Asas de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 370,
+      "title": "370 - Grato a Ti",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 371,
+      "title": "371 - Breve Vem o Dia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 372,
+      "title": "372 - Vencerá",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 373,
+      "title": "373 - Vem a Teu Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 374,
+      "title": "374 - Vida Abundante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 375,
+      "title": "375 - A Igreja Universal",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 376,
+      "title": "376 - Vamos Todos Trabalhar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 377,
+      "title": "377 - As Promessas Que Não Falham",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 378,
+      "title": "378 - As Pisadas do Mestre",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 379,
+      "title": "379 - Salvo de Graça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 380,
+      "title": "380 - Abraão e Seu Sacrifício",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 381,
+      "title": "381 - O Cordeiro de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 382,
+      "title": "382 - Olhando Para o Calvário",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 383,
+      "title": "383 - O Sustento da Alma",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 384,
+      "title": "384 - Sinto Vida do Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 385,
+      "title": "385 - Amemos o Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 386,
+      "title": "386 - Vencidos os Combates",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 387,
+      "title": "387 - Derrama Teu Espírito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 388,
+      "title": "388 - Canta, ó Crente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 389,
+      "title": "389 - Lava-me ó Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 390,
+      "title": "390 - Um Coração Bondoso",
+      "status": "pending",
+      "reason": "Créditos consultados indicam possível coautoria ainda não identificada."
+    },
+    {
+      "number": 391,
+      "title": "391 - Jesus no Monte da Ascensão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 392,
+      "title": "392 - Peregrinos Somos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 393,
+      "title": "393 - Há um Amigo Mui Chegado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 394,
+      "title": "394 - A Mão ao Arado!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 395,
+      "title": "395 - Ide por Todo Mundo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 396,
+      "title": "396 - Além do Nosso Entendimento",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 397,
+      "title": "397 - O Salvador me Achou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 398,
+      "title": "398 - Perto do Meu Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 399,
+      "title": "399 - Terra de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 400,
+      "title": "400 - Em Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 401,
+      "title": "401 - Jesus Voltará",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 402,
+      "title": "402 - Ao Gólgota",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 403,
+      "title": "403 - Gozo Real",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 404,
+      "title": "404 - Em Glória Virá",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 405,
+      "title": "405 - Queres Perdão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 406,
+      "title": "406 - A Sombra do Meu Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 407,
+      "title": "407 - Ó Criador Bendito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 408,
+      "title": "408 - Abre os Meus Olhos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 409,
+      "title": "409 - Trabalhadores do Evangelho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 410,
+      "title": "410 - Jesus Meu Rei Glorioso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 411,
+      "title": "411 - Nós Somos Teus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 412,
+      "title": "412 - Jesus Cristo, Bem Amado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 413,
+      "title": "413 - Meu Pastor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 414,
+      "title": "414 - Tem Compaixão do Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 415,
+      "title": "415 - Jesus Te Quer Curar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 416,
+      "title": "416 - Quando o Povo Salvo Entrar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 417,
+      "title": "417 - Bastante Para Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 418,
+      "title": "418 - Sou Um Soldado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 419,
+      "title": "419 - Vinde, Pecadores",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 420,
+      "title": "420 - O Que Buscas Ansioso?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 421,
+      "title": "421 - Careço de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 422,
+      "title": "422 - No Céu não Entra Pecado",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 423,
+      "title": "423 - De Ti Preciso Mais",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 424,
+      "title": "424 - Seu Precioso Sangue",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 425,
+      "title": "425 - Perdido Andei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 426,
+      "title": "426 - União Dos Irmãos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 427,
+      "title": "427 - Vai Orando",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 428,
+      "title": "428 - A estrela da Alva",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 429,
+      "title": "429 - Escuta o Evangelho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 430,
+      "title": "430 - Evangelho da Salvação",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 431,
+      "title": "431 - Cristo Chama o Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 432,
+      "title": "432 - Consagrado ao Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 433,
+      "title": "433 - Sois Benvindos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 434,
+      "title": "434 - A Teus Pés",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 435,
+      "title": "435 - Jesus Me Levantou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 436,
+      "title": "436 - Crentes Cantai!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 437,
+      "title": "437 - O Dom Celeste",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 438,
+      "title": "438 - Voltai-vos Para Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 439,
+      "title": "439 - Aos Pés de Cristo Prostrados",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 440,
+      "title": "440 - Faze Já o seu Querer",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 441,
+      "title": "441 - A Chuva do Consolador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 442,
+      "title": "442 - Breve Verei o Bom Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 443,
+      "title": "443 - Larga o Mundo!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 444,
+      "title": "444 - Escuta, Pobre Pecador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 445,
+      "title": "445 - Resgatado Com O Sangue de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 446,
+      "title": "446 - Ó Vem Já!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 447,
+      "title": "447 - Nascer de Novo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 448,
+      "title": "448 - Crentes, Avançai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 449,
+      "title": "449 - À Beira da Estrada",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 450,
+      "title": "450 - Sol da Justiça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 451,
+      "title": "451 - Meu Jesus Vem",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 452,
+      "title": "452 - Seguirei a Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 453,
+      "title": "453 - Deus é o mesmo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 454,
+      "title": "454 - Alegrai-vos, ó Remidos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 455,
+      "title": "455 - O Povo de Deus na Terra",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 456,
+      "title": "456 - A Fonte Transbordante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 457,
+      "title": "457 - O Festim de Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 458,
+      "title": "458 - Guia Meus Passos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 459,
+      "title": "459 - As Firmes Promessas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 460,
+      "title": "460 - Dize-o a Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 461,
+      "title": "461 - Jesus Chorou Sobre Jerusalém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 462,
+      "title": "462 - Glória ao Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 463,
+      "title": "463 - O Povo de Abraão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 464,
+      "title": "464 - Plena Graça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 465,
+      "title": "465 - Ele Sofreu Por mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 466,
+      "title": "466 - Que Maravilha",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 467,
+      "title": "467 - Sobre as Ondas do Mar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 468,
+      "title": "468 - Cristo Está Chamando",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 469,
+      "title": "469 - Ao Estrugir a Trombeta",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 470,
+      "title": "470 - Batismo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 471,
+      "title": "471 - Avançai Fiéis",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 472,
+      "title": "472 - Em Meu Lugar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 473,
+      "title": "473 - Outro Bem Não Acharei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 474,
+      "title": "474 - Paz, Doce Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 475,
+      "title": "475 - Em Belém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 476,
+      "title": "476 - O Cego de Jericó",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 477,
+      "title": "477 - Sede Fortes",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 478,
+      "title": "478 - Eis-me Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 479,
+      "title": "479 - Ao Raiar do Novo Ano",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 480,
+      "title": "480 - Fim do Ano",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 481,
+      "title": "481 - Cristo e Sua Humilhação",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 482,
+      "title": "482 - Comunhão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 483,
+      "title": "483 - Ora Vem Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 484,
+      "title": "484 - Meus Pecados Levou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 485,
+      "title": "485 - Andando Para o Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 486,
+      "title": "486 - Vasos Transbordantes",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 487,
+      "title": "487 - Doxologia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 488,
+      "title": "488 - O Áureo Dia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 489,
+      "title": "489 - Chegai Para Adorar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 490,
+      "title": "490 - Passando Está",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 491,
+      "title": "491 - Há Poder no Sangue de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 492,
+      "title": "492 - Jesus Virá do Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 493,
+      "title": "493 - Ao Pai Voltai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 494,
+      "title": "494 - Jerusalém Celestial",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 495,
+      "title": "495 - Cristo à Porta Está",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 496,
+      "title": "496 - Jesus me Tirou da Lama",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 497,
+      "title": "497 - Meu Bom Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 498,
+      "title": "498 - Guia-me ó Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 499,
+      "title": "499 - A Santa Bíblia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 500,
+      "title": "500 - Quero ver a Jesus Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 501,
+      "title": "501 - Vencendo Com o Bom Capitão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 502,
+      "title": "502 - Ó Pastor Bendito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 503,
+      "title": "503 - Vidas Consagradas ao Trabalho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 504,
+      "title": "504 - Momento Solene",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 505,
+      "title": "505 - As Palavras de Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 506,
+      "title": "506 - Bíblia Sagrada",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 507,
+      "title": "507 - Jesus Salva",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 508,
+      "title": "508 - Sua Palavra Revelada",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 509,
+      "title": "509 - Ao Passar o Jordão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 510,
+      "title": "510 - A Riqueza Divinal",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 511,
+      "title": "511 - Glorioso Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 512,
+      "title": "512 - O Amor Inesgotável",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 513,
+      "title": "513 - Minha Alma Quer Ter",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 514,
+      "title": "514 - Em Glória Esplendente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 515,
+      "title": "515 - Se Cristo Comigo Vai",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 516,
+      "title": "516 - Cristo Meu Vero Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 517,
+      "title": "517 - Cura Divina",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 518,
+      "title": "518 - Salva-Vidas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 519,
+      "title": "519 - Achei Jesus, Meu Salvador",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 520,
+      "title": "520 - A Doce e Preciosa Voz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 521,
+      "title": "521 - Vem o Passo Dar!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 522,
+      "title": "522 - Rei da Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 523,
+      "title": "523 - Cristo, a Fonte Escondida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 524,
+      "title": "524 - Cristo Pensa em Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 525,
+      "title": "525 - Vencendo Vem Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 526,
+      "title": "526 - Grandioso És Tu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 527,
+      "title": "527 - Dominador É Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 528,
+      "title": "528 - Eu Te Amo, Ó Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 529,
+      "title": "529 - Em Sua Graça",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 530,
+      "title": "530 - Vivifica a Tua Igreja",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 531,
+      "title": "531 - Nome Precioso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 532,
+      "title": "532 - Santo Nome",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 533,
+      "title": "533 - Honras Sejam ao Cordeiro",
+      "status": "pending",
+      "reason": "Letra portuguesa atribuída a Stuart Edmund McNair (1959); não tratar como domínio público por ser antiga.",
+      "url": "https://www.hymnary.org/text/cristo_nosso_salvador"
+    },
+    {
+      "number": 534,
+      "title": "534 - Cristo É Real Pra Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 535,
+      "title": "535 - Tu És Fiel Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 536,
+      "title": "536 - Amigo Sem Igual",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 537,
+      "title": "537 - Sempre Comigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 538,
+      "title": "538 - Tu, Senhor, És Nosso Amigo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 539,
+      "title": "539 - Ao Pensar na Dor Crucial",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 540,
+      "title": "540 - Ao Ver a Cruz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 541,
+      "title": "541 - Calvário, Revelação de Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 542,
+      "title": "542 - História de Cristo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 543,
+      "title": "543 - Cristo, Meu redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 544,
+      "title": "544 - Creio, Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 545,
+      "title": "545 - Porque Ele Vive",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 546,
+      "title": "546 - Manhã da Ressurreição",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 547,
+      "title": "547 - O Rei Está Voltando",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 548,
+      "title": "548 - Breve Jesus Há de Vir",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 549,
+      "title": "549 - Ora Vem, Senhor Jesus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 550,
+      "title": "550 - Breve Ele Volta",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 551,
+      "title": "551 - O Santo Espírito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 552,
+      "title": "552 - Quando para o Céu Nós Formos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 553,
+      "title": "553 - Oh! Pai, o Santo Espírito",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 554,
+      "title": "554 - O Evangelho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 555,
+      "title": "555 - O Redentor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 556,
+      "title": "556 - Lê a Bíblia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 557,
+      "title": "557 - A Palavra da Vida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 558,
+      "title": "558 - Daí-me a Bíblia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 559,
+      "title": "559 - Bíblia Sagrada",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 560,
+      "title": "560 - Tenho Paz em Meu Ser",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 561,
+      "title": "561 - Que Bênção!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 562,
+      "title": "562 - Autor da Vida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 563,
+      "title": "563 - Sempre Feliz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 564,
+      "title": "564 - Conta as Bênçãos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 565,
+      "title": "565 - Tu És Meu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 566,
+      "title": "566 - Paz Perfeita, Sim, Busquei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 567,
+      "title": "567 - Sou Feliz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 568,
+      "title": "568 - Manso e Suave",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 569,
+      "title": "569 - Morri na cruz por Ti",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 570,
+      "title": "570 - A Última Hora",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 571,
+      "title": "571 - Rende o Coração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 572,
+      "title": "572 - A Porta Sou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 573,
+      "title": "573 - A Graça de Nosso Senhor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 574,
+      "title": "574 - Ó Pai Bondoso",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 575,
+      "title": "575 - Espero em Ti",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 576,
+      "title": "576 - Assim como estou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 577,
+      "title": "577 - Em Fervente Oração",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 578,
+      "title": "578 - Sossegai!",
+      "status": "included"
+    },
+    {
+      "number": 579,
+      "title": "579 - Porque te Afliges?",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 580,
+      "title": "580 - Salmo 121",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 581,
+      "title": "581 - Castelo Forte",
+      "status": "pending",
+      "reason": "A redação da transcrição diverge da versão Hafe identificada como domínio público no Hymnary; não substituir silenciosamente uma pela outra.",
+      "url": "https://hymnary.org/text/castelo_forte_e_nosso_deus_hafe"
+    },
+    {
+      "number": 582,
+      "title": "582 - A Barca da Vida",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 583,
+      "title": "583 - Sê Tu Meu Guia",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 584,
+      "title": "584 - O Piloto",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 585,
+      "title": "585 - Jesus me Satisfaz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 586,
+      "title": "586 - Gozo e Vida Tenho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 587,
+      "title": "587 - Neste Lenho me Glorio",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 588,
+      "title": "588 - Sou Mui Feliz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 589,
+      "title": "589 - Quádruplo Amém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 590,
+      "title": "590 - Contentamento",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 591,
+      "title": "591 - Pura, Sim, Mais Pura",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 592,
+      "title": "592 - O Lugar de Bênção e Paz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 593,
+      "title": "593 - Estou Seguro",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 594,
+      "title": "594 - Fé Persistente",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 595,
+      "title": "595 - Somente a Ti!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 596,
+      "title": "596 - Gratidão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 597,
+      "title": "597 - Graça Dou",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 598,
+      "title": "598 - Riquezas do Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 599,
+      "title": "599 - Herdeiro do Reino",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 600,
+      "title": "600 - Mãos ao Trabalho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 601,
+      "title": "601 - A Seara está Madura",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 602,
+      "title": "602 - Juntos Trabalhamos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 603,
+      "title": "603 - Método de Deus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 604,
+      "title": "604 - Senhor, os Mensageiros Teus",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 605,
+      "title": "605 - Quero te Servir",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 606,
+      "title": "606 - Triunfo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 607,
+      "title": "607 - Luz após Trevas",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 608,
+      "title": "608 - Se em Teu Caminho",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 609,
+      "title": "609 - Vitória Deus Dará a Mim",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 610,
+      "title": "610 - Fé É a Vitória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 611,
+      "title": "611 - Cristo, Comandante",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 612,
+      "title": "612 - Ó Pai Eterno",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 613,
+      "title": "613 - Vitória Final",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 614,
+      "title": "614 - Terra Feliz",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 615,
+      "title": "615 - Vou Rumo ao Meu Lar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 616,
+      "title": "616 - Quanto Almejo!",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 617,
+      "title": "617 - Quanto Anelo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 618,
+      "title": "618 - É Nosso o Lar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 619,
+      "title": "619 - Meu Lar, Jerusalém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 620,
+      "title": "620 - Na Jornada Para Jerusalém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 621,
+      "title": "621 - Juntos, no Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 622,
+      "title": "622 - Tão Grato me é Lembrar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 623,
+      "title": "623 - Oh, Sim, Bem Sei",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 624,
+      "title": "624 - Anseio um Lugar de Amor",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 625,
+      "title": "625 - Glória Indizível",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 626,
+      "title": "626 - Tríplice Amém",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 627,
+      "title": "627 - Finda-se Minha Prisão",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 628,
+      "title": "628 - Além do céu Azul",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 629,
+      "title": "629 - Conversaremos Ali no Céu",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 630,
+      "title": "630 - Não Há Separação na Glória",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 631,
+      "title": "631 - Neste Lugar",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 632,
+      "title": "632 - Mais um Templo",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 633,
+      "title": "633 - Meu Brasil",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 634,
+      "title": "634 - Oração pela Pátria",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 635,
+      "title": "635 - Eis o Brasil em Tuas Mãos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 636,
+      "title": "636 - Por nossa Pátria Oramos",
+      "status": "not-reviewed"
+    },
+    {
+      "number": 637,
+      "title": "637 - Hino à Bandeira Nacional",
+      "status": "included"
+    },
+    {
+      "number": 638,
+      "title": "638 - Hino Nacional Brasileiro",
+      "status": "included"
+    },
+    {
+      "number": 639,
+      "title": "639 - Hino da Independência",
+      "status": "included"
+    },
+    {
+      "number": 640,
+      "title": "640 - Hino da Proclamação da República do Brasil",
+      "status": "included"
+    }
+  ]
+}

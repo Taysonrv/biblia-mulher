@@ -1,3 +1,4 @@
+import { bibleBooks } from '@/data/bible-catalog';
 import { useLayoutEffect, useRef, useState } from 'react';
 import { Pressable, Text, View, type ScrollView } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -13,6 +14,8 @@ import { useReadingJourney } from '@/hooks/use-reading-journey';
 import { ChapterNavigation } from '@/components/chapter-navigation';
 import { ChapterPlanProgress } from '@/components/chapter-plan-progress';
 import { useReading } from '@/hooks/use-reading';
+import { useBibleSpeech } from '@/hooks/use-bible-speech';
+import { BibleSpeechControls } from '@/components/bible-speech-controls';
 import { ReadingShare } from '@/components/reading-share';
 export default function ChapterScreen() {
   const { palette: p } = useAppTheme();
@@ -38,6 +41,7 @@ export default function ChapterScreen() {
       scroll.current.scrollTo({ y: Math.max(0, position.y - 12), animated: false });
     }
   }
+  const speech = useBibleSpeech(book, chapter, verses);
   const reading = useReading();
   const journey = useReadingJourney(book, chapter);
   const reader = useReaderPreferences();
@@ -49,6 +53,8 @@ export default function ChapterScreen() {
   }}>
     {verses && waitingForPreferences ? <Text style={s.body}>Preparando sua leitura…</Text> : verses ? <>
       <Text style={s.badge}>{label}</Text>
+      <FeatureLink title="Ler em português brasileiro atual" description="Abrir esta passagem na Bíblia Livre, disponível offline." icon="book-outline" href={{ pathname: '/online-bible', params: { language: 'pt-BR', bookOrder: String(bibleBooks.findIndex(item => item.name === book) + 1), chapter: String(chapter) } }} />
+      <BibleSpeechControls key={book + chapter} speech={speech} selected={selected} />
       <ActionButton secondary label="Trocar livro ou capítulo" onPress={() => router.push({ pathname: "/reading-picker", params: { book, chapter } })} />
       <ChapterNavigation book={book} chapter={chapter} planId={typeof params.plan === 'string' ? params.plan : undefined} day={Number(params.day)} />
       {!!journey.error && <View style={ui.card}><Text accessibilityRole="alert" style={s.error}>{journey.error}</Text><ActionButton secondary label="Tentar salvar histórico" onPress={journey.retry} /></View>}
@@ -68,7 +74,7 @@ export default function ChapterScreen() {
         }}>
           <Pressable accessibilityRole="button" accessibilityLabel={verseReference(verse, book, chapter) + '. ' + text} accessibilityState={{ selected: selected === verse }}
             onPress={() => setSelection({ route, verse: selected === verse ? 0 : verse })} style={({ pressed }) => [ui.card, reader.preferences.layout === "continuous" && { backgroundColor: "transparent", borderColor: "transparent", paddingHorizontal: 8, paddingVertical: 10, minHeight: 44 }, selected === verse && { borderColor: p.accent, backgroundColor: p.accentSurface }, pressed && ui.pressed]}>
-            <Text style={s.badge}>{verse}{entry?.favorite ? '  ♥' : ''}{entry?.note ? '  • Anotação' : ''}</Text>
+            <Text style={s.badge}>{verse}{speech.matches && speech.status === 'speaking' && speech.verse === verse ? '  • Ouvindo' : ''}{entry?.favorite ? '  ♥' : ''}{entry?.note ? '  • Anotação' : ''}</Text>
             <Text style={{ color: p.text, ...typography }}>{text}</Text>
           </Pressable>
           {selected === verse && <View style={ui.card}>

@@ -3,7 +3,7 @@ import type { SermonOutline } from './sermon';
 export const SERMON_KEY = '@biblia-smart/sermons/v1';
 export const MAX_SERMONS = 100;
 export const MAX_SERMON_STORE_BYTES = 1_500_000;
-export const SERMON_LIMITS = { theme: 300, baseText: 600, body: 4000, pointTitle: 200, reference: 300, question: 500, notes: 2000, list: 12 } as const;
+export const SERMON_LIMITS = { theme: 300, baseText: 600, body: 12000, manuscript: 80000, pointTitle: 200, reference: 300, question: 500, notes: 2000, list: 12 } as const;
 export interface SavedSermon { id: string; topic: string; outline: SermonOutline; notes: string; createdAt: number; updatedAt: number }
 interface Storage { getItem(key: string): Promise<string | null>; setItem(key: string, value: string): Promise<void> }
 function text(value: unknown, limit: number, label: string, optional = false): string {
@@ -17,6 +17,12 @@ function list(value: unknown, limit: number, label: string): string[] {
 export function validateOutline(value: unknown): SermonOutline {
   if (!value || typeof value !== 'object') throw Error('Esboço inválido.');
   const outline = value as SermonOutline;
+  if (outline.manuscript !== undefined) {
+    const manuscript = outline.manuscript;
+    if (typeof manuscript !== 'string' || !manuscript.trim() || manuscript.length > SERMON_LIMITS.manuscript) throw Error('Confira o texto completo: use de 1 a 80000 caracteres. Nada foi cortado.');
+    return { theme: text(outline.theme, SERMON_LIMITS.theme, 'o título'), baseText: text(outline.baseText, SERMON_LIMITS.baseText, 'a passagem', true), manuscript,
+      introduction: '', points: [], application: '', conclusion: '', references: [], questions: [] };
+  }
   if (!Array.isArray(outline.points) || outline.points.length !== 3) throw Error('O esboço precisa de três pontos de desenvolvimento.');
   return {
     theme: text(outline.theme, SERMON_LIMITS.theme, 'o tema'), baseText: text(outline.baseText, SERMON_LIMITS.baseText, 'o texto-base'),
@@ -77,13 +83,15 @@ export function findSermons(sermons: readonly SavedSermon[], query: string): Sav
 }
 export function formatSermon(outline: SermonOutline, notes = '', includeNotes = false): string {
   const value = validateOutline(outline);
+  if (value.manuscript !== undefined) return [value.theme, ...(value.baseText ? [`Texto-base: ${value.baseText}`] : []), value.manuscript,
+    ...(includeNotes && notes.trim() ? ['NOTAS PESSOAIS\n' + text(notes, SERMON_LIMITS.notes, 'as notas pessoais', true)] : [])].join('\n\n');
   return [value.theme, `Texto-base: ${value.baseText}`, 'INTRODUÇÃO\n' + value.introduction,
     'DESENVOLVIMENTO\n' + value.points.map(point => point.title + '\n' + point.body).join('\n\n'),
     'APLICAÇÃO\n' + value.application, 'CONCLUSÃO\n' + value.conclusion,
     'REFERÊNCIAS RELACIONADAS\n' + value.references.map(ref => '• ' + ref).join('\n'),
     'PERGUNTAS PARA REFLEXÃO\n' + value.questions.map((question, index) => `${index + 1}. ${question}`).join('\n'),
     ...(includeNotes && notes.trim() ? ['NOTAS PESSOAIS\n' + text(notes, SERMON_LIMITS.notes, 'as notas pessoais', true)] : []),
-    'Preparado com Bíblia Smart • Roteiro de apoio; confira as passagens em seu contexto.',
+    'Preparado com Bíblia VP • Roteiro de apoio; confira as passagens em seu contexto.',
   ].join('\n\n');
 }
 export function createSermonRepository(storage: Storage, now = () => Date.now(), makeId = () => `sermon-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`) {

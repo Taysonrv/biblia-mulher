@@ -1,0 +1,6 @@
+{
+  "indexes": [],
+  "fieldOverrides": [
+    { "collectionGroup": "sync", "fieldPath": "payload", "indexes": [] }
+  ]
+}

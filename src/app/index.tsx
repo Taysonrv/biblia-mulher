@@ -1,3 +1,6 @@
+import { ReadingReportCards } from '@/components/reading-report-cards';
+import { WidgetCard } from '@/components/widget-card';
+import { Image } from 'expo-image';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { router, type Href } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -8,10 +11,12 @@ import { PlanResume } from '@/components/plan-resume';
 import { ReadingResume } from '@/components/reading-resume';
 import type { Palette } from '@/constants/design';
 
-const shortcuts: { title: string; subtitle: string; icon: 'book-outline' | 'layers-outline' | 'calendar-outline' | 'mic-outline'; href: Href; violet?: boolean }[] = [
+const shortcuts: { title: string; subtitle: string; icon: 'book-outline' | 'layers-outline' | 'calendar-outline' | 'mic-outline' | 'musical-notes-outline' | 'time-outline'; href: Href; violet?: boolean }[] = [
   { title: 'Bíblia', subtitle: 'Leia e medite', icon: 'book-outline', href: '/bible' },
   { title: 'Estudos', subtitle: 'Aprofunde sua fé', icon: 'layers-outline', href: '/studies', violet: true },
   { title: 'Agenda', subtitle: 'Organize sua jornada', icon: 'calendar-outline', href: '/agenda', violet: true },
+  { title: 'Harpa Cristã', subtitle: 'Hinos disponíveis offline', icon: 'musical-notes-outline', href: '/harpa' },
+  { title: 'Histórico', subtitle: 'Retome suas leituras', icon: 'time-outline', href: '/reading-history' },
   { title: 'Apoio ministerial', subtitle: 'Ferramentas Premium', icon: 'mic-outline', href: '/support' },
 ];
 export default function HomeScreen() {
@@ -19,19 +24,18 @@ export default function HomeScreen() {
   const { width, fontScale } = useWindowDimensions();
   const styles = createStyles(p, width < 360, fontScale > 1.3);
   const ui = useUi();
-  return <ScreenFrame>
+  return <ScreenFrame compactTop>
     <View style={styles.header}>
-      <View style={[ui.row, { flex: 1, minWidth: 0 }]}><IconBadge name="book-outline" /><View style={{ flex: 1, minWidth: 0 }}>
+      <View style={styles.brandRow}><View accessible={false} style={styles.brandIcon}><Image source={require('../../assets/brand/palavra-luz-v1/app-icon.png')} style={{ width: 32, height: 32, borderRadius: 10 }} contentFit="contain" /></View><View style={{ flex: 1, minWidth: 0 }}>
         <Text style={styles.brand}>Bíblia VP</Text><Text style={styles.brandSubtitle}>VERDADE PRÁTICA</Text>
       </View></View>
       <Pressable accessibilityRole="button" accessibilityLabel="Abrir meu perfil" style={({ pressed }) => [styles.profile, pressed && ui.pressed]} onPress={() => router.push('/profile')}>
         <Ionicons name="person-outline" size={21} color={p.text} />
       </Pressable>
     </View>
-    <View style={{ gap: 8 }}>
-      <Text style={ui.eyebrow}>UM NOVO MOMENTO COM DEUS</Text>
+    <View style={styles.intro}>
       <Text accessibilityRole="header" style={styles.welcome}>Sua fé. Seu caminho.</Text>
-      <Text style={ui.body}>Um espaço para ler, refletir e viver a Palavra.</Text>
+      <Text style={styles.introBody}>Um espaço para ler, refletir e viver a Palavra.</Text>
     </View>
     <ReadingResume />
     <PlanResume />
@@ -56,6 +60,8 @@ export default function HomeScreen() {
         <Text style={styles.shortcutSubtitle}>{shortcut.subtitle}</Text>
       </Pressable>)}</View>
     </View>
+    <ReadingReportCards />
+    <WidgetCard />
     <FeatureLink title="Mentorias e Pregações" description="Aulas e mensagens em vídeo e áudio para aprofundar sua jornada." icon="play-circle-outline" href="/premium-library" violet />
     <OrbitCard violet>
       <View style={ui.pill}><Text style={ui.pillText}>APOIO MINISTERIAL</Text></View><PremiumBadge />
@@ -84,17 +90,21 @@ export default function HomeScreen() {
 }
 function createStyles(p: Palette, narrow: boolean, largeText: boolean) { return StyleSheet.create({
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
-  brand: { color: p.text, fontSize: narrow ? 20 : 22, lineHeight: 28, fontWeight: '700', letterSpacing: -0.6 },
-  brandSubtitle: { color: p.subtle, fontSize: 9, fontWeight: '700', letterSpacing: 2, marginTop: 3 },
-  profile: { width: 46, height: 46, borderRadius: 17, backgroundColor: p.surfaceRaised, borderWidth: 1, borderColor: p.border, alignItems: 'center', justifyContent: 'center' },
-  welcome: { color: p.text, fontSize: narrow ? 24 : 26, lineHeight: 34, letterSpacing: -0.6, fontWeight: '700' },
+  brandRow: { flex: 1, minWidth: 0, flexDirection: 'row', alignItems: 'center', gap: 9 },
+  brandIcon: { width: 32, height: 32, borderRadius: 10, backgroundColor: p.accentSurface, alignItems: 'center', justifyContent: 'center' },
+  brand: { color: p.text, fontSize: 18, lineHeight: 23, fontWeight: '700', letterSpacing: -0.3 },
+  brandSubtitle: { color: p.subtle, fontSize: 9, lineHeight: 13, fontWeight: '500', letterSpacing: 1.1, marginTop: 1 },
+  profile: { width: 44, height: 44, borderRadius: 22, backgroundColor: p.surfaceRaised, borderWidth: 1, borderColor: p.border, alignItems: 'center', justifyContent: 'center' },
+  intro: { gap: 5, paddingTop: 2, paddingBottom: 2 },
+  introBody: { color: p.muted, fontSize: 13, lineHeight: 20 },
+  welcome: { color: p.text, fontSize: narrow ? 20 : 22, lineHeight: 28, letterSpacing: -0.4, fontWeight: '600' },
   labelRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
-  verse: { color: p.text, fontSize: 20, lineHeight: 30, letterSpacing: -0.2, fontWeight: '500' },
+  verse: { color: p.text, fontSize: 18, lineHeight: 27, letterSpacing: -0.2, fontWeight: '500' },
   reference: { color: p.accent, fontSize: 13, fontWeight: '600' },
   grid: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', rowGap: 12 },
-  shortcut: { width: largeText ? '100%' : '48%', padding: 16, gap: 9 },
+  shortcut: { width: largeText ? '100%' : '48%', padding: 14, gap: 8 },
   shortcutSubtitle: { color: p.muted, fontSize: 13, lineHeight: 19 },
-  outlineButton: { minHeight: 50, borderRadius: 16, borderWidth: 1, borderColor: p.violetBorder, backgroundColor: p.violetSurface, padding: 14, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 },
+  outlineButton: { minHeight: 44, borderRadius: 13, borderWidth: 1, borderColor: p.violetBorder, backgroundColor: p.violetSurface, padding: 14, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 8 },
   outlineText: { color: p.violet, fontSize: 14, fontWeight: '700', flexShrink: 1 },
   footer: { color: p.subtle, textAlign: 'center', fontSize: 12, lineHeight: 19 },
 }); }

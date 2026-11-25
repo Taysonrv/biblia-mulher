@@ -1,8 +1,8 @@
 export type PremiumFeature = 'studies' | 'ministerial' | 'media';
-export type AccessMode = 'free' | 'premium' | 'preview';
+export type AccessMode = 'free' | 'premium' | 'premium-plus' | 'preview';
 export const PREMIUM_FEATURES: Record<PremiumFeature, { title: string; description: string }> = {
   studies: { title: 'Estudos bíblicos', description: 'Panoramas dos 66 livros, palavras nas línguas originais e busca nos estudos.' },
-  ministerial: { title: 'Apoio ministerial', description: 'Criação de esboços, duplicação de mensagens e modo de apresentação.' },
+  ministerial: { title: 'Apoio ministerial', description: 'Roteiro desenvolvido localmente, com explicações, transições, perguntas e aplicação. Sem geração por IA.' },
   media: { title: 'Mentorias e Pregações', description: 'Mentorias organizadas em aulas e pregações para assistir ou ouvir, exclusivas para assinantes.' },
 };
 export const FREE_BENEFITS = [
@@ -11,7 +11,8 @@ export const FREE_BENEFITS = [
   'Planos de leitura e acompanhamento do progresso',
   'Agenda e lembretes locais',
   'Temas claro e escuro e ajustes de leitura',
-  'Acesso, edição e compartilhamento dos seus esboços salvos',
+  'Criação de esboço básico com três pontos e aplicação',
+  'Acesso, edição, compartilhamento e leitura em tela cheia dos seus textos salvos',
   'Suas reflexões pessoais e backup dos seus dados',
 ] as const;
 
@@ -19,6 +20,7 @@ export const FREE_BENEFITS = [
 // Never read entitlement from route params, login, AsyncStorage or backups.
 export interface VerifiedSubscription {
   accountId: string;
+  tier?: 'premium' | 'premium-plus';
   status: 'active' | 'expired' | 'revoked';
   expiresAt: number;
 }
@@ -38,17 +40,18 @@ export function subscriptionActive(value: VerifiedSubscription | null, accountId
   return !!accountId && value?.accountId === accountId && value.status === 'active' &&
     Number.isFinite(value.expiresAt) && value.expiresAt > now;
 }
-export function canUsePremium(mode: AccessMode) { return mode === 'premium' || mode === 'preview'; }
+export function canUsePremium(mode: AccessMode) { return mode === 'premium' || mode === 'premium-plus' || mode === 'preview'; }
+
+export function canUsePremiumPlus(mode: AccessMode) { return mode === 'premium-plus' || mode === 'preview'; }
 
 const premiumRoutes: Record<string, PremiumFeature> = {
   '/book-studies': 'studies', '/book-study': 'studies', '/word-studies': 'studies',
   '/word-study': 'studies', '/study-search': 'studies',
-  '/sermon-builder': 'ministerial', '/sermon-presenter': 'ministerial',
   '/premium-library': 'media', '/mentorships': 'media', '/preachings': 'media',
   '/premium-content': 'media', '/content-watch': 'media', '/content-studio': 'media',
 };
-export function routePremiumFeature(path: string, params: Record<string, unknown> = {}): PremiumFeature | null {
-  if (path === '/sermon-outline') return typeof params.id === 'string' && params.id.trim() ? null : 'ministerial';
+export function routePremiumFeature(path: string, _params: Record<string, unknown> = {}): PremiumFeature | null {
+  if (path === '/sermon-outline') return null;
   return premiumRoutes[path] ?? null;
 }
 
@@ -59,7 +62,7 @@ export function createSubscriptionController(adapter: SubscriptionAdapter, devel
   const listeners = new Set<(state: SubscriptionState) => void>();
   function current(): SubscriptionState {
     const active = subscriptionActive(entitlement, accountId, now());
-    return { accountId, ready, testAccess, mode: testAccess || (preview && development) ? 'preview' : active ? 'premium' : 'free',
+    return { accountId, ready, testAccess, mode: testAccess || (preview && development) ? 'preview' : active ? entitlement?.tier === 'premium-plus' ? 'premium-plus' : 'premium' : 'free',
       expiresAt: active ? entitlement!.expiresAt : null, error };
   }
   function emit() { const state = current(); listeners.forEach(listener => listener(state)); }

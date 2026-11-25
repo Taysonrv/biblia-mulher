@@ -3,7 +3,7 @@ const fs = require('node:fs'); const path = require('node:path'); const vm = req
 const moduleValue = { exports: {} };
 const code = ts.transpileModule(fs.readFileSync(path.resolve(__dirname, '../src/services/subscription-access.ts'), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
 vm.runInNewContext(code, { module: moduleValue, exports: moduleValue.exports, Date, Set, Number });
-const { subscriptionActive, routePremiumFeature, canUsePremium, createSubscriptionController } = moduleValue.exports;
+const { canUsePremiumPlus, subscriptionActive, routePremiumFeature, canUsePremium, createSubscriptionController } = moduleValue.exports;
 const NOW = Date.parse('2026-10-03T12:00:00Z');
 const active = (accountId = 'alice', expiresAt = NOW + 1000) => ({ accountId, status: 'active', expiresAt });
 const pending = () => { let resolve; let reject; const promise = new Promise((yes, no) => { resolve = yes; reject = no; }); return { promise, resolve, reject }; };
@@ -14,9 +14,9 @@ test('the complete Bible and all personal records remain free, including saved o
 });
 test('premium routes require access even when opened directly or with forged search params', () => {
   for (const route of ['/book-studies','/book-study','/word-studies','/word-study','/study-search']) assert.equal(routePremiumFeature(route, { premium: '1', fromMyStudies: '1' }), 'studies');
-  for (const route of ['/sermon-builder','/sermon-presenter','/sermon-outline']) assert.equal(routePremiumFeature(route, { premium: '1' }), 'ministerial');
+  for (const route of ['/sermon-builder','/sermon-presenter','/sermon-outline']) assert.equal(routePremiumFeature(route, { premium: '1' }), null);
   for (const route of ['/premium-library','/mentorships','/preachings','/premium-content','/content-watch','/content-studio']) assert.equal(routePremiumFeature(route, { premium: '1', uri: 'https://example.com/bypass.mp4' }), 'media');
-  for (const id of ['', ' ', null, ['fake-id'], 123]) assert.equal(routePremiumFeature('/sermon-outline', { id }), 'ministerial');
+  for (const id of ['', ' ', null, ['fake-id'], 123]) assert.equal(routePremiumFeature('/sermon-outline', { id }), null);
   assert.equal(canUsePremium('free'), false); assert.equal(canUsePremium('premium'), true); assert.equal(canUsePremium('preview'), true);
 });
 test('subscription must be active, unexpired and belong to the current account', () => {
@@ -96,10 +96,23 @@ test('verification errors close premium access and support retry without affecti
 });
 test('all premium catalog and creation routes render a boundary before mounting their content', () => {
   const root = path.resolve(__dirname, '../src/app');
-  for (const name of ['book-studies','book-study','word-studies','word-study','study-search','sermon-builder','sermon-presenter','premium-library','mentorships','preachings','premium-content','content-watch','content-studio']) {
+  for (const name of ['book-studies','book-study','word-studies','word-study','study-search','premium-library','mentorships','preachings','premium-content','content-watch','content-studio']) {
     const source = fs.readFileSync(path.join(root, name + '.tsx'), 'utf8');
     assert.match(source, /export default withPremiumAccess\(/, name);
     assert.equal(routePremiumFeature('/' + name), source.match(/export default withPremiumAccess\(\w+, '(\w+)'/)[1]);
   }
-  assert.match(fs.readFileSync(path.join(root, 'sermon-outline.tsx'), 'utf8'), /return id \? content : <PremiumBoundary/);
+  assert.equal(routePremiumFeature('/sermon-builder'), null);
+  assert.equal(routePremiumFeature('/sermon-presenter'), null);
+});
+
+test('Premium+ requires a verified tier; Premium cannot gain AI from login or parameters', async () => {
+
+  assert.equal(canUsePremiumPlus('free'), false); assert.equal(canUsePremiumPlus('premium'), false);
+  assert.equal(canUsePremiumPlus('premium-plus'), true); assert.equal(canUsePremium('premium-plus'), true);
+  let value = { ...active(), tier: 'premium-plus' };
+  const controller = createSubscriptionController({configured:true, async read(){return value;}}, false, () => NOW);
+  await controller.setAccount('alice'); assert.equal(controller.current().mode,'premium-plus');
+  value = active(); await controller.refresh(); assert.equal(controller.current().mode,'premium');
+  value = {...active(),tier:'premium-plus',status:'expired'}; await controller.refresh(); assert.equal(controller.current().mode,'free');
+  value = {...active('bob'),tier:'premium-plus'}; await controller.refresh(); assert.equal(controller.current().mode,'free');
 });

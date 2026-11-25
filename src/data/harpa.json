@@ -1,0 +1,438 @@
+[
+  {
+    "number": 15,
+    "title": "Conversão",
+    "alternateTitles": [
+      "Foi na cruz"
+    ],
+    "author": "Isaac Watts (1674–1748); refrão: Ralph Erskine Hudson (1843–1901)",
+    "portugueseCredit": "Versão em português: Henry Maxwell Wright (1849–1931)",
+    "chorus": "Foi na cruz, foi na cruz,\nonde um dia eu vi\nMeu pecado castigado em Jesus;\nFoi ali, pela fé, que os olhos abri,\nE agora me alegro em Sua luz",
+    "verses": [
+      "Oh! quão cego andei e perdido vaguei,\nLonge, longe do meu Salvador!\nMas do céu Ele desceu, e Seu sangue verteu\nPra salvar um tão pobre pecador.",
+      "Eu ouvia falar dessa graça sem par,\nQue do céu trouxe nosso Jesus;\nMas eu surdo me fiz, converter-me não quis\nAo Senhor, que por mim morreu na cruz.",
+      "Mas um dia senti meu pecado, e vi\nSobre mim a espada da lei;\nApressado fugi, em Jesus me escondi,\nE abrigo seguro nEle achei.",
+      "Quão ditoso, então, este meu coração,\nConhecendo o excelso amor\nQue levou meu Jesus a sofrer lá na cruz;\nP'ra salvar a um tão pobre pecador."
+    ],
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Estrofes originais atribuídas a Isaac Watts (falecido em 1748), refrão a Ralph Erskine Hudson (falecido em 1901) e tradução a Henry Maxwell Wright (falecido em 1931). Pela regra geral do art. 41 da Lei 9.610/1998, o prazo relativo ao último desses falecimentos terminou ao final de 2001. A análise é da letra tradicional para uso no Brasil, sem gravações, arranjos ou ilustrações.",
+      "textNote": "Transcrição tradicional identificada na Harpa como hino 15, Conversão. Há variantes de redação em outros hinários. Quebras de linha organizadas para leitura; o crédito de autor que aparecia anexado ao fim da última estrofe na fonte foi separado do texto cantado e incorporado aos créditos.",
+      "sources": [
+        {
+          "label": "Hymnary: autores, refrão e tradutor",
+          "url": "https://hymnary.org/hymn/CC1971/396"
+        },
+        {
+          "label": "Portal Luterano: créditos e variante da tradução",
+          "url": "https://www.luterano.org.br/lci-585-foi-na-cruz/"
+        },
+        {
+          "label": "Hinologia: história e tradução por Wright",
+          "url": "https://www.hinologia.org/hcc-293-foi-na-cruz/"
+        },
+        {
+          "label": "Transcrição para conferência — entrada 15",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/main/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 47,
+    "title": "Rocha Eterna",
+    "author": "Augustus Montague Toplady (1740–1778)",
+    "portugueseCredit": "Versão em português: Henry Maxwell Wright (1849–1931)",
+    "category": "worship",
+    "verses": [
+      "Rocha eterna, meu Jesus,\nQue, por mim, na amarga cruz,\nFoste morto em meu lugar,\nMorto para me salvar;\nEm Ti quero me esconder,\nSó Tu podes me valer.",
+      "Minhas obras, eu bem sei,\nNada valem ante a lei;\nSe eu chorasse sem cessar.\nTrabalhasse sem cansar,\nTudo inútil, tudo em vão!\nSó em Ti há salvação.",
+      "Nada trago a Ti, Senhor!\n'Spero só em Teu amor!\nTodo indigno e imundo sou,\nEis, sem Ti, perdido estou!\nNo Teu sangue, ó Salvador,\nLava um pobre pecador.",
+      "Quando a morte me chamar,\nE ante Ti me apresentar,\nRocha eterna, meu Jesus,\nQue por mim, na amarga cruz,\nFoste morto em meu lugar,\nQuero em Ti só me abrigar."
+    ],
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1931. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2001. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "Hymnary: texto português, autoria e tradutor",
+          "url": "https://www.hymnary.org/text/rocha_eterna_meu_jesus_que_por_mim_na"
+        },
+        {
+          "label": "Hinologia: biografia de Henry Maxwell Wright",
+          "url": "https://www.hinologia.org/henry-maxwell-wright/"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 59,
+    "title": "Eu creio, Sim",
+    "author": "Frida Vingren (1891–1940)",
+    "portugueseCredit": "Letra em português atribuída a Frida Vingren",
+    "category": "worship",
+    "verses": [
+      "Té conhecer o amor sem fim,\nUm pecador fui eu;\nEm o meu pensar não houve lugar\nPara Cristo e o céu.",
+      "Pois, quando vi Jesus por mim,\nSofrendo sobre a cruz,\nO meu coração, sem hesitação,\nRecebeu o amor e a luz.",
+      "Com lágrimas, pedi perdão,\nE dor, também senti;\nVeio, então, Jesus, e a mim falou:\n“Foi por ti que Eu morri”.",
+      "Eu sei que Deus, no Filho Seu,\nMe vê perfeito e são;\nNão há mais temor, só bendito amor,\nGozo no meu coração."
+    ],
+    "chorus": "Eu creio, sim, Já creio, sim,\nJesus morreu por mim;\nPelo sangue Seu, que Ele verteu,\nLibertado fui por fim.",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1940. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2010. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "Hymnary: Té conhecer o amor sem fim, autoria",
+          "url": "https://hymnary.org/person/Vingren_Frida"
+        },
+        {
+          "label": "Agência Câmara: vida e falecimento de Frida",
+          "url": "https://www.camara.leg.br/noticias/1103353-entra-em-vigor-lei-que-cria-o-dia-nacional-da-musica-gospel/"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 126,
+    "title": "Bem-aventurança do Crente",
+    "author": "Emil Gustafson (1862–1900)",
+    "portugueseCredit": "Versão em português: Frida Vingren (1891–1940)",
+    "verses": [
+      "Bem-aventurado o que confia\nNo Senhor, como fez Abraão\nEle creu, ainda que não via\nE, assim, a fé não foi em vão\nÉ feliz quem segue, fielmente\nNos caminhos santos do Senhor\nNa tribulação é paciente\nEsperando no seu Salvador",
+      "Os heróis da Bíblia Sagrada\nNão fruíram logo seus troféus\nMas levaram sempre a cruz pesada\nPara obter poder dos céus\nE depois, saíram pelo mundo\nComo mensageiros do Senhor\nCom coragem e amor profundo\nProclamando Cristo, o Salvador",
+      "Quem quiser de Deus ter a coroa\nPassará por mais tribulação\nÀs alturas santas ninguém voa\nSem as asas da humilhação\nO Senhor tem dado aos Seus queridos\nParte do Seu glorioso ser\nQuem no coração for mais ferido\nMais daquela glória há de ter",
+      "Quando aqui as flores já fenecem\nAs do céu começam a brilhar\nQuando as esperanças desvanecem\nO aflito crente vai orar\nOs mais belos hinos e poesias\nForam escritos em tribulação\nE do céu, as lindas melodias\nSe ouviram, na escuridão",
+      "Sim, confia tu, inteiramente\nNa imensa graça do Senhor\nSeja de ti longe o desalento\nE confia no Seu santo amor\nAleluia seja a divisa\nDo herói e todo o vencedor\nE do céu mais forte vem a brisa\nQue te leva ao seio do Senhor"
+    ],
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-27",
+      "basis": "Letra original atribuída a Emil Gustafson (falecido em 1900) e versão em português atribuída a Frida Vingren (falecida em 1940). Prazo geral do art. 41 da Lei 9.610/1998: 70 anos a partir de 1º de janeiro seguinte ao falecimento. Não foram incorporados arranjos, cifras, gravações, comentários ou ilustrações de terceiros.",
+      "textNote": "Texto tradicional em cinco estrofes. Quebras de linha e apresentação preparadas para leitura no app; não reproduz o projeto gráfico de uma edição comercial.",
+      "sources": [
+        {
+          "label": "Texto para conferência — hino 126",
+          "url": "https://aharpacristaonline.com.br/letras/126-bem-aventuranca-do-crente.html"
+        },
+        {
+          "label": "Agência Câmara: Frida Vingren, datas e hino 126",
+          "url": "https://www.camara.leg.br/noticias/1103353-entra-em-vigor-lei-que-cria-o-dia-nacional-da-musica-gospel/"
+        },
+        {
+          "label": "Pesquisa UNISINOS: autoria original e versão em português",
+          "url": "https://repositorio.jesuita.org.br/bitstream/handle/UNISINOS/6867/Moab%2BC%C3%A9sar%2BCarvalho%2BCosta_.pdf?sequence=1"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm"
+        }
+      ]
+    }
+  },
+  {
+    "number": 187,
+    "title": "Mais Perto Meu Deus de Ti!",
+    "author": "Sarah Flower Adams (1805–1848)",
+    "portugueseCredit": "Versão em português: João Gomes da Rocha (1861–1947)",
+    "category": "worship",
+    "verses": [
+      "Mais perto quero estar\nMeu Deus, de Ti!\nInda que seja a dor\nQue me una a Ti,\nSempre hei de suplicar\nMais perto quero estar\nMais perto quero estar\nMeu Deus, de Ti!",
+      "Andando triste, aqui\nNa solidão,\nPaz e descanso a mim\nTeus braços dão;\nNas trevas vou sonhar,\nMais perto quero estar,\nMais perto quero estar,\nMeu Deus, de Ti!",
+      "Minh'alma cantará\nA Ti, Senhor!\nE em Betel alçará\nPadrão de amor,\nEu sempre hei de rogar\nMais perto quero estar,\nMais perto quero estar,\nMeu Deus, de Ti!",
+      "E, quando Cristo, enfim,\nMe vier chamar,\nNos céus com serafins,\nIrei morar.\nEntão me alegrarei\nPerto de Ti, meu Rei.\nPerto de Ti, meu Rei,\nMeu Deus, de Ti!"
+    ],
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1947. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2017. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. A referência bibliográfica de edição de 2011 traz aviso histórico de copyright da tradução em 1975. A análise é do texto tradicional atribuído ao tradutor falecido em 1947, não de uma eventual adaptação nova de terceiros.",
+      "sources": [
+        {
+          "label": "Hymnary: autoria, tradução de 1888 e primeira linha",
+          "url": "https://www.hymnary.org/hymn/HPCC2011/399"
+        },
+        {
+          "label": "Portal Luterano: João Gomes da Rocha, 1861–1947",
+          "url": "https://www.luterano.org.br/joao-gomes-da-rocha-1861-1947/"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 198,
+    "title": "Jesus o Bom Amigo",
+    "author": "Charles William Fry (falecido em 1882)",
+    "portugueseCredit": "Versão em português: Justus Henry Nelson (falecido em 1937)",
+    "category": "worship",
+    "verses": [
+      "Achei um bom amigo,\nJesus, o Salvador,\nO escolhido dos milhares para mim;\nDos vales é o lírio; é o forte Mediador,\nQue me purifica e guarda para Si,\nConsolador amado, meu protetor do mal,\nSolicitude minha toma a Si.",
+      "Levou-me as dores todas,\nAs mágoas lhe entreguei;\nMinha fortaleza é, na tentação.\nDeixei, por Ele tudo; os ídolos queimei;\nEle me conserva santo o coração,\nQue o mundo me abandone; persiga o tentador;\nJesus me guarda até da vida o fim.",
+      "Não desampara nunca,\nNem me abandonará,\nSe fiel e obediente eu viver;\nUm muro é de fogo, que me protegerá,\nTé que venha a mim o tempo de morrer,\nAo céu então voando, Sua glória eu verei\nOnde a dor e a morte nunca vêm."
+    ],
+    "chorus": "Dos vales é o lírio, a estrela da manhã,\nO escolhido dos milhares para mim.\nConsolador amado, meu protetor do mal,\nSolicitude minha toma a Si,\nDos vales é o lírio, a estrela da manhã,\nO escolhido dos milhares para mim.",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1937. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2007. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "Hino 198: créditos e transcrição para comparação",
+          "url": "https://www.hinosdaharpa.org/2019/04/hino-198-harpa-crista.html"
+        },
+        {
+          "label": "Hymnary: original de Charles W. Fry",
+          "url": "https://hymnary.org/text/i_have_found_a_friend_in_jesus_hes_every"
+        },
+        {
+          "label": "Hinologia: Justus Henry Nelson",
+          "url": "https://www.hinologia.org/justus-henry-nelson/"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 578,
+    "title": "Sossegai!",
+    "author": "Mary Ann Baker (falecida em 1925, conforme pesquisa biográfica do Hymnary)",
+    "portugueseCredit": "Versão em português: William Edwin Entzminger (1859–1930)",
+    "category": "worship",
+    "verses": [
+      "— Ó Mestre! O mar se revolta:\nAs ondas nos dão pavor:\nO céu se reveste de trevas:\nNão temos um Salvador!\nNão se te dá que morramos?\nPodes assim dormir.\nSe a cada momento nos vemos,\nSim, prestes a submergir?",
+      "— Mestre, na minha tristeza\nEstou quase a sucumbir:\nA dor que perturba minha alma,\nOh! Peço-te, vem banir!\nDe ondas do mal que me encobrem,\nQuem me fará sair?\nPereço, sem ti, oh! meu Mestre!\nVem logo, vem me acudir!",
+      "— Mestre, chegou a bonança,\nEm paz eis o céu e o mar!\nO meu coração goza calma\nQue não poderá findar.\nFica comigo, oh! meu Mestre,\nDono da Terra e Céu,\nE assim chegarei bem seguro\nAo porto, destino meu."
+    ],
+    "chorus": "— “As ondas atendem ao meu mandar:\nSossegai!\nSeja o encapelado mar\nA ira dos homens, o gênio do mal:\nTais águas não podem a nau tragar,\nQue leva o Senhor, Rei do Céu e mar,\nPois todos ouvem o meu mandar:\nSossegai! — sossegai!\nConvosco estou para vos salvar:\nSim, sossegai!”",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1930. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2000. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Há biografias antigas que informam 1921 para Baker; o Hymnary registra pesquisa posterior com falecimento em 1925. Em ambos os casos o último falecimento considerado permanece o de Entzminger em 1930.",
+      "sources": [
+        {
+          "label": "Hymnary: letra original e tradução de 1903",
+          "url": "https://www.hymnary.org/text/mestre_o_mar_se_revolta_as_ondes_nos_dao"
+        },
+        {
+          "label": "Hymnary: pesquisa biográfica de Mary Ann Baker",
+          "url": "https://www.hymnary.org/person/Baker_MaryAnn"
+        },
+        {
+          "label": "Hinologia: William Entzminger",
+          "url": "https://www.hinologia.org/william-entzminger/"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 637,
+    "title": "Hino à Bandeira Nacional",
+    "author": "Olavo Bilac (1865–1918)",
+    "portugueseCredit": "Letra original em português",
+    "category": "civic",
+    "verses": [
+      "Salve lindo pendão da esperança!\nSalve, símbolo augusto da paz!\nTua nobre presença à lembrança\nA grandeza da Pátria nos traz.",
+      "Em teu seio formoso retratas\nEste céu de puríssimo azul,\nA verdura sem-par destas matas,\nE o esplendor do Cruzeiro do Sul.",
+      "Contemplando teu vulto sagrado,\nCompreendemos o nosso dever,\nE o Brasil. por seus filhos amado,\nPoderoso e feliz há de ser.",
+      "Sobre a imensa nação brasileira,\nNos momentos de festa ou de dor,\nPaira sempre, sagrada bandeira,\nPavilhão da justiça e do amor!"
+    ],
+    "chorus": "Recebe o afeto que se encerra\nEm nosso peito juvenil,\nQuerido símbolo da terra,\nDa amada terra do Brasil!",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1918. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 1988. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "Câmara dos Deputados: texto e autoria do Hino à Bandeira",
+          "url": "https://plenarinho.leg.br/index.php/2018/10/hino-a-bandeira-nacional/"
+        },
+        {
+          "label": "Academia Brasileira de Letras: Olavo Bilac",
+          "url": "https://academia.org.br/academicos/olavo-bilac"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 638,
+    "title": "Hino Nacional Brasileiro",
+    "author": "Joaquim Osório Duque-Estrada (1870–1927)",
+    "portugueseCredit": "Letra original em português",
+    "category": "civic",
+    "verses": [
+      "Ouviram do Ipiranga as margens plácidas\nDe um povo heróico o brado retumbante,\nE o sol da liberdade, em raios fúlgidos,\nBrilhou no céu da Pátria nesse instante.\nSe o penhor dessa igualdade\nConseguimos conquistar com braço forte,\nEm teu seio, ó liberdade,\nDesafia o nosso peito á própria morte!\nO Pátria amada, idolatrada, salve! salve!\nBrasil, um sonho intenso, um raio vívido\nDe amor e de esperança à terra desce,\nSe em teu formoso céu, risonho e límpido,\nA imagem do Cruzeiro resplandece.\nGigante pela própria natureza,\nÉs belo, és forte, impávido, colosso,\nE o teu futuro espelha essa grandeza.",
+      "Deitado eternamente em berço esplêndido,\nAo som do mar e à luz do céu profundo,\nFulguras, ó Brasil, florão da América,\nIluminado ao sol do Novo Mundo!\nDo que a terra mais garrida\nTeus risonhos, lindos campos têm mais flores,\n“Nossos bosques têm mais vida,\nNossa vida”, no teu seio, “mais amores”.\nÓ Pátria amada, idolatrada, salve! salve!\nBrasil, de amor eterno seja símbolo\nO lábaro que ostentas estrelado,\nE diga o verde louro desta flâmula:\n“Paz no futuro e glória no passado\".\nMas, se ergues da justiça a clava forte,\nVerás que um filho teu não foge à luta,\nNem teme, quem te adora, a própria morte."
+    ],
+    "chorus": "Terra adorada, entre outras mil és tu, Brasil,\nÓ Pátria amada!\nDos filhos deste solo és mãe gentil,\nPátria amada, Brasil!",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1927. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 1997. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Incluído somente o texto do apêndice cívico. Não há gravação, arranjo ou alteração da letra para execução musical.",
+      "sources": [
+        {
+          "label": "Biblioteca Nacional: história e autoria do Hino Nacional",
+          "url": "https://bndigital.bn.gov.br/artigos/13-de-abril-dia-do-hino-nacional-brasileiro/"
+        },
+        {
+          "label": "Academia Brasileira de Letras: Osório Duque-Estrada",
+          "url": "https://www.academia.org.br/academicos/osorio-duque-estrada"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 639,
+    "title": "Hino da Independência",
+    "author": "Evaristo da Veiga (1799–1837)",
+    "portugueseCredit": "Letra original em português",
+    "category": "civic",
+    "verses": [
+      "Já podeis da Pátria filhos\nVer contente a mãe gentil,\nJá raiou a liberdade\nNo horizonte do Brasil!\nJá raiou a liberdade\nJá raiou a liberdade\nNo horizonte do Brasil.",
+      "Mal soou na serra ao longe\nNosso grito varonil;\nNos imensos ombros, logo,\nA cabeça ergue o Brasil!\nNos imensos ombros, logo,\nNos imensos ombros, logo,\nA cabeça ergue o Brasil.",
+      "Os grilhões que nos forjava\nDa perfídia astuto ardil\nHouve mão mais poderosa\nZombou deles o Brasil.\nHouve mão mais poderosa\nHouve mão mais poderosa\nZombou deles o Brasil!",
+      "Parabéns, ó brasileiros\nJá com garbo juvenil\nDo Universo entre as nações\nResplandece a do Brasil.\nDo Universo entre as nações\nDo Universo entre as nações\nResplandece a do Brasil."
+    ],
+    "chorus": "Brava gente brasileira\nLonge vá temor servil\nOu ficar a Pátria livre\nOu morrer pelo Brasil\nOu ficar a Pátria livre\nOu morrer pelo Brasil",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1837. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 1907. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "MultiRio: Evaristo da Veiga e Hino da Independência",
+          "url": "https://multi.rio/index.php/historia-do-brasil/rio-de-janeiro/65-o-rio-de-janeiro-novamente-corte-o-imperio/2871-no-brasil-e-no-rio-de-janeiro-ja-raiou-a-liberdade"
+        },
+        {
+          "label": "IMSLP: publicação histórica e autoria do poema",
+          "url": "https://imslp.org/wiki/Hymno%2C_Imperial%2C_e_Constitucional_%28Pedro_I%2C_Dom%29"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  },
+  {
+    "number": 640,
+    "title": "Hino da Proclamação da República do Brasil",
+    "author": "Medeiros e Albuquerque (1867–1934)",
+    "portugueseCredit": "Letra original em português",
+    "category": "civic",
+    "verses": [
+      "Seja um pálio de luz desdobrado\nSob a larga amplidão destes céus\nEste canto rebel, que o passado\nVem remir dos mais torpes labéus!\nSeja um hino de glória que fale\nDe esperanças de um novo porvir!\nCom visões de triunfos embale\nQuem por ele lutando surgir!",
+      "Nós nem cremos que escravos outrora\nTenha havido em tão nobre pais...\nHoje, o rubro lampejo da Aurora\nAcha irmãos, não tiranos hostis.\nSomos todos iguais! Ao futuro\nSaberemos, unidos, levar\nNosso augusto estandarte que, puro,\nBrilha, ovante, da Pátria no altar!",
+      "Se é mister que de pertos valentes\nHaja sangue no nosso pendão,\nSangue vivo do herói Tiradentes\nBatizou este audaz pavilhão!\nMensageiros da paz, paz queremos,\nE de amor nossa força e poder,\nMas da guerra nos transes supramos\nHeis de ver-nos lutar e vencer!",
+      "Do Ipiranga é preciso que o brado\nSeja um grito soberbo de fé!\nO Brasil já surgiu libertado,\nSobre as púrpuras régias de pé!\nEia, pois, brasileiros, avante!\nVerdes louros colhamos louçãos!\nSeja o nosso pais, triunfante,\nLivre terra de livres irmãos!"
+    ],
+    "chorus": "Liberdade! Liberdade!\nAbre as asas sobre nós!\nDas lutas na tempestade\nDá que ouçamos tua voz!",
+    "rights": {
+      "status": "public-domain",
+      "territory": "BR",
+      "reviewedAt": "2026-10-28",
+      "basis": "Análise individual dos créditos e da versão em português, com último falecimento considerado em 1934. Pela regra geral do art. 41 da Lei 9.610/1998, o prazo se encerrou ao final de 2004. Trata-se de conclusão para uso do texto tradicional no Brasil, sem arranjos ou gravações.",
+      "textNote": "Quebras de linha organizadas para leitura. Grafia e pontuação seguem a transcrição tradicional conferida; não há reprodução de ilustrações ou comentários editoriais.",
+      "sources": [
+        {
+          "label": "Biblioteca Nacional: autoria e datas",
+          "url": "https://bdlb.bn.gov.br/acervo/browse?type=author&value=Albuquerque%2C+Medeiros+e%2C+1867-1934"
+        },
+        {
+          "label": "Câmara dos Deputados: decreto de 1890 e autoria da poesia",
+          "url": "https://www2.camara.leg.br/legin/fed/decret/1824-1899/decreto-171-20-janeiro-1890-497697-norma-pe.html"
+        },
+        {
+          "label": "Transcrição conferida — revisão fixa",
+          "url": "https://github.com/DanielLiberato/Harpa-Crista-JSON-640-Hinos-Completa/blob/e8ff5ca2f9c9e7d9892c0c68f2ad45eea3273127/harpa_crista_640_hinos.json"
+        },
+        {
+          "label": "Lei 9.610/1998, artigos 14 e 41",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/1998/lei-9610-19-fevereiro-1998-365399-normaatualizada-pl.html"
+        }
+      ]
+    }
+  }
+]

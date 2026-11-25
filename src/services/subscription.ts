@@ -1,8 +1,5 @@
+import { billing } from './billing';
 import type { SubscriptionAdapter } from './subscription-access';
 
-// Replace only after connecting store purchases and trusted receipt validation.
-// Unconfigured builds always start free; there is no purchase or fake restore.
-export const subscriptionAdapter: SubscriptionAdapter = {
-  configured: false,
-  async read() { return null; },
-};
+// Native billing is inactive until the store and public SDK key are configured.
+export const subscriptionAdapter: SubscriptionAdapter = billing;

@@ -1,6 +1,6 @@
 # Conta — Bíblia VP
 
-O pacote implementa acesso opcional com Firebase Authentication. A leitura e os dados locais continuam disponíveis sem conta. Não há projeto Firebase conectado nesta entrega, nem cadastro real criado durante os testes.
+O pacote implementa acesso opcional com Firebase Authentication. A leitura e os dados locais continuam disponíveis sem conta. A autenticação Google foi ativada e validada pelo usuário em development build. A sincronização manual opcional está documentada em [CLOUD-SYNC.md](CLOUD-SYNC.md).
 
 ## O que foi implementado
 
@@ -27,7 +27,7 @@ As variáveis `EXPO_PUBLIC_*` são configuração pública e entram no aplicativ
 
 1. No mesmo projeto Firebase, ative **Google** em Authentication e configure o e-mail de suporte. Ajuste a tela de consentimento OAuth e usuários de teste no Google Cloud quando aplicável.
 2. Para web, inclua o domínio usado pelo app em Authentication → Settings → Authorized domains. Para testes locais, confira explicitamente `localhost`. O fluxo usa o popup do Firebase e seu domínio de autenticação.
-3. Para Android/iOS, preencha `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` com o cliente OAuth **Web** do mesmo projeto. O SDK nativo pede um ID token para esse cliente; um ID de cliente Android não deve ser usado nesse campo.
+3. Para Android/iOS, preencha `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID` com o cliente OAuth **Web** configurado para o login. Se os clientes Google pertencem a outro projeto, autorize os IDs externos no provedor Google do Firebase, conforme a configuração validada deste app. O SDK nativo pede um ID token para esse cliente; um ID de cliente Android não deve ser usado nesse campo.
 4. Defina `APP_ANDROID_PACKAGE` e registre esse mesmo identificador no Firebase/Google. Cadastre as impressões SHA-1 e SHA-256 dos certificados usados na versão de desenvolvimento e na versão distribuída. O cliente OAuth Android precisa corresponder ao pacote e ao certificado efetivos.
 5. Para iOS, defina `APP_IOS_BUNDLE_IDENTIFIER`, registre esse identificador e preencha `EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID` com o cliente OAuth iOS correspondente. `app.config.ts` deriva o esquema de retorno do cliente iOS e aplica o plugin Google quando esse ID está preenchido.
 6. Prepare uma **development build** com esses valores e teste em aparelho. O Google nativo **não funciona no Expo Go**; nessa prévia, a opção explica a limitação e mantém o e-mail disponível. Nenhum build externo, projeto EAS, arquivo de assinatura ou aplicativo nativo foi criado por este pacote.
@@ -38,7 +38,7 @@ O SDK Google é carregado somente depois de verificar a execução fora do Expo 
 
 `AuthAdapter` separa as operações da interface e do provedor Firebase. A interface recebe somente UID, nome, e-mail, estado de verificação e provedores; não recebe tokens do SDK. Senhas ficam apenas nos campos durante a operação e são apagadas ao alternar o formulário ou sair da tela.
 
-**Este pacote não sincroniza dados.** Favoritos, notas, histórico, planos e agenda continuam pertencendo ao armazenamento local do aparelho e ficam disponíveis ao sair ou trocar de conta. A interface informa esse comportamento. O backup existente exporta apenas seus dados permitidos; não exporta sessão Firebase, senha ou configurações de autenticação. Para sincronização futura, será necessário definir associação dos dados à conta, migração, conflitos e regras de acesso no servidor.
+**A conta permite sincronização manual opcional em Meus dados**, com prévia, conflitos e vínculo da coleção local ao UID, conforme [CLOUD-SYNC.md](CLOUD-SYNC.md). Entrar na conta não inicia envios automáticos. Favoritos, notas, histórico, planos e agenda continuam pertencendo ao armazenamento local do aparelho e ficam disponíveis ao sair ou trocar de conta. A interface informa esse comportamento. O backup existente exporta apenas seus dados permitidos; não exporta sessão Firebase, senha ou configurações de autenticação. A sincronização manual precisa de Firestore e regras publicados, além de validação real entre aparelhos. A coleção local vinculada não pode ser sincronizada por outra conta.
 
 ## Arquivos deste pacote
 

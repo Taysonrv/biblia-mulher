@@ -23,19 +23,19 @@ export function checkBackupSize(text: string) {
     if (bytes > MAX_BACKUP_BYTES) throw Error('Escolha um backup de até 8 MB.');
   }
 }
-async function decodeData(values: DataSnapshot): Promise<BackupData> {
+export async function decodeData(values: DataSnapshot): Promise<BackupData> {
   if (DATA_KEYS.some(key => values[key] !== null && !values[key]?.length)) throw Error('Dados locais inválidos. Seus registros foram preservados.');
   const raw = new Map<string, string | null>(Object.entries(values));
   const storage = { async getItem(key: string) { return raw.get(key) ?? null; }, async setItem() { throw Error('Somente leitura.'); } };
   const reading = (await createReadingRepository(storage).read()).map(({ book, chapter, verse, favorite, note }) => ({ book, chapter, verse, favorite, note }));
   const state = await createPlanRepository(storage).read();
   const plans: PlanState = { version: 1, activePlanId: state.activePlanId, plans: state.plans.map(({ planId, startedAt, completed }) => ({ planId, startedAt, completed: [...completed] })) };
-  const events = decodeAgenda(values[AGENDA_STORAGE_KEY]).map(({ id, title, category, startsAt, location, notes, reminderMinutes, reminderState }) => ({ id, title, category, startsAt, location, notes, reminderMinutes, reminderState }));
+  const events = decodeAgenda(values[AGENDA_STORAGE_KEY]).map(({ id, title, category, startsAt, location, notes, reminderMinutes, reminderState, sermonId }) => ({ id, title, category, startsAt, location, notes, reminderMinutes, reminderState, ...(sermonId ? { sermonId } : {}) }));
   const sermons = decodeSermons(values[SERMON_KEY]);
   const studies = decodePersonalStudies(values[PERSONAL_STUDIES_KEY]);
   return { reading, plans, events, sermons, studies };
 }
-function encodeData(data: BackupData): DataSnapshot {
+export function encodeData(data: BackupData): DataSnapshot {
   return {
     [READING_KEY]: JSON.stringify({ version: 2, translation: 'almeida-1911', entries: data.reading }),
     [PLAN_KEY]: JSON.stringify(data.plans),

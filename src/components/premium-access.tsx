@@ -13,7 +13,7 @@ export function PremiumBoundary({ feature, backTo, children }: PropsWithChildren
   return <MinisterialScreen title={info.title} backTo={backTo} preferBackTo>
     <View style={ui.card}>
       <IconBadge name="lock-closed-outline" violet />
-      <Text style={ui.eyebrow}>BÍBLIA SMART PREMIUM</Text>
+      <Text style={ui.eyebrow}>BÍBLIA VP PREMIUM</Text>
       <Text accessibilityRole="header" style={ui.heading}>Aprofunde sua jornada.</Text>
       <Text style={ui.body}>{info.description}</Text>
       <Text style={ui.body}>{subscription.ready ? 'Este recurso faz parte da assinatura Premium.' : 'Verificando seu acesso…'}</Text>
