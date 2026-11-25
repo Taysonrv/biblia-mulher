@@ -22,7 +22,7 @@ export default function HomeScreen() {
   return <ScreenFrame>
     <View style={styles.header}>
       <View style={[ui.row, { flex: 1, minWidth: 0 }]}><IconBadge name="book-outline" /><View style={{ flex: 1, minWidth: 0 }}>
-        <Text style={styles.brand}>Bíblia Smart</Text><Text style={styles.brandSubtitle}>FÉ PARA A VIDA</Text>
+        <Text style={styles.brand}>Bíblia VP</Text><Text style={styles.brandSubtitle}>VERDADE PRÁTICA</Text>
       </View></View>
       <Pressable accessibilityRole="button" accessibilityLabel="Abrir meu perfil" style={({ pressed }) => [styles.profile, pressed && ui.pressed]} onPress={() => router.push('/profile')}>
         <Ionicons name="person-outline" size={21} color={p.text} />
