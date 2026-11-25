@@ -1,4 +1,4 @@
-# Conta — Bíblia Smart
+# Conta — Bíblia VP
 
 O pacote implementa acesso opcional com Firebase Authentication. A leitura e os dados locais continuam disponíveis sem conta. Não há projeto Firebase conectado nesta entrega, nem cadastro real criado durante os testes.
 
