@@ -19,7 +19,7 @@ export default function SubscriptionScreen() {
       <ActionButton secondary label={state.hasPremium ? 'Continuar lendo a Bíblia' : 'Continuar no gratuito'} onPress={() => { state.setPreview(false); router.navigate('/bible'); }} />
     </View>
     <OrbitCard violet>
-      <IconBadge name="sparkles-outline" violet /><Text accessibilityRole="header" style={ui.heading}>Bíblia Smart Premium</Text>
+      <IconBadge name="sparkles-outline" violet /><Text accessibilityRole="header" style={ui.heading}>Bíblia VP Premium</Text>
       <Text style={ui.cardTitle}>Tudo do gratuito, mais:</Text>
       {Object.values(PREMIUM_FEATURES).map(item => <View key={item.title} style={{ gap: 4 }}><Text style={ui.cardTitle}>✓ {item.title}</Text><Text style={ui.body}>{item.description}</Text></View>)}
       <Text style={ui.body}>Os esboços desta versão são gerados localmente. Uma integração com inteligência artificial será avaliada em uma próxima etapa.</Text>
