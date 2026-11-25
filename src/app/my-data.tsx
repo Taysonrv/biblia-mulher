@@ -36,7 +36,7 @@ export default function MyDataScreen() {
   }
   async function exportData() {
     const result = await backupRepository.export();
-    const name = 'biblia-smart-backup-' + result.file.createdAt.replace(/[:.]/g, '-') + '.json';
+    const name = 'biblia-vp-backup-' + result.file.createdAt.replace(/[:.]/g, '-') + '.json';
     const destination = await saveBackupFile(result.text, name);
     if (focused.current) setMessage(destination === 'download' ? 'Download solicitado. Confira o arquivo na pasta de downloads.' : 'Menu de compartilhamento aberto. Guarde o arquivo no destino escolhido para concluir seu backup.');
   }
@@ -59,7 +59,7 @@ export default function MyDataScreen() {
     <Text accessibilityRole="header" style={ui.heading}>Salvos neste aparelho</Text>
     {counts ? <CountsCard counts={counts} /> : <ActionButton secondary label="Carregar meus dados" disabled={!!busy} onPress={() => void action('load', async () => { setCounts(await backupRepository.current()); })} />}
     <View style={ui.card}><Text style={ui.cardTitle}>Guardar minha jornada</Text><Text style={ui.body}>O arquivo inclui suas anotações, reflexões de estudos e notas pessoais dos esboços. Você escolhe onde guardá-lo. O app não envia uma cópia automaticamente.</Text><ActionButton label="Exportar backup" busy={busy === 'export'} disabled={!!busy || !counts} onPress={() => void action('export', exportData)} /></View>
-    <View style={ui.card}><Text style={ui.cardTitle}>Trazer um backup</Text><Text style={ui.body}>Selecione um arquivo da Bíblia Smart de até 8 MB. Confira a prévia antes de combinar os dados. Seus registros atuais serão mantidos.</Text><ActionButton secondary label="Selecionar arquivo de backup" busy={busy === 'import'} disabled={!!busy} onPress={() => void action('import', importData)} /></View>
+    <View style={ui.card}><Text style={ui.cardTitle}>Trazer um backup</Text><Text style={ui.body}>Selecione um arquivo da Bíblia VP de até 8 MB. Confira a prévia antes de combinar os dados. Seus registros atuais serão mantidos.</Text><ActionButton secondary label="Selecionar arquivo de backup" busy={busy === 'import'} disabled={!!busy} onPress={() => void action('import', importData)} /></View>
     {!!error && <Text accessibilityRole="alert" style={{ color: p.danger, lineHeight: 23 }}>{error}</Text>}
     {!!message && <View style={ui.card}><Text accessibilityLiveRegion="polite" style={ui.body}>{message}</Text></View>}
     {preview && <View style={{ gap: 18 }}>
