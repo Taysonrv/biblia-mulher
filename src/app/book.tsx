@@ -154,11 +154,18 @@ function createStyles(p: Palette) { return StyleSheet.create({
     borderColor: p.border,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 0,
   },
 
   chapterNumber: {
     fontSize: 15,
+    lineHeight: 20,
     fontWeight: '700',
     color: p.accent,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    includeFontPadding: false,
+    margin: 0,
+    padding: 0,
   },
 }); }
