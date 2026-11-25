@@ -55,7 +55,7 @@ export async function parseBackup(raw: string): Promise<BackupFile> {
     const data = await decodeData(encodeData({ ...file.data, sermons: file.version === 1 && file.data.sermons === undefined ? [] : file.data.sermons,
       studies: file.version < 3 && file.data.studies === undefined ? [] : file.data.studies }));
     return { app: 'biblia-smart', version: file.version, createdAt: new Date(file.createdAt).toISOString(), data };
-  } catch { throw Error('Este arquivo não é um backup válido da Bíblia Smart ou usa uma versão incompatível. Nada foi alterado.'); }
+  } catch { throw Error('Este arquivo não é um backup válido da Bíblia VP ou usa uma versão incompatível. Nada foi alterado.'); }
 }
 const verseId = (entry: ReadingEntry) => entry.book + ':' + entry.chapter + ':' + entry.verse;
 const eventContent = (event: AgendaEvent) => JSON.stringify([event.title.trim(), event.category, new Date(event.startsAt).toISOString(), event.location.trim(), event.notes.trim(), event.reminderMinutes]);
