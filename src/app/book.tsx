@@ -173,8 +173,6 @@ function createStyles(p: Palette) { return StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     includeFontPadding: false,
-    // Compensa a posição visual dos algarismos na fonte do Android.
-    transform: [{ translateY: -7 }],
     margin: 0,
     padding: 0,
   },
