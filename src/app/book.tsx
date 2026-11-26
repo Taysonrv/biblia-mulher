@@ -38,7 +38,10 @@ export default function BookScreen() {
   return (
     <SafeAreaView edges={['top', 'left', 'right']} style={styles.safeArea}>
       <ScrollView
+        style={styles.scrollView}
         showsVerticalScrollIndicator={false}
+        overScrollMode="never"
+        bounces={false}
         contentContainerStyle={styles.container}
       >
         <Pressable
@@ -85,9 +88,14 @@ function createStyles(p: Palette) { return StyleSheet.create({
     backgroundColor: p.background,
   },
 
+  scrollView: {
+    flex: 1,
+    width: '100%',
+  },
+
   container: {
     padding: 20,
-    paddingBottom: 50,
+    paddingBottom: 24,
     width: '100%',
     maxWidth: 680,
     alignSelf: 'center',
