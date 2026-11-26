@@ -20,7 +20,7 @@ Este fluxo depende de monitorar o e-mail de suporte. Testar com conta descartáv
 4. Fazer a operação administrativa em ambiente confiável. Bloquear novas sessões e sincronizações da conta antes da limpeza. Desativar uma conta no Authentication por si só não deve ser tratado como garantia de bloqueio imediato das requisições Firestore de sessões já emitidas. Para garantia de exclusão, preparar bloqueio por UID nas regras/backend e verificar sua efetividade antes da limpeza. **Esse bloqueio e seus testes ainda são pendência técnica.**
 5. Remover documentos e subcoleções associados ao UID, incluindo `users/{uid}/sync/journey`. Excluir apenas o documento pai não remove subcoleções. Conferir inventário de outros serviços antes de declarar exclusão total. A IA não foi ativada; se futuramente houver registros de uso ou compras, incluir seus ciclos e obrigações de retenção.
 6. Confirmar a remoção dos dados remotos; só depois remover o usuário do Authentication. Tratar falhas parciais como pendentes e repetir a limpeza com verificação. Registrar conclusão mínima para responder ao pedido, sem copiar textos pessoais para logs.
-7. Confirmar ao solicitante o escopo removido e quaisquer retenções. Explicar que cópias locais em aparelhos, arquivos exportados e a própria conta Google não são removidos pelo pedido ao Bíblia Smart.
+7. Confirmar ao solicitante o escopo removido e quaisquer retenções. Explicar que cópias locais em aparelhos, arquivos exportados e a própria conta Google não são removidos pelo pedido ao Bíblia VP.
 
 O app não oferece exclusão automática implementada. O caminho de solicitação não equivale a um processo operacional validado. Não declarar essa pendência concluída até testar o atendimento e o bloqueio contra recriação dos dados.
 
