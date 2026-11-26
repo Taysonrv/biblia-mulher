@@ -15,8 +15,8 @@ export default function PrivacyScreen() {
   }
   async function compose(deletion: boolean) {
     setError('');
-    const subject = deletion ? 'Exclusão de conta — Bíblia Smart' : 'Suporte — Bíblia Smart';
-    const body = deletion ? 'Solicito a exclusão da minha conta do Bíblia Smart e dos dados associados na nuvem.\n\nE-mail cadastrado: \n\nEntendo que o atendimento é manual e que arquivos exportados e cópias locais não são apagados remotamente.' : '';
+    const subject = deletion ? `Exclusão de conta — ${legal.app}` : `Suporte — ${legal.app}`;
+    const body = deletion ? `Solicito a exclusão da minha conta do ${legal.app} e dos dados associados na nuvem.\n\nE-mail cadastrado: \n\nEntendo que o atendimento é manual e que arquivos exportados e cópias locais não são apagados remotamente.` : '';
     try { await Linking.openURL(`mailto:${legal.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`); }
     catch { setError('Não foi possível abrir seu aplicativo de e-mail. Copie o endereço abaixo e envie a solicitação pelo seu serviço de e-mail.'); }
   }
@@ -27,7 +27,7 @@ export default function PrivacyScreen() {
       <Text style={ui.body}>Abra uma mensagem para o suporte e envie pelo seu e-mail. O atendimento é manual e exige confirmação de titularidade. Esta ação apenas prepara a mensagem; nenhum dado é apagado ao tocar no botão.</Text>
       <ActionButton label="Preparar pedido de exclusão" onPress={() => void compose(true)} />
       <Text selectable style={ui.body}>{legal.email}</Text>
-      <Text style={ui.body}>Assunto: Exclusão de conta — Bíblia Smart. Envie preferencialmente pelo e-mail cadastrado. Nunca envie senha ou código de acesso.</Text>
+      <Text style={ui.body}>Assunto: Exclusão de conta — {legal.app}. Envie preferencialmente pelo e-mail cadastrado. Nunca envie senha ou código de acesso.</Text>
       {!!error && <Text accessibilityRole="alert" style={{ color: p.danger }}>{error}</Text>}
     </View>
     <View style={ui.card}>
