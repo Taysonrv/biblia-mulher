@@ -1,0 +1,36 @@
+name: Qualidade do Biblia VP
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: TypeScript, lint e testes
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Instalar dependencias
+        run: npm ci
+      - name: Verificar TypeScript
+        run: npx tsc --noEmit
+      - name: Verificar lint
+        run: npm run lint
+      - name: Executar testes do app
+        run: node --test scripts/*.test.cjs
+      - name: Executar testes das funcoes
+        run: node --test functions/*.test.mjs
