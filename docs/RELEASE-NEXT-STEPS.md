@@ -1,4 +1,6 @@
-# Bíblia Smart — próxima etapa
+> Para os bloqueios de publicação atualizados, consulte [Auditoria pré-publicação — 25/11/2026](RELEASE-AUDIT-2026-11-25.md). Este documento preserva o histórico de outubro.
+
+# Bíblia VP — próxima etapa
 
 Decisão do responsável: preparar assinatura desde o lançamento. Ainda não há conta no Play Console.
 
