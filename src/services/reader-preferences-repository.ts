@@ -1,12 +1,12 @@
 export interface ReaderPreferences {
-  size: 'standard' | 'medium' | 'large';
+  size: 'standard' | 'medium' | 'large' | 'extra-large';
   spacing: 'standard' | 'wide';
   layout: 'cards' | 'continuous';
 }
 export const readerDefaults: Readonly<ReaderPreferences> = Object.freeze({ size: 'standard', spacing: 'standard', layout: 'cards' });
 export const readerPreferencesKey = '@biblia-smart/reader-preferences/v1';
 interface Storage { getItem(key: string): Promise<string | null>; setItem(key: string, value: string): Promise<void> }
-const allowed = { size: ['standard', 'medium', 'large'], spacing: ['standard', 'wide'], layout: ['cards', 'continuous'] };
+const allowed = { size: ['standard', 'medium', 'large', 'extra-large'], spacing: ['standard', 'wide'], layout: ['cards', 'continuous'] };
 function validate(value: unknown, partial = false): ReaderPreferences | Partial<ReaderPreferences> {
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw Error('Preferências inválidas.');
   const entries = Object.entries(value);
@@ -14,7 +14,7 @@ function validate(value: unknown, partial = false): ReaderPreferences | Partial<
   return { ...value } as ReaderPreferences;
 }
 export function readerTypography(value: ReaderPreferences) {
-  const fontSize = value.size === 'large' ? 25 : value.size === 'medium' ? 22 : 19;
+  const fontSize = value.size === 'extra-large' ? 30 : value.size === 'large' ? 25 : value.size === 'medium' ? 22 : 19;
   return { fontSize, lineHeight: Math.round(fontSize * (value.spacing === 'wide' ? 1.95 : 1.65)) };
 }
 export function createReaderPreferencesRepository(storage: Storage) {

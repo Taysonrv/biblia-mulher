@@ -1,39 +1,64 @@
-# Build da Bíblia Smart
+# Bíblia VP — builds Android e homologação
 
-O erro `android.package is not defined` foi corrigido em `app.json`. O identificador padrão para Android e iOS é `com.taysonaraujo.bibliasmart`. O `app.config.ts` mantém a opção de substituir pelos campos `APP_ANDROID_PACKAGE` e `APP_IOS_BUNDLE_IDENTIFIER`; vazios, eles usam o padrão estático.
+**Nome público:** Bíblia VP — Verdade Prática. **Pacote Android fixo para a distribuição:** `com.taysonaraujo.bibliasmart`. **Projeto EAS:** `a1115f2c-bec7-44b4-852d-9d69c60bb24e`. **Código de trabalho:** branch `feat/painel-preparacao-ministerial`.
 
-O projeto EAS existente foi preservado: `a1115f2c-bec7-44b4-852d-9d69c60bb24e`, com slug `biblia-mulher`. O nome mostrado no aparelho continua Bíblia Smart.
+## Diferença entre os perfis
 
-## APK para testar no Android
+- **preview:** gera APK para instalação direta, com recursos Premium liberados **somente para testes**, sem cobrança. Utiliza ambiente EAS `production` no perfil histórico de preview; confira as configurações no `eas.json` antes de construir.
+- **production:** usa **ambiente EAS production**, distribuição `store`, `android.buildType: app-bundle`, com Premium de testes **desabilitado**. Gera arquivo AAB; **não envia automaticamente** à Google Play.
+- A geração de AAB por si só **não publica** o aplicativo. A distribuição de testes depende de upload e configuração posterior no Play Console.
+- Não altere o pacote Android após criar o app na Play; a identidade é vinculada ao pacote e à chave de assinatura.
+
+## 1. Conferir o repositório
+
+No PowerShell:
 
 ```powershell
-cd "D:\Tayson\App Biblia\biblia-mulher"
-npx eas-cli@latest build --platform android --profile preview
+cd "D:\Tayson\VSCODE\biblia-mulher"
+git status --short
+git pull --ff-only origin feat/painel-preparacao-ministerial
+npm ci
+npx expo install --check
+npx tsc --noEmit
+npm run lint
+node --test scripts/*.test.cjs
+node --test functions/*.test.mjs
 ```
 
-O perfil `preview` usa distribuição interna e `android.buildType: apk`. Ao terminar a compilação na nuvem, abra no celular o link fornecido pelo EAS e baixe/instale o APK. O build não publica na Play Store.
+Não execute `npm audit fix --force` no SDK 57. Auditorias pendentes e compatibilidade devem ser analisadas separadamente.
 
-## Versão Android para a loja
+## 2. Conferir conta e variáveis do EAS production
+
+```powershell
+npx eas-cli@latest whoami
+npx eas-cli@latest env:list production
+npx eas-cli@latest env:exec production "node scripts/check-release-env.cjs"
+```
+
+É necessário configurar, no painel Expo > Project settings > Environment variables, as variáveis de cliente usadas por Firebase e Google, **no ambiente production**, antes da build: `EXPO_PUBLIC_FIREBASE_API_KEY`, `EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN`, `EXPO_PUBLIC_FIREBASE_PROJECT_ID`, `EXPO_PUBLIC_FIREBASE_APP_ID`, `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID`. Também revise as configurações de OAuth do Android e os fingerprints SHA exigidos para autenticação com Google. O script de diagnóstico só imprime `OK` ou `PENDENTE` para valores sensíveis, nunca as credenciais. **Não compartilhe valores de variáveis, tokens ou arquivos de assinatura em chats ou commits.**
+
+Se o comando de preflight mostrar `PENDENTE`, configurar somente as variáveis ausentes e executar novamente. Variáveis em `.env.local` usadas pelo Expo Go não comprovam configuração da compilação remota.
+
+## 3. Gerar AAB de homologação
+
+Apenas depois do preflight:
 
 ```powershell
 npx eas-cli@latest build --platform android --profile production
 ```
 
-O perfil `production` mantém `autoIncrement: true` e o formato padrão AAB. AAB é destinado à Play Store e não é instalado diretamente como APK. Enviar à loja é uma etapa posterior.
+Se solicitado, configure a assinatura Android via EAS e guarde os acessos. O pacote de produção é `.aab`, **não** um APK instalável diretamente. Confirme no registro do EAS o pacote, versão/código, perfil e ausência de acesso Premium de teste. **Não use `--auto-submit` e não execute `eas submit` nesta fase.**
 
-O identificador iOS também está resolvido. A assinatura e a distribuição iOS exigem configuração própria de credenciais; comece pelo Android para validar o app no aparelho atual.
+## 4. Validar o AAB pelo Google Play Console
 
-O aviso sobre uso do Expo Go não era a causa da falha apresentada. A causa era o identificador ausente na configuração dinâmica. A ausência de variáveis EAS também não causa esse erro: autenticação Firebase/Google e assinaturas permanecem aguardando configuração, como nas versões anteriores. Não adicionar credenciais privadas ao app.
+Crie o cadastro do app no Play Console com o pacote Android existente, envie o AAB à faixa de **teste interno** (ou à faixa de teste fechado aplicável) e instale pelo link oficial da Play. Testes de produção devem verificar: abertura limpa, navegação Bíblia, nomes e capítulos, busca, Salmos 23, compartilhamento, modo claro/escuro, tamanho de fonte, recursos offline, agenda/lembretes, conta Google/e-mail, sincronização e restauração em dois dispositivos, atualização sem perda de dados e privacidade/exclusão de conta. Teste também que **Premium não é liberado gratuitamente** e que compras reais só aparecem após homologação e ativação.
 
-O APK `preview` agora ativa automaticamente o Premium para testes e mostra uma faixa permanente de acesso temporário sem cobrança. O Estúdio de testes também fica disponível para vídeos/áudios locais. O acesso volta ativo ao reiniciar; as prévias de mídia são temporárias. É necessário gerar outro APK para receber esta alteração. O perfil `production` desativa essa liberação. Veja [PREMIUM-TESTING.md](./PREMIUM-TESTING.md). Login real, catálogo remoto e assinatura real ainda dependem da ativação dos serviços.
+A publicação pública continua bloqueada até revisar dados pessoais, exclusão real, direitos de conteúdo, dependências vulneráveis, telas e condições de assinatura. Caso a conta Play seja pessoal e criada depois de 13/11/2023, pode ser exigido teste fechado com 12 testadores por 14 dias contínuos.
 
-## Arquivos alterados e checagens
-
-- `app.json`: pacote Android e bundle identifier iOS.
-- `eas.json`: APK explícito no perfil preview, demais perfis preservados.
-- `.env.example`: orientações sobre os identificadores padrão.
-- `EAS-BUILD.md`: este guia.
-
-`npx expo config --type public --json` confirmou os dois identificadores e o projeto EAS correto. TypeScript e lint foram executados. Nenhum build na nuvem foi iniciado por esta correção; o resultado da próxima compilação depende da execução do comando e das etapas de assinatura do EAS.
-
-Referências: [APK no EAS](https://docs.expo.dev/build-reference/apk/), [perfis de build](https://docs.expo.dev/build/eas-json/) e [configuração Expo SDK 57](https://docs.expo.dev/versions/v57.0.0/config/app/).
+## Referências
+- https://docs.expo.dev/eas/environment-variables/manage/
+- https://docs.expo.dev/eas/environment-variables/usage/
+- https://docs.expo.dev/build/eas-json/
+- https://docs.expo.dev/submit/android/
+- https://support.google.com/googleplay/android-developer/answer/14151465
+- [Auditoria pré-publicação](./RELEASE-AUDIT-2026-11-25.md)

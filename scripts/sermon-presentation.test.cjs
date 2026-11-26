@@ -67,3 +67,10 @@ test('reopening the saved message after a presentation preserves storage and sho
   assert.equal(next.find(section => section.id === 'conclusion').body, 'Conclusão atualizada');
   assert.equal(next.find(section => section.id === 'notes').body, 'Nova nota'); assert.equal(reloaded.updatedAt, edited.updatedAt);
 });
+
+test('complete manuscript is read continuously without placeholder outline or loss of points and prayer', () => {
+  const saved=message(); saved.outline.manuscript='Introdução\n\nI. Um\nII. Dois\nIII. Três\nIV. Quatro\nV. Cinco\n\nOração final';
+  const sections=presentationSections(saved); assert.equal(sections.length,1); assert.equal(sections[0].body,saved.outline.manuscript);
+  assert.equal(movePresentation(sections,'base',1),'manuscript');
+  const notes=presentationSections(saved,true); assert.equal(notes.length,2); assert.equal(notes[1].id,'notes');
+});

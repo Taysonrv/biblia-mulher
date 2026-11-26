@@ -21,7 +21,13 @@ export async function googleLogin(auth: Auth): Promise<'success' | 'cancelled'> 
     const response = await module.GoogleSignin.signIn();
     if (response.type === 'cancelled') return 'cancelled';
     if (!response.data.idToken) throw authFailure('auth/invalid-credential');
-    await signInWithCredential(auth, GoogleAuthProvider.credential(response.data.idToken));
+    try {
+      await signInWithCredential(auth, GoogleAuthProvider.credential(response.data.idToken));
+    } catch (reason) {
+      const code = reason && typeof reason === 'object' && 'code' in reason ? String(reason.code) : 'unknown';
+      console.warn('[Google Auth] Firebase rejeitou autenticacao Google. Codigo:', code);
+      throw reason;
+    }
     return 'success';
   } catch (reason) {
     if (module.isErrorWithCode(reason)) {

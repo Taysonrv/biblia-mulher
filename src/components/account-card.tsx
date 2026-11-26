@@ -12,6 +12,6 @@ export function AccountCard() {
     {!account.configured && <Text style={ui.body}>O acesso à conta aguarda ativação. Sua leitura continua disponível sem entrar.</Text>}
     {!!account.error && <><Text accessibilityRole="alert" style={ui.body}>{account.error}</Text><ActionButton secondary label="Conferir acesso novamente" disabled={!!account.busy} onPress={account.retry} /></>}
     <FeatureLink title={account.user ? 'Gerenciar minha conta' : 'Entrar ou criar conta'} description={account.user ? 'Confira seu acesso e endereço de e-mail.' : 'Google, e-mail e recuperação de senha.'} icon="log-in-outline" href="/account" />
-    <Text style={ui.body}>Favoritos, anotações, planos e agenda continuam neste aparelho, inclusive ao sair ou trocar de conta. A sincronização entre aparelhos será disponibilizada em uma próxima etapa.</Text>
+    <Text style={ui.body}>Favoritos, anotações, planos e agenda continuam neste aparelho, inclusive ao sair ou trocar de conta. Em Meus dados, você pode conferir e confirmar a sincronização com sua conta.</Text>
   </OrbitCard>;
 }

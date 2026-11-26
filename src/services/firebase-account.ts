@@ -28,7 +28,14 @@ export const firebaseAccount: AuthAdapter = {
     return messages.join(' ');
   },
   async reset(email) { await sendPasswordResetEmail(session(), email); },
-  google: () => googleLogin(session()),
+  async google() {
+    try { return await googleLogin(session()); }
+    catch (reason) {
+      const code = reason && typeof reason === 'object' && 'code' in reason ? String(reason.code) : 'unknown';
+      console.warn('[Google Auth] Falha de autenticacao. Codigo:', code);
+      throw reason;
+    }
+  },
   async logout() { await signOut(session()); await clearGoogleLogin(); },
   async verify() { const current = user(); if (!current.emailVerified) await sendEmailVerification(current); },
   async reload() { await reload(user()); },

@@ -1,0 +1,45 @@
+[
+  {
+    "number":47,"author":"Augustus Montague Toplady (1740–1778)","portugueseCredit":"Versão em português: Henry Maxwell Wright (1849–1931)","lastDeath":1931,
+    "sources":[{"label":"Hymnary: texto português, autoria e tradutor","url":"https://www.hymnary.org/text/rocha_eterna_meu_jesus_que_por_mim_na"},{"label":"Hinologia: biografia de Henry Maxwell Wright","url":"https://www.hinologia.org/henry-maxwell-wright/"}],
+    "corrections":[["Foste morto eu meu lugar","Foste morto em meu lugar"]]
+  },
+  {
+    "number":59,"author":"Frida Vingren (1891–1940)","portugueseCredit":"Letra em português atribuída a Frida Vingren","lastDeath":1940,
+    "sources":[{"label":"Hymnary: Té conhecer o amor sem fim, autoria","url":"https://hymnary.org/person/Vingren_Frida"},{"label":"Agência Câmara: vida e falecimento de Frida","url":"https://www.camara.leg.br/noticias/1103353-entra-em-vigor-lei-que-cria-o-dia-nacional-da-musica-gospel/"}],
+    "corrections":[["Te conhecer o amor sem fim","Té conhecer o amor sem fim"]]
+  },
+  {
+    "number":187,"author":"Sarah Flower Adams (1805–1848)","portugueseCredit":"Versão em português: João Gomes da Rocha (1861–1947)","lastDeath":1947,
+    "sources":[{"label":"Hymnary: autoria, tradução de 1888 e primeira linha","url":"https://www.hymnary.org/hymn/HPCC2011/399"},{"label":"Portal Luterano: João Gomes da Rocha, 1861–1947","url":"https://www.luterano.org.br/joao-gomes-da-rocha-1861-1947/"}],
+    "note":"A referência bibliográfica de edição de 2011 traz aviso histórico de copyright da tradução em 1975. A análise é do texto tradicional atribuído ao tradutor falecido em 1947, não de uma eventual adaptação nova de terceiros.",
+    "corrections":[["Meus Deus, de Ti!","Meu Deus, de Ti!"],["Perto de TI, meu Rei","Perto de Ti, meu Rei"]]
+  },
+  {
+    "number":198,"author":"Charles William Fry (falecido em 1882)","portugueseCredit":"Versão em português: Justus Henry Nelson (falecido em 1937)","lastDeath":1937,
+    "sources":[{"label":"Hino 198: créditos e transcrição para comparação","url":"https://www.hinosdaharpa.org/2019/04/hino-198-harpa-crista.html"},{"label":"Hymnary: original de Charles W. Fry","url":"https://hymnary.org/text/i_have_found_a_friend_in_jesus_hes_every"},{"label":"Hinologia: Justus Henry Nelson","url":"https://www.hinologia.org/justus-henry-nelson/"}],
+    "corrections":[["Que me purifica e guarde para Si","Que me purifica e guarda para Si"],["Que o mundo me abandona","Que o mundo me abandone"]]
+  },
+  {
+    "number":578,"author":"Mary Ann Baker (falecida em 1925, conforme pesquisa biográfica do Hymnary)","portugueseCredit":"Versão em português: William Edwin Entzminger (1859–1930)","lastDeath":1930,
+    "sources":[{"label":"Hymnary: letra original e tradução de 1903","url":"https://www.hymnary.org/text/mestre_o_mar_se_revolta_as_ondes_nos_dao"},{"label":"Hymnary: pesquisa biográfica de Mary Ann Baker","url":"https://www.hymnary.org/person/Baker_MaryAnn"},{"label":"Hinologia: William Entzminger","url":"https://www.hinologia.org/william-entzminger/"}],
+    "note":"Há biografias antigas que informam 1921 para Baker; o Hymnary registra pesquisa posterior com falecimento em 1925. Em ambos os casos o último falecimento considerado permanece o de Entzminger em 1930."
+  },
+  {
+    "number":637,"category":"civic","author":"Olavo Bilac (1865–1918)","portugueseCredit":"Letra original em português","lastDeath":1918,
+    "sources":[{"label":"Câmara dos Deputados: texto e autoria do Hino à Bandeira","url":"https://plenarinho.leg.br/index.php/2018/10/hino-a-bandeira-nacional/"},{"label":"Academia Brasileira de Letras: Olavo Bilac","url":"https://academia.org.br/academicos/olavo-bilac"}]
+  },
+  {
+    "number":638,"category":"civic","author":"Joaquim Osório Duque-Estrada (1870–1927)","portugueseCredit":"Letra original em português","lastDeath":1927,
+    "sources":[{"label":"Biblioteca Nacional: história e autoria do Hino Nacional","url":"https://bndigital.bn.gov.br/artigos/13-de-abril-dia-do-hino-nacional-brasileiro/"},{"label":"Academia Brasileira de Letras: Osório Duque-Estrada","url":"https://www.academia.org.br/academicos/osorio-duque-estrada"}],
+    "note":"Incluído somente o texto do apêndice cívico. Não há gravação, arranjo ou alteração da letra para execução musical."
+  },
+  {
+    "number":639,"category":"civic","author":"Evaristo da Veiga (1799–1837)","portugueseCredit":"Letra original em português","lastDeath":1837,
+    "sources":[{"label":"MultiRio: Evaristo da Veiga e Hino da Independência","url":"https://multi.rio/index.php/historia-do-brasil/rio-de-janeiro/65-o-rio-de-janeiro-novamente-corte-o-imperio/2871-no-brasil-e-no-rio-de-janeiro-ja-raiou-a-liberdade"},{"label":"IMSLP: publicação histórica e autoria do poema","url":"https://imslp.org/wiki/Hymno%2C_Imperial%2C_e_Constitucional_%28Pedro_I%2C_Dom%29"}]
+  },
+  {
+    "number":640,"category":"civic","author":"Medeiros e Albuquerque (1867–1934)","portugueseCredit":"Letra original em português","lastDeath":1934,
+    "sources":[{"label":"Biblioteca Nacional: autoria e datas","url":"https://bdlb.bn.gov.br/acervo/browse?type=author&value=Albuquerque%2C+Medeiros+e%2C+1867-1934"},{"label":"Câmara dos Deputados: decreto de 1890 e autoria da poesia","url":"https://www2.camara.leg.br/legin/fed/decret/1824-1899/decreto-171-20-janeiro-1890-497697-norma-pe.html"}]
+  }
+]

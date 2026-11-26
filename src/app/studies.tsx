@@ -6,7 +6,7 @@ import { bookStudies, wordStudies } from '@/services/studies';
 export default function StudiesScreen() {
   const ui = useUi(); const { palette: p } = useAppTheme();
   return <ScreenFrame>
-    <ScreenHeading eyebrow="BÍBLIA SMART • ESTUDOS" title="Conheça. Entenda. Viva."
+    <ScreenHeading eyebrow="BÍBLIA VP • ESTUDOS" title="Conheça. Entenda. Viva."
       subtitle="Um olhar sobre cada livro e as palavras que dão forma à mensagem bíblica." />
     <FeatureLink title="Conheça o Premium" description="Estudos dos livros e palavras originais fazem parte da assinatura. Seus planos de leitura e reflexões pessoais continuam gratuitos." icon="sparkles-outline" href="/subscription" violet />
     <FeatureLink title="Buscar nos estudos" description="Encontre temas, autores, palavras originais e referências em um só lugar." icon="search-outline" href="/study-search" />

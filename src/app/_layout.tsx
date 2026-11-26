@@ -37,9 +37,9 @@ function AppNavigator() {
         tabBarInactiveTintColor: p.subtle,
 
         tabBarStyle: {
-          height: 70 + insets.bottom,
-          paddingTop: 7,
-          paddingBottom: Math.max(insets.bottom, 7),
+          height: 62 + insets.bottom,
+          paddingTop: 5,
+          paddingBottom: Math.max(insets.bottom, 5),
           backgroundColor: p.background,
           borderTopColor: p.border,
         },
@@ -123,12 +123,15 @@ function AppNavigator() {
           href: null,
         }}
       />
+      <Tabs.Screen name="online-bible" options={{ href: null }} />
       <Tabs.Screen name="book" options={{ href: null }} />
       <Tabs.Screen name="chapter" options={{ href: null }} />
       <Tabs.Screen name="reading-plans" options={{ href: null }} />
       <Tabs.Screen name="reading-plan" options={{ href: null }} />
       <Tabs.Screen name="reading-plan-day" options={{ href: null }} />
       <Tabs.Screen name="reading-settings" options={{ href: null }} />
+      <Tabs.Screen name="harpa" options={{ href: null }} />
+      <Tabs.Screen name="privacy" options={{ href: null }} />
       <Tabs.Screen name="account" options={{ href: null }} />
       <Tabs.Screen name="subscription" options={{ href: null }} />
       <Tabs.Screen name="premium-library" options={{ href: null }} />
@@ -145,10 +148,12 @@ function AppNavigator() {
       <Tabs.Screen name="sermon-builder" options={{ href: null }} />
       <Tabs.Screen name="sermon-outline" options={{ href: null }} />
       <Tabs.Screen name="sermons" options={{ href: null }} />
+      <Tabs.Screen name="sermon-manuscript" options={{ href: null }} />
       <Tabs.Screen name="sermon-editor" options={{ href: null }} />
-      <Tabs.Screen name="sermon-presenter" options={{ href: null, ...(subscription.hasPremium ? { tabBarStyle: { display: 'none' as const } } : {}) }} />
+      <Tabs.Screen name="sermon-presenter" options={{ href: null, tabBarStyle: { display: 'none' as const } }} />
       <Tabs.Screen name="agenda" options={{ href: null }} />
       <Tabs.Screen name="agenda-event" options={{ href: null }} />
+      <Tabs.Screen name="ministerial-preparation" options={{ href: null }} />
       <Tabs.Screen name="favorites" options={{ href: null }} />
       <Tabs.Screen name="notes" options={{ href: null }} />
       <Tabs.Screen name="verse-note" options={{ href: null }} />

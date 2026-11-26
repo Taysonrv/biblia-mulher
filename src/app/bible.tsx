@@ -38,7 +38,10 @@ export default function BibleScreen() {
       >
         <ScreenHeading eyebrow="BÍBLIA" title="Explore a Palavra."
           subtitle="Leia, medite e encontre inspiração para sua caminhada." />
-        <Text style={{ color: p.muted, lineHeight: 22 }}>Bíblia completa offline: 66 livros e 1.189 capítulos. Almeida 1911, com grafia histórica.</Text>
+        <Text style={{ color: p.muted, lineHeight: 22 }}>Duas versões completas offline: Bíblia Livre, em português do Brasil com grafia atual, e Almeida 1911, com grafia histórica.</Text>
+        <View style={{ marginTop: 14 }}><FeatureLink title="Português BR · Bíblia Livre" description="Grafia atual, 66 livros e 1.189 capítulos. Leia sem internet." icon="book-outline" href={{ pathname: '/online-bible', params: { language: 'pt-BR' } }} /></View>
+        <Text style={{ color: p.muted, marginTop: 18 }}>Catálogo abaixo: Almeida 1911 · grafia histórica</Text>
+        <View style={{ marginTop: 14 }}><FeatureLink title="Bíblia em inglês · WEB" description="World English Bible: 66 livros em inglês, com internet." icon="globe-outline" href={{ pathname: '/online-bible', params: { language: 'en' } }} /></View>
         <View style={{ marginTop: 18 }}><FeatureLink title="Buscar versículos" description="Encontre palavras, frases ou uma referência." icon="search-outline" href="/reading-search" violet /></View>
         <View style={{ marginTop: 18, marginBottom: 20, gap: 12 }}>
           <SearchField label="Buscar livro da Bíblia" placeholder="Buscar um livro" value={query} onChange={setQuery} />
@@ -121,15 +124,15 @@ function createStyles(p: Palette) { return StyleSheet.create({
   },
 
   container: {
-    padding: 20,
-    paddingBottom: 50,
+    padding: 16,
+    paddingBottom: 28,
     width: '100%',
     maxWidth: 680,
     alignSelf: 'center',
   },
 
   title: {
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: '700',
     color: p.text,
   },
@@ -138,7 +141,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
     fontSize: 14,
     color: p.muted,
     marginTop: 6,
-    marginBottom: 22,
+    marginBottom: 16,
     lineHeight: 21,
   },
 
@@ -152,7 +155,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
-    marginBottom: 28,
+    marginBottom: 20,
   },
 
   searchIcon: {
@@ -167,7 +170,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
   },
 
   sectionTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '700',
     color: p.text,
     marginBottom: 14,
@@ -179,8 +182,8 @@ function createStyles(p: Palette) { return StyleSheet.create({
     borderColor: p.accentBorder,
     backgroundColor: p.accentSurface,
     borderRadius: 20,
-    padding: 20,
-    marginBottom: 28,
+    padding: 16,
+    marginBottom: 20,
   },
 
   readingTop: {
@@ -198,7 +201,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
 
   chapter: {
     color: p.text,
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: '700',
     marginTop: 5,
   },
@@ -230,7 +233,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
   bookContainer: {
     backgroundColor: p.surface,
     borderRadius: 18,
-    marginBottom: 28,
+    marginBottom: 20,
     paddingHorizontal: 16,
     borderWidth: 1,
     borderColor: p.border,
@@ -239,7 +242,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
   bookRow: {
     borderBottomWidth: 1,
     borderBottomColor: p.border,
-    paddingVertical: 15,
+    paddingVertical: 12,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

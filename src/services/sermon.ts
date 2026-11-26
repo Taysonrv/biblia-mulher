@@ -1,5 +1,6 @@
 export const MAX_SERMON_INPUT = 300;
 export type SermonOutline = {
+  manuscript?: string;
   theme: string;
   baseText: string;
   introduction: string;

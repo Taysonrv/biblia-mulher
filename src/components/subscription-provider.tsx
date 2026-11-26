@@ -3,11 +3,12 @@ import { AppState } from 'react-native';
 import Constants from 'expo-constants';
 import { useAccount } from './account-provider';
 import { subscriptionAdapter } from '@/services/subscription';
-import { canUsePremium, createSubscriptionController, type SubscriptionState } from '@/services/subscription-access';
+import { canUsePremium, canUsePremiumPlus, createSubscriptionController, type SubscriptionState } from '@/services/subscription-access';
 
 interface SubscriptionContextValue extends SubscriptionState {
   configured: boolean;
   hasPremium: boolean;
+  hasPremiumPlus: boolean;
   setPreview: (enabled: boolean) => void;
   refresh: () => void;
   current: () => SubscriptionState;
@@ -35,7 +36,7 @@ export function SubscriptionProvider({ children }: PropsWithChildren) {
   // Deny the previous account's entitlement even before the account effect runs.
   const current = state.accountId === owner ? state : { ...state, accountId: owner, ready: state.testAccess, mode: state.testAccess ? 'preview' as const : 'free' as const, expiresAt: null, error: '' };
   return <SubscriptionContext value={{ ...current, configured: subscriptionAdapter.configured,
-    hasPremium: canUsePremium(current.mode), setPreview: enabled => { controller.setPreview(enabled); },
+    hasPremium: canUsePremium(current.mode), hasPremiumPlus: canUsePremiumPlus(current.mode), setPreview: enabled => { controller.setPreview(enabled); },
     refresh: () => { void controller.refresh(); }, current: controller.current }}>{children}</SubscriptionContext>;
 }
 export function useSubscription() {

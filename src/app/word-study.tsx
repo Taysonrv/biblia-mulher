@@ -28,7 +28,7 @@ function WordStudyScreen() {
     <StudySection title="Para refletir"><Text style={ui.body}>{word.reflection}</Text></StudySection>
     <StudyPersonalActions kind="word" studyId={word.id} fromStudySearch={fromStudySearch} fromMyStudies={fromMyStudies} />
     {book && <FeatureLink title={'Conhecer ' + book.name} description="Autoria, data, mensagem principal e estrutura." icon="library-outline" href={{ pathname: '/book-study', params: { book: book.id } }} />}
-    <StudySection title="Fonte e consulta"><Text style={ui.body}>Definições breves adaptadas em português pela Bíblia Smart a partir dos léxicos STEP Bible, de Tyndale House. Licença CC BY 4.0. Os exemplos e perguntas são comentários introdutórios do app.</Text>
+    <StudySection title="Fonte e consulta"><Text style={ui.body}>Definições breves adaptadas em português pela Bíblia VP a partir dos léxicos STEP Bible, de Tyndale House. Licença CC BY 4.0. Os exemplos e perguntas são comentários introdutórios do app.</Text>
       <StudySourceLink {...word.source} /><StudySourceLink label={'Consultar ' + word.strong + ' no STEP Bible'} url={word.lexiconUrl} /><StudySourceLink label="Licença CC BY 4.0" url="https://creativecommons.org/licenses/by/4.0/" />
     </StudySection>
   </MinisterialScreen>;

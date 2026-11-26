@@ -1,7 +1,7 @@
-import { withPremiumAccess } from '@/components/premium-access';
-import { useState } from 'react';
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { router, useLocalSearchParams } from 'expo-router';
+import { useCallback, useState } from 'react';
+import { ActivityIndicator, Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAppTheme } from '@/components/app-theme';
@@ -16,6 +16,8 @@ function leave(id: string) {
 
 function Presentation({ message }: { message: SavedSermon }) {
   const { palette: p } = useAppTheme();
+  const [fullScreen, setFullScreen] = useState(false);
+  useFocusEffect(useCallback(() => () => setFullScreen(false), []));
   const [sectionId, setSectionId] = useState('base');
   const [fontIndex, setFontIndex] = useState(1);
   const [choosing, setChoosing] = useState(false);
@@ -29,13 +31,19 @@ function Presentation({ message }: { message: SavedSermon }) {
     setIncludeNotes(value => !value);
   }
 
-  return <>
+  const content = <>
     <View style={[styles.toolbar, { borderBottomColor: p.border }]}>
       <Pressable accessibilityRole="button" accessibilityLabel={choosing ? 'Voltar à mensagem' : 'Escolher seção'}
         accessibilityState={{ expanded: choosing }} onPress={() => setChoosing(value => !value)}
         style={({ pressed }) => [styles.sectionButton, { backgroundColor: p.surfaceRaised, opacity: pressed ? 0.7 : 1 }]}>
         <Ionicons accessible={false} name={choosing ? 'book-outline' : 'list-outline'} size={20} color={p.accent} />
         <Text style={[styles.controlText, { color: p.accent }]}>{choosing ? 'Voltar' : 'Seções'}</Text>
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel={fullScreen ? 'Sair da tela cheia' : 'Abrir tela cheia'}
+        onPress={() => setFullScreen(value => !value)}
+        style={({ pressed }) => [styles.sectionButton, { backgroundColor: p.surfaceRaised, opacity: pressed ? 0.7 : 1 }]}>
+        <Ionicons accessible={false} name={fullScreen ? 'contract-outline' : 'expand-outline'} size={20} color={p.accent} />
+        <Text style={[styles.controlText, { color: p.accent }]}>{fullScreen ? 'Reduzir' : 'Tela cheia'}</Text>
       </Pressable>
       <View style={styles.fontControls}>
         <Pressable accessibilityRole="button" accessibilityLabel="Diminuir texto" accessibilityState={{ disabled: fontIndex === 0 }} disabled={fontIndex === 0}
@@ -88,6 +96,16 @@ function Presentation({ message }: { message: SavedSermon }) {
           onPress={() => position === sections.length - 1 ? leave(message.id) : setSectionId(movePresentation(sections, current.id, 1))} /></View>
       </View>
     </View>
+  </>;
+  return <>
+    {!fullScreen && content}
+    <Modal visible={fullScreen} animationType="fade" presentationStyle="fullScreen"
+      supportedOrientations={['portrait', 'landscape']} onRequestClose={() => setFullScreen(false)}>
+      {fullScreen && <SafeAreaView style={{ flex: 1, backgroundColor: p.background }}>
+        <StatusBar hidden />
+        <View style={[styles.frame, { maxWidth: 960, paddingTop: 8 }]}>{content}</View>
+      </SafeAreaView>}
+    </Modal>
   </>;
 }
 
@@ -147,4 +165,4 @@ const styles = StyleSheet.create({
   next: { flex: 1.25 },
 });
 
-export default withPremiumAccess(SermonPresenterScreen, 'ministerial', '/sermons');
+export default SermonPresenterScreen;

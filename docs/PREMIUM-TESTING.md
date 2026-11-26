@@ -36,7 +36,7 @@ Este pacote não iniciou build na nuvem, publicação ou push.
 
 ## Configuração
 
-`app.config.ts` resolve o campo público booleano `extra.premiumTestAccess`, lido pelo SubscriptionProvider com `Constants.expoConfig`. A liberação local vem ativada por padrão nesta fase. `APP_PREMIUM_TEST_ACCESS=false` permite desativá-la ao iniciar o Expo local, para testar os bloqueios.
+`app.config.ts` resolve o campo público booleano `extra.premiumTestAccess`, lido pelo SubscriptionProvider com `Constants.expoConfig`. A liberação local somente é ativada quando APP_PREMIUM_TEST_ACCESS=true é informado explicitamente; sem essa variável, o aplicativo inicia sem Premium automático. `APP_PREMIUM_TEST_ACCESS=false` permite desativá-la ao iniciar o Expo local, para testar os bloqueios.
 
 `eas.json` ativa o campo nos perfis `development` e `preview`, e desativa no perfil `production`. A função de configuração sempre desativa a liberação quando `EAS_BUILD_PROFILE=production`, mesmo se a variável de liberação vier como true. O perfil `production` é destinado à versão comercial; os testes de APK devem usar `preview`.
 

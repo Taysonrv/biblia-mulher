@@ -17,6 +17,6 @@ export async function saveBackupFile(text: string, name: string): Promise<'share
   if (!await Sharing.isAvailableAsync()) throw Error('O compartilhamento de arquivos não está disponível neste aparelho.');
   const folder = new Directory(Paths.cache, 'biblia-smart-backups'); folder.create({ idempotent: true });
   const file = new File(folder, name); file.create({ overwrite: true }); file.write(text);
-  await Sharing.shareAsync(file.uri, { mimeType: 'application/json', UTI: 'public.json', dialogTitle: 'Guardar backup da Bíblia Smart' });
+  await Sharing.shareAsync(file.uri, { mimeType: 'application/json', UTI: 'public.json', dialogTitle: 'Guardar backup da Bíblia VP' });
   return 'shared';
 }

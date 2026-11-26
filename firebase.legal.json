@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "biblia-mulher-legal",
+    "public": "public-legal",
+    "ignore": ["firebase.legal.json", "**/.*", "**/node_modules/**"],
+    "redirects": [{"source": "/", "destination": "/privacy.html", "type": 302}],
+    "headers": [{
+      "source": "**",
+      "headers": [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "Referrer-Policy", "value": "no-referrer"},
+        {"key": "Content-Security-Policy", "value": "default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"},
+        {"key": "Cache-Control", "value": "public, max-age=300"}
+      ]
+    }]
+  }
+}

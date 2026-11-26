@@ -7,7 +7,7 @@ import { readerDefaults, readerTypography, type ReaderPreferences } from '@/serv
 import { ActionButton } from './ui-controls';
 import { bibleTextProvider } from '@/data/bible-text';
 const groups = [
-  { key: 'size', title: 'Tamanho do texto', options: [{ value: 'standard', label: 'Padrão' }, { value: 'medium', label: 'Maior' }, { value: 'large', label: 'Grande' }] },
+  { key: 'size', title: 'Tamanho do texto', options: [{ value: 'standard', label: 'Padrão' }, { value: 'medium', label: 'Maior' }, { value: 'large', label: 'Grande' }, { value: 'extra-large', label: 'Extra grande' }] },
   { key: 'spacing', title: 'Espaçamento entre linhas', options: [{ value: 'standard', label: 'Regular' }, { value: 'wide', label: 'Amplo' }] },
   { key: 'layout', title: 'Organização dos versículos', options: [{ value: 'cards', label: 'Em cards' }, { value: 'continuous', label: 'Contínua' }] },
 ] as const;

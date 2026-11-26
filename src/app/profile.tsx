@@ -22,12 +22,14 @@ export default function ProfileScreen() {
         {(['light', 'dark'] as const).map(mode => <Pressable key={mode} accessibilityRole="radio" aria-checked={theme.mode === mode} accessibilityState={{ checked: theme.mode === mode, disabled: !theme.ready || theme.busy }} disabled={!theme.ready || theme.busy}
           onPress={() => void theme.setMode(mode)} style={({ pressed }) => [ui.card, { flex: stackOptions ? undefined : 1, padding: 14, borderColor: theme.mode === mode ? p.accent : p.border, backgroundColor: theme.mode === mode ? p.accentSurface : p.surface }, pressed && ui.pressed, theme.busy && { opacity: 0.5 }]}>
           <Text style={ui.cardTitle}>{mode === 'light' ? '☀ Claro' : '☾ Escuro'}</Text>
-          <Text style={ui.body}>{mode === 'light' ? 'Verde sálvia' : 'Azul e ciano'}</Text>
+          <Text style={ui.body}>{mode === 'light' ? 'Marfim e verde profundo' : 'Carvão e sálvia'}</Text>
         </Pressable>)}
       </View>
       {!!theme.error && <Text accessibilityRole="alert" style={{ color: p.danger }}>{theme.error}</Text>}
     </View>
+    <FeatureLink title="Harpa Cristã" description="Seleção de letras tradicionais para leitura offline." icon="musical-notes-outline" href="/harpa" />
     <FeatureLink title="Sua leitura" description="Tamanho, espaçamento e conforto para ler." icon="text-outline" href="/reading-settings" />
+    <FeatureLink title="Privacidade e conta" description="Política de privacidade, suporte e pedido de exclusão." icon="document-text-outline" href="/privacy" />
     <FeatureLink title="Meus dados" description="Guarde e restaure sua jornada." icon="shield-checkmark-outline" href="/my-data" violet />
     <View style={{ gap: 14 }}>
       <Text style={ui.heading}>Continue sua jornada</Text>
@@ -42,8 +44,8 @@ export default function ProfileScreen() {
     </View>
     <View style={ui.card}>
       <Text style={ui.heading}>Mais espaço para sua fé</Text>
-      <Text style={ui.body}>A sincronização entre aparelhos está em preparação para acompanhar sua jornada.</Text>
-      <Text style={[ui.eyebrow, { color: p.violet }]}>PRÓXIMAS ETAPAS</Text>
+      <Text style={ui.body}>Confira e confirme a sincronização em Meus dados para levar sua jornada a outro aparelho.</Text>
+      <Text style={[ui.eyebrow, { color: p.violet }]}>SEUS DADOS COM VOCÊ</Text>
     </View>
   </ScreenFrame>;
 }

@@ -46,3 +46,13 @@ example
 /.env
 /.env.*
 !/.env.example
+
+# Backend configuration stays local
+/functions/.env*
+!/functions/.env.example
+
+# Firebase emulator secret overrides
+/functions/.secret.local
+
+# Local Firebase hosting and deployment cache
+/.firebase/

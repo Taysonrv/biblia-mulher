@@ -26,18 +26,18 @@ export function MinisterialScreen({ title, backTo, children, scrollRef, onConten
 }
 function createStyles(p: Palette) { return StyleSheet.create({
   safe: { flex: 1, backgroundColor: p.background },
-  container: { padding: 20, paddingBottom: 32, gap: 18, width: '100%', maxWidth: 680, alignSelf: 'center' },
+  container: { padding: 16, paddingBottom: 24, gap: 14, width: '100%', maxWidth: 680, alignSelf: 'center' },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   back: { minWidth: 44, minHeight: 44, borderRadius: 16, borderWidth: 1, borderColor: p.border, backgroundColor: p.surfaceRaised, alignItems: 'center', justifyContent: 'center' },
   backText: { fontSize: 30, color: p.accent },
-  title: { flex: 1, fontSize: 23, lineHeight: 30, fontWeight: '700', color: p.text },
-  heading: { fontSize: 20, lineHeight: 28, fontWeight: '700', color: p.text },
-  body: { fontSize: 16, lineHeight: 25, color: p.muted },
-  card: { padding: 18, gap: 12, borderRadius: 20, backgroundColor: p.surface, borderWidth: 1, borderColor: p.border },
-  button: { minHeight: 48, padding: 16, borderRadius: 16, backgroundColor: p.accent, alignItems: 'center' },
-  buttonText: { textAlign: 'center', fontSize: 16, fontWeight: '700', color: p.ink },
+  title: { flex: 1, fontSize: 21, lineHeight: 28, fontWeight: '700', color: p.text },
+  heading: { fontSize: 18, lineHeight: 25, fontWeight: '700', color: p.text },
+  body: { fontSize: 14, lineHeight: 21, color: p.muted },
+  card: { padding: 14, gap: 10, borderRadius: 16, backgroundColor: p.surface, borderWidth: 1, borderColor: p.border },
+  button: { minHeight: 44, padding: 12, borderRadius: 13, backgroundColor: p.accent, alignItems: 'center' },
+  buttonText: { textAlign: 'center', fontSize: 14, fontWeight: '700', color: p.ink },
   badge: { color: p.accent, fontSize: 12, fontWeight: '700', letterSpacing: 1 },
-  input: { minHeight: 140, padding: 16, borderWidth: 1, borderColor: p.accent, borderRadius: 16, backgroundColor: p.surface, color: p.text, fontSize: 17, lineHeight: 25, textAlignVertical: 'top' },
+  input: { minHeight: 140, padding: 16, borderWidth: 1, borderColor: p.accent, borderRadius: 16, backgroundColor: p.surface, color: p.text, fontSize: 16, lineHeight: 24, textAlignVertical: 'top' },
   error: { color: p.danger, fontSize: 14, lineHeight: 21 },
 }); }
 

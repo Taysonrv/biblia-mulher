@@ -38,7 +38,10 @@ export default function BookScreen() {
   return (
     <SafeAreaView edges={['top', 'left', 'right']} style={styles.safeArea}>
       <ScrollView
+        style={styles.scrollView}
         showsVerticalScrollIndicator={false}
+        overScrollMode="never"
+        bounces={false}
         contentContainerStyle={styles.container}
       >
         <Pressable
@@ -68,7 +71,9 @@ export default function BookScreen() {
               accessibilityRole="button" accessibilityLabel={'Capítulo ' + chapter + ' disponível'} style={({ pressed }) => [styles.chapterButton, { backgroundColor: p.accentSurface, borderColor: p.accent }, pressed && { opacity: 0.65 }]}
               onPress={() => openChapter(chapter)}
             >
-              <Text style={styles.chapterNumber}>{chapter}</Text>
+              <View pointerEvents="none" style={styles.chapterNumberLayer}>
+                <Text allowFontScaling={false} style={styles.chapterNumber}>{chapter}</Text>
+              </View>
             </Pressable>
           ))}
         </View>
@@ -83,9 +88,14 @@ function createStyles(p: Palette) { return StyleSheet.create({
     backgroundColor: p.background,
   },
 
+  scrollView: {
+    flex: 1,
+    width: '100%',
+  },
+
   container: {
     padding: 20,
-    paddingBottom: 50,
+    paddingBottom: 24,
     width: '100%',
     maxWidth: 680,
     alignSelf: 'center',
@@ -154,11 +164,24 @@ function createStyles(p: Palette) { return StyleSheet.create({
     borderColor: p.border,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 0,
+  },
+
+  chapterNumberLayer: {
+    ...StyleSheet.absoluteFill,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   chapterNumber: {
     fontSize: 15,
+    lineHeight: 20,
     fontWeight: '700',
     color: p.accent,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    includeFontPadding: false,
+    margin: 0,
+    padding: 0,
   },
 }); }

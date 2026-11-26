@@ -30,7 +30,7 @@ export default function AccountScreen() {
         <ActionButton label="Reenviar confirmação" disabled={disabled} busy={account.busy === 'verify'} onPress={() => void account.action('verify', accountService.verify)} />
         <ActionButton secondary label="Já confirmei meu e-mail" disabled={disabled} busy={account.busy === 'reload'} onPress={() => void account.action('reload', accountService.reload)} />
       </View>}
-      <View style={ui.card}><Text style={ui.cardTitle}>Sua jornada neste aparelho</Text><Text style={ui.body}>Seus favoritos, anotações, planos e agenda permanecem disponíveis ao sair ou trocar de conta. Para levar esses dados a outro celular, use o backup. A sincronização automática será disponibilizada em uma próxima etapa.</Text><ActionButton secondary label="Abrir meus dados" disabled={disabled} onPress={() => router.navigate('/my-data')} /></View>
+      <View style={ui.card}><Text style={ui.cardTitle}>Sua jornada neste aparelho</Text><Text style={ui.body}>Seus favoritos, anotações, planos e agenda permanecem disponíveis ao sair ou trocar de conta. Em Meus dados, confira e confirme a sincronização com esta conta para levar sua jornada a outro aparelho. O backup em arquivo continua disponível.</Text><ActionButton secondary label="Abrir meus dados" disabled={disabled} onPress={() => router.navigate('/my-data')} /></View>
       <ActionButton secondary label="Sair da conta" disabled={disabled} busy={account.busy === 'logout'} onPress={() => void account.action('logout', accountService.logout)} />
     </> : <>
       <Text style={ui.heading}>{mode === 'Recuperar senha' ? 'Vamos recuperar seu acesso.' : mode === 'Criar conta' ? 'Comece sua conta.' : 'Bem-vindo à sua jornada.'}</Text>
@@ -54,6 +54,7 @@ export default function AccountScreen() {
       <Text style={ui.body}>O acesso à conta não é obrigatório. Sua jornada local continua disponível ao entrar, sair ou trocar de conta.</Text>
       <ActionButton secondary label="Continuar sem conta" disabled={disabled} onPress={() => { setPassword(''); setConfirmation(''); router.navigate('/profile'); }} />
     </>}
+    <ActionButton secondary label="Privacidade, suporte e exclusão de conta" onPress={() => router.navigate('/privacy')} />
     {!!account.error && <Text accessibilityRole="alert" style={{ color: p.danger, lineHeight: 23 }}>{account.error}</Text>}
     {!!account.notice && <View style={ui.card}><Text accessibilityLiveRegion="polite" style={ui.body}>{account.notice}</Text></View>}
   </MinisterialScreen>;

@@ -62,7 +62,7 @@ test('corrupt, empty, incompatible and duplicate stores are preserved and cannot
 });
 test('invalid fields, limits, dates and identifiers reject writes instead of silently truncating', async () => {
   const { repo, state } = setup();
-  for (const value of [{ ...outline(), theme: '' }, { ...outline(), introduction: 'x'.repeat(4001) }, { ...outline(), points: [] }, { ...outline(), references: [] }, { ...outline(), questions: Array(13).fill('Pergunta') }]) await assert.rejects(repo.create('A', value));
+  for (const value of [{ ...outline(), theme: '' }, { ...outline(), introduction: 'x'.repeat(12001) }, { ...outline(), points: [] }, { ...outline(), references: [] }, { ...outline(), questions: Array(13).fill('Pergunta') }]) await assert.rejects(repo.create('A', value));
   assert.equal(state.writes, 0); assert.throws(() => encodeSermons([{ ...row(), id: '../bad' }])); assert.throws(() => encodeSermons([{ ...row(), updatedAt: NOW - 1 }]));
   await assert.rejects(createSermonRepository(setup().storage, () => NaN).create('A', outline()));
   const first = await repo.create('A', outline()); const writes = state.writes; await assert.rejects(repo.save(first.id, first.outline, 'x'.repeat(2001), first.updatedAt)); assert.equal(state.writes, writes);
@@ -70,9 +70,9 @@ test('invalid fields, limits, dates and identifiers reject writes instead of sil
 test('collection count and Unicode byte limits protect bounded Android storage rows', async () => {
   const rows = Array.from({ length: MAX_SERMONS }, (_, i) => row('record-' + i));
   const { repo, state } = setup({ [SERMON_KEY]: encodeSermons(rows) }); await assert.rejects(repo.create('A', outline()), /100/); assert.equal(state.writes, 0);
-  const large = row(); large.outline.introduction = '漢'.repeat(4000); large.outline.application = '漢'.repeat(4000); large.outline.conclusion = '漢'.repeat(4000);
-  large.outline.points = large.outline.points.map(point => ({ ...point, body: '漢'.repeat(4000) }));
-  const raw = JSON.stringify({ version: 1, sermons: Array.from({ length: 23 }, (_, i) => ({ ...large, id: 'unicode-' + i })) });
+  const large = row(); large.outline.introduction = '漢'.repeat(12000); large.outline.application = '漢'.repeat(12000); large.outline.conclusion = '漢'.repeat(12000);
+  large.outline.points = large.outline.points.map(point => ({ ...point, body: '漢'.repeat(12000) }));
+  const raw = JSON.stringify({ version: 1, sermons: Array.from({ length: 10 }, (_, i) => ({ ...large, id: 'unicode-' + i })) });
   assert.ok(raw.length < MAX_SERMON_STORE_BYTES); assert.ok(Buffer.byteLength(raw, 'utf8') > MAX_SERMON_STORE_BYTES); assert.throws(() => decodeSermons(raw), /limite/);
 });
 test('search covers accents, scripture references and notes and sorts without mutating saved input', () => {
@@ -131,4 +131,23 @@ test('native sharing opens the text dialog, reports cancellation and propagates 
 });
 test('browser sharing provides selectable text without invoking an external share service', async () => {
   const { shareSermon } = service('sermon-sharing'); assert.equal(await shareSermon('Texto', 'Tema'), 'text'); await assert.rejects(shareSermon('', 'Tema'));
+});
+
+test('complete manuscript preserves all five points, whitespace and prayer through save, backup and sharing', async () => {
+  const full = '\nLeitura bíblica\r\n\r\n' + ['I. Descanso','II. Direção','III. Vale','IV. Mesa','V. Esperança','Oração final'].map(title => title + '\n' + 'Texto para leitura. '.repeat(250)).join('\n\n') + '\n';
+  const input = { ...outline(), theme:'Salmos 23 completo', manuscript:full };
+  const { repo, backups } = setup(); const saved = await repo.create('Salmos 23', input);
+  assert.equal(saved.outline.manuscript,full); assert.equal(saved.outline.points.length,0);
+  const reopened = (await repo.read())[0]; assert.equal(reopened.outline.manuscript,full);
+  assert.ok(formatSermon(reopened.outline).includes(full)); assert.equal(findSermons([reopened],'Oração final').length,1);
+  const exported = await backups.export(); const parsed = await parseBackup(exported.text);
+  assert.equal(parsed.data.sermons[0].outline.manuscript,full);
+  const copy = await repo.duplicate(saved.id,'Cópia completa',saved.updatedAt); assert.equal(copy.outline.manuscript,full);
+  const edited=await repo.save(saved.id,{...saved.outline,manuscript:full+'Revisão'},'nota privada',saved.updatedAt);
+  assert.equal(edited.outline.manuscript,full+'Revisão'); assert.ok(!formatSermon(edited.outline,edited.notes).includes('nota privada'));
+});
+test('complete manuscript rejects empty and excessive text without truncating or changing saved data', async () => {
+  const { repo }=setup(); const saved=await repo.create('Salmos 23',{...outline(),manuscript:'Texto completo'});
+  for(const manuscript of ['', '   ', null, 123, 'x'.repeat(80001)]) await assert.rejects(repo.create('Inválido',{...outline(),manuscript}));
+  assert.equal((await repo.read()).length,1); assert.equal((await repo.read())[0].id,saved.id);
 });

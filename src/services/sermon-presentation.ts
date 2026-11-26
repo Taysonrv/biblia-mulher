@@ -6,6 +6,11 @@ export const PRESENTATION_FONT_SIZES = [20, 24, 28, 32] as const;
 // View model only: presenting never writes to the saved message or its revision.
 export function presentationSections(message: SavedSermon, includeNotes = false): PresentationSection[] {
   const outline = message.outline;
+  if (outline.manuscript !== undefined) {
+    const sections = [{ id: 'manuscript', title: outline.theme, body: outline.manuscript }];
+    if (includeNotes && message.notes.trim()) sections.push({ id: 'notes', title: 'Minhas notas pessoais', body: message.notes });
+    return sections;
+  }
   const sections: PresentationSection[] = [
     { id: 'base', title: 'Texto-base', body: `${outline.theme}\n\n${outline.baseText}` },
     { id: 'introduction', title: 'Introdução', body: outline.introduction },

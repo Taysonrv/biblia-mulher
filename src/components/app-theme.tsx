@@ -4,9 +4,9 @@ import { darkPalette, lightPalette, darkGradients, lightGradients } from '@/cons
 import * as SystemUI from 'expo-system-ui';
 type Mode = 'light' | 'dark';
 const KEY = '@biblia-mulher/theme/v1';
-const ThemeContext = createContext({ mode: 'dark' as Mode, ready: false, busy: false, error: '', setMode: async (_mode: Mode) => false });
+const ThemeContext = createContext({ mode: 'light' as Mode, ready: false, busy: false, error: '', setMode: async (_mode: Mode) => false });
 export function AppThemeProvider({ children }: PropsWithChildren) {
-  const [mode, applyMode] = useState<Mode>('dark');
+  const [mode, applyMode] = useState<Mode>('light');
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');

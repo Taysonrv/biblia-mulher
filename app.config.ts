@@ -2,7 +2,7 @@ import type { ConfigContext, ExpoConfig } from 'expo/config';
 // Build setting only; this temporary access never represents a purchase.
 export function resolvePremiumTestAccess(value: string | undefined, buildProfile: string | undefined) {
   if (buildProfile === 'production') return false;
-  return (value ?? 'true') === 'true';
+  return value === 'true';
 }
 export default function appConfig({ config }: ConfigContext): ExpoConfig {
   const googlePlugin = '@react-native-google-signin/google-signin';
@@ -15,7 +15,7 @@ export default function appConfig({ config }: ConfigContext): ExpoConfig {
     plugins.push([googlePlugin, { iosUrlScheme: 'com.googleusercontent.apps.' + iosClient.replace('.apps.googleusercontent.com', '') }]);
   }
   return {
-    ...config, name: config.name ?? 'Bíblia Smart', slug: config.slug ?? 'biblia-mulher', plugins,
+    ...config, name: config.name ?? 'Bíblia VP', slug: config.slug ?? 'biblia-mulher', plugins,
     extra: { ...config.extra, premiumTestAccess: resolvePremiumTestAccess(process.env.APP_PREMIUM_TEST_ACCESS, process.env.EAS_BUILD_PROFILE) },
     android: { ...config.android, ...(process.env.APP_ANDROID_PACKAGE ? { package: process.env.APP_ANDROID_PACKAGE.trim() } : {}) },
     ios: { ...config.ios, ...(process.env.APP_IOS_BUNDLE_IDENTIFIER ? { bundleIdentifier: process.env.APP_IOS_BUNDLE_IDENTIFIER.trim() } : {}) },

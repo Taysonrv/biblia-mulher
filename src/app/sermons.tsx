@@ -14,6 +14,7 @@ export default function SermonsScreen() {
   return <MinisterialScreen title="Meus esboços" backTo="/support" scrollRef={scroll}>
     <Text style={ui.body}>Suas mensagens, prontas para continuar. Salvas neste aparelho e organizadas pela última edição.</Text>
     <FeatureLink title="Preparar nova mensagem" description="Comece por um tema ou passagem." icon="add-circle-outline" href="/sermon-builder" violet />
+    <FeatureLink title="Colar pregação completa" description="Traga seu texto do AI Studio e leia em tela cheia." icon="document-text-outline" href="/sermon-manuscript" />
     {!!library.error && <View style={ui.card}><Text accessibilityRole="alert" style={s.error}>{library.error}</Text><ActionButton secondary label="Tentar carregar esboços" onPress={library.retry} /></View>}
     {!library.ready && !library.error && <Text style={ui.body}>Carregando suas mensagens…</Text>}
     {library.ready && !library.entries.length && <View style={ui.card}><IconBadge name="documents-outline" violet /><Text style={ui.heading}>Uma mensagem pode acompanhar sua jornada.</Text><Text style={ui.body}>Crie um esboço e toque em “Salvar esboço” para retomá-lo aqui. Você poderá adaptar os pontos e acrescentar suas notas pessoais.</Text></View>}

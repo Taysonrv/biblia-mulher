@@ -7,18 +7,31 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "env": { "APP_PREMIUM_TEST_ACCESS": "true" }
+      "env": {
+        "APP_PREMIUM_TEST_ACCESS": "true"
+      }
     },
     "preview": {
       "distribution": "internal",
-      "env": { "APP_PREMIUM_TEST_ACCESS": "true" },
+      "env": {
+        "APP_PREMIUM_TEST_ACCESS": "true"
+      },
       "android": {
         "buildType": "apk"
-      }
+      },
+      "environment": "production",
+      "autoIncrement": true
     },
     "production": {
       "autoIncrement": true,
-      "env": { "APP_PREMIUM_TEST_ACCESS": "false" }
+      "env": {
+        "APP_PREMIUM_TEST_ACCESS": "false"
+      },
+      "distribution": "store",
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
+      }
     }
   },
   "submit": {

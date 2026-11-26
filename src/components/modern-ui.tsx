@@ -10,10 +10,11 @@ import { routePremiumFeature } from '@/services/subscription-access';
 import { useSubscription } from './subscription-provider';
 
 type IconName = ComponentProps<typeof Ionicons>['name'];
-export function ScreenFrame({ children }: PropsWithChildren) {
+export function ScreenFrame({ children, compactTop = false }: PropsWithChildren<{ compactTop?: boolean }>) {
   const ui = useUi();
-  return <SafeAreaView edges={['top', 'left', 'right']} style={ui.safe}>
-    <ScrollView keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false} contentContainerStyle={ui.container}>
+  const subscription = useSubscription();
+  return <SafeAreaView edges={subscription.mode === 'preview' ? ['left', 'right'] : ['top', 'left', 'right']} style={ui.safe}>
+    <ScrollView keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" showsVerticalScrollIndicator={false} contentContainerStyle={[ui.container, compactTop && { paddingTop: 6 }]}>
       {children}
     </ScrollView>
   </SafeAreaView>;
@@ -30,7 +31,7 @@ export function IconBadge({ name, violet = false }: { name: IconName; violet?: b
   const { palette: p } = useAppTheme();
   const ui = useUi();
   return <View accessible={false} style={[ui.iconBadge, violet && { backgroundColor: p.violetSurface, borderColor: p.violetBorder }]}>
-    <Ionicons name={name} size={23} color={violet ? p.violet : p.accent} />
+    <Ionicons name={name} size={20} color={violet ? p.violet : p.accent} />
   </View>;
 }
 export function OrbitCard({ children, violet = false }: PropsWithChildren<{ violet?: boolean }>) {
@@ -40,7 +41,7 @@ export function OrbitCard({ children, violet = false }: PropsWithChildren<{ viol
     start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={[ui.hero, violet && { borderColor: p.violetBorder }]}>
     <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
       style={ui.orbit}><View style={ui.innerOrbit} /></View>
-    <View style={{ gap: 16 }}>{children}</View>
+    <View style={{ gap: 12 }}>{children}</View>
   </LinearGradient>;
 }
 export function FeatureLink({ title, description, icon, href, violet = false }: {
@@ -62,22 +63,22 @@ export function PremiumBadge() {
 }
 function createStyles(p: Palette) { return StyleSheet.create({
   safe: { flex: 1, backgroundColor: p.background },
-  container: { padding: 20, paddingBottom: 32, gap: 20, width: '100%', maxWidth: 680, alignSelf: 'center' },
-  title: { color: p.text, fontSize: 28, lineHeight: 36, fontWeight: '700', letterSpacing: -0.8 },
+  container: { padding: 16, paddingBottom: 24, gap: 14, width: '100%', maxWidth: 680, alignSelf: 'center' },
+  title: { color: p.text, fontSize: 24, lineHeight: 31, fontWeight: '700', letterSpacing: -0.8 },
   eyebrow: { color: p.accent, fontSize: 11, lineHeight: 17, letterSpacing: 1.4, fontWeight: '700' },
-  heading: { color: p.text, fontSize: 20, lineHeight: 28, fontWeight: '700', letterSpacing: -0.4 },
-  cardTitle: { color: p.text, fontSize: 17, lineHeight: 24, fontWeight: '600' },
-  body: { color: p.muted, fontSize: 15, lineHeight: 23 },
-  card: { backgroundColor: p.surface, borderWidth: 1, borderColor: p.border, borderRadius: 20, padding: 18, gap: 12 },
+  heading: { color: p.text, fontSize: 18, lineHeight: 25, fontWeight: '700', letterSpacing: -0.4 },
+  cardTitle: { color: p.text, fontSize: 15, lineHeight: 21, fontWeight: '600' },
+  body: { color: p.muted, fontSize: 14, lineHeight: 21 },
+  card: { backgroundColor: p.surface, borderWidth: 1, borderColor: p.border, borderRadius: 16, padding: 14, gap: 10 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  iconBadge: { width: 44, height: 44, borderRadius: 16, borderWidth: 1, borderColor: p.accentBorder, backgroundColor: p.accentSurface, alignItems: 'center', justifyContent: 'center' },
-  hero: { borderRadius: 24, padding: 20, borderWidth: 1, borderColor: p.accentBorder, overflow: 'hidden' },
-  orbit: { pointerEvents: 'none', position: 'absolute', width: 240, height: 240, borderRadius: 120, borderWidth: 1, borderColor: 'rgba(187,166,255,0.16)', top: -90, right: -115, alignItems: 'center', justifyContent: 'center' },
-  innerOrbit: { width: 160, height: 160, borderRadius: 80, borderWidth: 28, borderColor: 'rgba(104,227,213,0.035)' },
-  button: { backgroundColor: p.accent, minHeight: 50, paddingHorizontal: 20, paddingVertical: 14, borderRadius: 16, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 },
-  buttonText: { color: p.ink, fontSize: 15, lineHeight: 22, fontWeight: '700', flexShrink: 1, textAlign: 'center' },
+  iconBadge: { width: 38, height: 38, borderRadius: 13, borderWidth: 1, borderColor: p.accentBorder, backgroundColor: p.accentSurface, alignItems: 'center', justifyContent: 'center' },
+  hero: { borderRadius: 20, padding: 16, borderWidth: 1, borderColor: p.accentBorder, overflow: 'hidden' },
+  orbit: { pointerEvents: 'none', position: 'absolute', width: 180, height: 180, borderRadius: 36, borderWidth: 1, borderColor: p.accentBorder, opacity: 0.15, transform: [{ rotate: '32deg' }], top: -110, right: -95, alignItems: 'center', justifyContent: 'center' },
+  innerOrbit: { width: 136, height: 136, borderRadius: 25, borderWidth: 1, borderColor: p.accentBorder },
+  button: { backgroundColor: p.accent, minHeight: 44, paddingHorizontal: 16, paddingVertical: 11, borderRadius: 13, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 },
+  buttonText: { color: p.ink, fontSize: 14, lineHeight: 20, fontWeight: '700', flexShrink: 1, textAlign: 'center' },
   pressed: { opacity: 0.72 },
-  pill: { alignSelf: 'flex-start', paddingVertical: 7, paddingHorizontal: 12, backgroundColor: p.violetSurface, borderRadius: 12, borderWidth: 1, borderColor: p.violetBorder },
+  pill: { alignSelf: 'flex-start', paddingVertical: 5, paddingHorizontal: 10, backgroundColor: p.violetSurface, borderRadius: 12, borderWidth: 1, borderColor: p.violetBorder },
   pillText: { color: p.violet, fontSize: 11, fontWeight: '700', letterSpacing: 0.7 },
 }); }
 
