@@ -53,3 +53,6 @@ example
 
 # Firebase emulator secret overrides
 /functions/.secret.local
+
+# Local Firebase hosting and deployment cache
+/.firebase/
