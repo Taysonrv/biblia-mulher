@@ -24,7 +24,7 @@ export function BillingControls() {
   return <View style={ui.card}>
     <Text style={ui.heading}>Assinatura pela Google Play</Text>
     <Text style={ui.body}>O Premium inclui estudos e desenvolvimento local de esboços. A geração por IA não faz parte desta oferta. A assinatura é renovada automaticamente até o cancelamento; gerencie-a na Google Play.</Text>
-    <Text style={ui.body}>Para verificar compras, seu identificador de conta e os dados da assinatura são processados pelo RevenueCat e pela loja. Use a mesma conta do Bíblia Smart ao comprar e restaurar. Confira os termos e a política antes de continuar.</Text>
+    <Text style={ui.body}>Para verificar compras, seu identificador de conta e os dados da assinatura são processados pelo RevenueCat e pela loja. Use a mesma conta do Bíblia VP ao comprar e restaurar. Confira os termos e a política antes de continuar.</Text>
     {!uid ? <ActionButton label="Entrar para consultar os planos" onPress={() => router.navigate('/account')} /> : <>
       <ActionButton label="Consultar planos e preços" disabled={!!busy || !subscription.ready} busy={busy === 'offers'} onPress={() => void action('offers', async owner => {
         const values = await billing.offers(owner); setOffers({ uid: owner, values });
