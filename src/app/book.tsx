@@ -68,7 +68,9 @@ export default function BookScreen() {
               accessibilityRole="button" accessibilityLabel={'Capítulo ' + chapter + ' disponível'} style={({ pressed }) => [styles.chapterButton, { backgroundColor: p.accentSurface, borderColor: p.accent }, pressed && { opacity: 0.65 }]}
               onPress={() => openChapter(chapter)}
             >
-              <Text style={styles.chapterNumber}>{chapter}</Text>
+              <View pointerEvents="none" style={styles.chapterNumberLayer}>
+                <Text allowFontScaling={false} style={styles.chapterNumber}>{chapter}</Text>
+              </View>
             </Pressable>
           ))}
         </View>
@@ -157,6 +159,12 @@ function createStyles(p: Palette) { return StyleSheet.create({
     padding: 0,
   },
 
+  chapterNumberLayer: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   chapterNumber: {
     fontSize: 15,
     lineHeight: 20,
@@ -165,6 +173,8 @@ function createStyles(p: Palette) { return StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     includeFontPadding: false,
+    // Compensa a posição visual dos algarismos na fonte do Android.
+    transform: [{ translateY: -5 }],
     margin: 0,
     padding: 0,
   },
