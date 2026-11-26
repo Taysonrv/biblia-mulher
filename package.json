@@ -61,5 +61,8 @@
     "check:auth": "node scripts/check-auth-config.cjs",
     "setup:gemini": "node scripts/configure-gemini.cjs"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "decode-uri-component": "0.5.1"
+  }
 }
