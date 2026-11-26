@@ -160,7 +160,7 @@ function createStyles(p: Palette) { return StyleSheet.create({
   },
 
   chapterNumberLayer: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     alignItems: 'center',
     justifyContent: 'center',
   },
