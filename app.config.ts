@@ -2,7 +2,7 @@ import type { ConfigContext, ExpoConfig } from 'expo/config';
 // Build setting only; this temporary access never represents a purchase.
 export function resolvePremiumTestAccess(value: string | undefined, buildProfile: string | undefined) {
   if (buildProfile === 'production') return false;
-  return (value ?? 'true') === 'true';
+  return value === 'true';
 }
 export default function appConfig({ config }: ConfigContext): ExpoConfig {
   const googlePlugin = '@react-native-google-signin/google-signin';
