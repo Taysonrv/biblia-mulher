@@ -13,6 +13,9 @@ for (const key of ['EXPO_PUBLIC_FIREBASE_API_KEY','EXPO_PUBLIC_FIREBASE_AUTH_DOM
 check('Projeto Firebase esperado', env.EXPO_PUBLIC_FIREBASE_PROJECT_ID?.trim() === 'biblia-mulher');
 check('Cliente OAuth Web com formato válido', /^[a-zA-Z0-9-]+\.apps\.googleusercontent\.com$/.test(env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID?.trim() ?? ''));
 const app = JSON.parse(fs.readFileSync(path.join(root,'app.json'),'utf8')).expo;
+const legal = JSON.parse(fs.readFileSync(path.join(root,'src/data/legal.json'),'utf8'));
+check('Nome do produto e política consistentes', app.name === 'Bíblia VP' && legal.app === app.name);
+check('URLs legais em HTTPS', [legal.privacyUrl, legal.deletionUrl].every(url => typeof url === 'string' && /^https:\/\/[^\s]+$/.test(url)));
 check('Pacote Android preservado', (env.APP_ANDROID_PACKAGE?.trim() || app.android.package) === 'com.taysonaraujo.bibliasmart');
 check('Premium de teste explicitamente desativado', env.APP_PREMIUM_TEST_ACCESS === 'false');
 check('IA integrada desativada nesta preparação', !env.EXPO_PUBLIC_PREACHING_AI_URL?.trim());
