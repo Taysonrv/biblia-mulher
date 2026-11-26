@@ -34,6 +34,9 @@ test('checked-in legal pages match the product brand and account-deletion addres
 test('production build has preview access disabled while development builds remain explicit', () => {
   const eas = JSON.parse(read('eas.json'));
   assert.equal(eas.build.production.env.APP_PREMIUM_TEST_ACCESS, 'false');
+  assert.equal(eas.build.production.environment, 'production');
+  assert.equal(eas.build.production.distribution, 'store');
+  assert.equal(eas.build.production.android.buildType, 'app-bundle');
   assert.equal(eas.build.preview.env.APP_PREMIUM_TEST_ACCESS, 'true');
   assert.equal(eas.build.development.env.APP_PREMIUM_TEST_ACCESS, 'true');
   assert.match(read('app.config.ts'), /return value === 'true';/);
