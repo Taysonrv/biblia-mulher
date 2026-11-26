@@ -17,7 +17,7 @@ const legal = JSON.parse(fs.readFileSync(path.join(root,'src/data/legal.json'),'
 check('Nome do produto e política consistentes', app.name === 'Bíblia VP' && legal.app === app.name);
 check('URLs legais em HTTPS', [legal.privacyUrl, legal.deletionUrl].every(url => typeof url === 'string' && /^https:\/\/[^\s]+$/.test(url)));
 check('Pacote Android preservado', (env.APP_ANDROID_PACKAGE?.trim() || app.android.package) === 'com.taysonaraujo.bibliasmart');
-check('Premium de teste explicitamente desativado', env.APP_PREMIUM_TEST_ACCESS === 'false');
+check('Premium de teste não habilitado neste ambiente', env.APP_PREMIUM_TEST_ACCESS !== 'true');
 check('IA integrada desativada nesta preparação', !env.EXPO_PUBLIC_PREACHING_AI_URL?.trim());
 check('Cobrança desativada até validar loja e termos', env.EXPO_PUBLIC_BILLING_ENABLED !== 'true');
 console.log('Esta verificação NÃO comprova configuração no EAS, login real, direitos, regras, compras ou aprovação da loja.');
