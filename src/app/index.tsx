@@ -4,7 +4,7 @@ import { Image } from 'expo-image';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { router, type Href } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { FeatureLink, IconBadge, OrbitCard, PremiumBadge, ScreenFrame, useUi } from '@/components/modern-ui';
+import { FeatureLink, IconBadge, OrbitCard, ScreenFrame, useUi } from '@/components/modern-ui';
 import { SubscriptionCard } from '@/components/subscription-card';
 import { useAppTheme } from '@/components/app-theme';
 import { PlanResume } from '@/components/plan-resume';
@@ -17,7 +17,7 @@ const shortcuts: { title: string; subtitle: string; icon: 'book-outline' | 'laye
   { title: 'Agenda', subtitle: 'Organize sua jornada', icon: 'calendar-outline', href: '/agenda', violet: true },
   { title: 'Harpa Cristã', subtitle: 'Hinos disponíveis offline', icon: 'musical-notes-outline', href: '/harpa' },
   { title: 'Histórico', subtitle: 'Retome suas leituras', icon: 'time-outline', href: '/reading-history' },
-  { title: 'Apoio ministerial', subtitle: 'Ferramentas Premium', icon: 'mic-outline', href: '/support' },
+  { title: 'Apoio ministerial', subtitle: 'Esboços e preparação', icon: 'mic-outline', href: '/support' },
 ];
 export default function HomeScreen() {
   const { palette: p } = useAppTheme();
@@ -56,7 +56,7 @@ export default function HomeScreen() {
         style={({ pressed }) => [ui.card, styles.shortcut, pressed && ui.pressed]}>
         <IconBadge name={shortcut.icon} violet={shortcut.violet} />
         <Text style={ui.cardTitle}>{shortcut.title}</Text>
-        {shortcut.title === 'Apoio ministerial' && <PremiumBadge />}
+        
         <Text style={styles.shortcutSubtitle}>{shortcut.subtitle}</Text>
       </Pressable>)}</View>
     </View>
@@ -64,7 +64,7 @@ export default function HomeScreen() {
     <WidgetCard />
     <FeatureLink title="Mentorias e Pregações" description="Aulas e mensagens em vídeo e áudio para aprofundar sua jornada." icon="play-circle-outline" href="/premium-library" violet />
     <OrbitCard violet>
-      <View style={ui.pill}><Text style={ui.pillText}>APOIO MINISTERIAL</Text></View><PremiumBadge />
+      <View style={ui.pill}><Text style={ui.pillText}>APOIO MINISTERIAL</Text></View>
       <Text style={ui.heading}>Uma mensagem com propósito.</Text>
       <Text style={ui.body}>Transforme seu tema em um roteiro de estudo, com referências e perguntas para reflexão.</Text>
       <Pressable accessibilityRole="button" style={({ pressed }) => [styles.outlineButton, pressed && ui.pressed]} onPress={() => router.push('/support')}>
