@@ -26,6 +26,11 @@
       "autoIncrement": true,
       "env": {
         "APP_PREMIUM_TEST_ACCESS": "false"
+      },
+      "distribution": "store",
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
       }
     }
   },
